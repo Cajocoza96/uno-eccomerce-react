@@ -35,7 +35,7 @@ function ProductoDescuento2() {
         setProductos(productoArray);
     }, []);
 
-    const obtenerRutaImagen = (imagen) => `/assets/img/articulosCompra/${imagen}`;
+    const obtenerRutaImagen = (imagen) => process.env.PUBLIC_URL + `/assets/img/articulosCompra/${imagen}`;
 
     return (
 
@@ -72,7 +72,7 @@ function ProductoDescuento2() {
                             </div>
 
                             <div className='contenedor-imagen-producto-descuento2'>
-                                <img className='imagen-producto-descuento2' src={obtenerRutaImagen(producto.productosInfo.imagen)} alt={obtenerRutaImagen(producto.productosInfo.imagen)} />
+                                <img className='imagen-producto-descuento2' src={obtenerRutaImagen(producto.productosInfo.imagen)} alt={producto.productosInfo.nombreProductoUnitario} />
                             </div>
                         </div>
 

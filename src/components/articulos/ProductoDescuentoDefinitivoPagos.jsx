@@ -93,7 +93,7 @@ function ProductoDescuentoDefinitivoPagos() {
 
     }, []);
 
-    const obtenerRutaImagen = (imagen) => `/assets/img/articulosCompra/${imagen}`;
+    const obtenerRutaImagen = (imagen) => process.env.PUBLIC_URL + `/assets/img/articulosCompra/${imagen}`;
 
     return (
         <article className='contenedor-prod-desc-defi-pagos-boton-agregar'>
@@ -108,7 +108,7 @@ function ProductoDescuentoDefinitivoPagos() {
                     <SwiperSlide className='swiperSlide-contenedor-prod-desc-defi-pago' key={index}>
 
                         <div className='contenedor-imagen-prod-defi'>
-                            <img className='imagen-prod-defi' src={obtenerRutaImagen(producto.imagen)} alt={obtenerRutaImagen(producto.imagen)} />
+                            <img className='imagen-prod-defi' src={obtenerRutaImagen(producto.imagen)} alt={producto.nombreProductoUnitario} />
                         </div>
 
                         <div className='contenedor-detalles-desc-antes-precio-tarjeta-prod-defi-padre'>

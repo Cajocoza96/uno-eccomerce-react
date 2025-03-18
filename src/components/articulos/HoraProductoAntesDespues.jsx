@@ -102,7 +102,7 @@ function HoraProductoAntesDespues() {
         };
     }, []);
 
-    const obtenerRutaImagen = (imagen) => `/assets/img/articulosCompra/${imagen}`;
+    const obtenerRutaImagen = (imagen) => process.env.PUBLIC_URL + `/assets/img/articulosCompra/${imagen}`;
 
     return (
         <article className='contenedor-hora-actual-imagen-producto-antes-despues'>
@@ -123,7 +123,7 @@ function HoraProductoAntesDespues() {
                             <div className='contenedor-imagen-antes-desp-tarjeta-producto'>
 
                                 <div className='contenedor-imagen-producto'>
-                                    <img className='imagen-producto' src={obtenerRutaImagen(producto.imagen)} alt={obtenerRutaImagen(producto.imagen)} />
+                                    <img className='imagen-producto' src={obtenerRutaImagen(producto.imagen)} alt={producto.nombreProductoUnitario} />
                                 </div>
 
 

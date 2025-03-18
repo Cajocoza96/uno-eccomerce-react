@@ -225,7 +225,7 @@ function ArticulosCompra({ itemSeleccionado: itemDesdeProps }) {
     }, [state?.itemSeleccionado]);
 
 
-    const obtenerRutaImagen = (imagen) => `/assets/img/articulosCompra/${imagen}`;
+    const obtenerRutaImagen = (imagen) => process.env.PUBLIC_URL + `/assets/img/articulosCompra/${imagen}`;
 
     return (
         <div className='contenedor-padre-articulos-compra'>

@@ -27,7 +27,7 @@ function ProductoAntesDespuesDoble() {
 
     }, []);
 
-    const obtenerRutaImagen = (imagen) => `/assets/img/articulosCompra/${imagen}`;
+    const obtenerRutaImagen = (imagen) => process.env.PUBLIC_URL + `/assets/img/articulosCompra/${imagen}`;
 
     return (
         <article className='contenedor-producto-antes-despues-doble-boton-1'>
@@ -94,7 +94,7 @@ function ProductoAntesDespuesDoble() {
 
 
                             <div className='contenedor-imagen-producto-antes-despues-doble'>
-                                <img className='imagen-producto-antes-despues-doble' src={obtenerRutaImagen(producto.imagen)} alt={producto.detalle} />
+                                <img className='imagen-producto-antes-despues-doble' src={obtenerRutaImagen(producto.imagen)} alt={producto.nombreProductoUnitario} />
                             </div>
 
                         </div>
