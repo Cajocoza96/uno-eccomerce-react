@@ -13,6 +13,15 @@
     background-color: #000000;
 }
 
+/*modo claro*/
+.light-mode .contenedor-derechos-reservados-footer{
+    border-top: 1px solid #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-derechos-reservados-footer{
+    border-top: 1px solid #ffffff;
+}
+
 .contenedor-derechos-reservados-footer .texto-creador-derecho-reservados{
     color: #ffffff;
     font-size: 0.8rem;

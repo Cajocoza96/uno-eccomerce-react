@@ -22,6 +22,15 @@ body, html{
     align-items: center;
 }
 
+/*modo claro*/
+.light-mode .contenedor-cuadro-compra-footer{
+    background-color: #ffffff;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-cuadro-compra-footer{
+    background-color: #000000;
+}
+
 .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando{
     width: 90%;
     height: 100%;
@@ -33,10 +42,27 @@ body, html{
     gap: 1rem;
 }
 
+/*modo claro*/
+.light-mode .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando{
+    background-color: #ffffff;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando{
+    background-color: #000000;
+}
+
 .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .texto-carrito-vacio{
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+/*modo claro*/
+.light-mode .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .texto-carrito-vacio{
     color:#000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .texto-carrito-vacio{
+    color:#ffffff;
 }
 
 .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .boton-sigue-comprando{
@@ -65,13 +91,21 @@ body, html{
     height: auto;
     border-radius: 50%;
     border:none;
-    background-color: #948a8a;
     overflow: hidden;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+/*modo claro*/
+.light-mode .contenedor-icono-carrito-compra{
+    background-color: #948a8a;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-icono-carrito-compra{
+    background-color: #ffffff;
 }
 
 .contenedor-icono-carrito-compra .icono-carrito{
@@ -88,10 +122,18 @@ body, html{
 }
 
 .contenedor-tenemos .texto-tenemos{
-    color: #000000;
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
+}
+
+/*modo claro*/
+.light-mode .contenedor-tenemos .texto-tenemos{
+    color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-tenemos .texto-tenemos{
+    color: #ffffff;
 }
 
 /*modo Landscape para dispositivos moviles*/

@@ -11,7 +11,6 @@
     height: auto;
     padding: 0.3rem;
 
-    background: rgba(98, 35, 210, 0.85); 
     background-size: 300% 300%;
 
     display: flex;
@@ -21,6 +20,15 @@
     gap: 0.2rem;
 
     overflow: hidden;
+}
+
+/*modo claro*/
+.light-mode .contenedor-producto-descuento-1{
+    background: rgba(98, 35, 210, 0.85); 
+}
+/*modo oscuro*/
+.dark-mode .contenedor-producto-descuento-1{
+    background: rgba(21, 8, 44, 0.85); 
 }
 
 
@@ -122,7 +130,6 @@
 .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio {
     width: 100%;
     height: auto;
-    background-color: #ffffff;
     padding: 0.5rem;
     border-radius: 0.7rem;
     text-align: center;
@@ -135,17 +142,38 @@
     gap: 0.3rem;
 }
 
+/*modo claro*/
+.light-mode .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio{
+    background-color: #ffffff;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio{
+    background-color: #474646;
+}
+
 .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .texto-envio-gratis,
 .texto-por-compras-de,
 .texto-con-tarjeta {
-    color: #000000;
     font-size: 1rem;
 }
 
-.contenedor-tarjeta-uno {
+/*modo claro*/
+.light-mode .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .texto-envio-gratis, 
+.light-mode .texto-por-compras-de,
+.light-mode .texto-con-tarjeta{
+    color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .texto-envio-gratis,
+.dark-mode .texto-por-compras-de,
+.dark-mode .texto-con-tarjeta{
+    color: #ffffff;
+}
+
+.contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .contenedor-tarjeta-uno {
     padding: 0.4rem;
-    background-color: #fbff02;
     border-radius: 50%;
+    background-color: #fbff02;
     width: auto;
 
     display: flex;
@@ -154,11 +182,10 @@
     justify-content: center;
 }
     
-
-.contenedor-tarjeta-uno .tarjeta-uno {
+.contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .contenedor-tarjeta-uno .tarjeta-uno {
     font-size: 1rem;
-    font-weight: bold;
     color: #000000;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -171,7 +198,6 @@
     font-size: 1rem;
     border: none;
     border-radius: 0.3rem;
-    background-color: #2517e7;
     cursor: pointer;
 
     display: flex;
@@ -181,14 +207,29 @@
 
 }
 
-.swiperSlide-contenedor-producto-desc-similares-boton .boton-compra:active {
+/*modo claro*/
+.light-mode .swiperSlide-contenedor-producto-desc-similares-boton .boton-compra {
+    background-color: #2517e7;
+}
+/*modo oscuro*/
+.dark-mode .swiperSlide-contenedor-producto-desc-similares-boton .boton-compra {
+    background-color: #000000;
+}
+
+
+/*modo claro*/
+.light-mode .swiperSlide-contenedor-producto-desc-similares-boton .boton-compra:active{
     background-color: #4f44e0;
+}
+/*modo oscuro*/
+.dark-mode .swiperSlide-contenedor-producto-desc-similares-boton .boton-compra:active{
+    background-color: #3a3939;
 }
 
 
 /*modo Landscape para dispositivos moviles*/
 @media screen and (min-width: 320px) and (max-width: 932px) and (orientation: landscape) {
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.2rem;
     }
 
@@ -217,7 +258,7 @@
 
 /*Tablets y laptops pequeñas*/
 @media screen and (min-width: 768px) and (max-width: 1366px) {
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.2rem;
     }
 
@@ -276,7 +317,7 @@
 
 /*Laptops estandar*/
 @media screen and (min-width: 1367px) and (max-width: 1440px) {
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.4rem;
     }
 
@@ -335,7 +376,7 @@
 
 /*Escritorio grandes*/
 @media screen and (min-width: 1441px) and (max-width: 1920px) {
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.6rem;
     }
 
@@ -394,7 +435,7 @@
 
 /*TVs Full HD (1921px o mas)*/
 @media screen and (min-width: 1921px) and (max-width: 3840px) {
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.8rem;
     }
 
@@ -453,7 +494,7 @@
 
 /*TVs 4K (3841px o mas)*/
 @media screen and (min-width: 3841px) and (max-width: 4480px) {
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 2rem;
     }
 
@@ -513,7 +554,7 @@
 
 /*TVs 4481px o mas*/
 @media screen and (min-width: 4481px) {
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 2.2rem;
     }
 

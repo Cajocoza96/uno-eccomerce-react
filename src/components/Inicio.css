@@ -8,13 +8,26 @@
 .contenedor-padre{
     width: 100%;
     height: auto;
-    background-color: #ffffff;
+    min-height: 100vh;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 
     position: relative;
+}
+
+.contenedor-padre > *:not(FooterCompleto){
+    flex-grow: 1;
+}
+
+/*modo claro*/
+.light-mode .contenedor-padre{
+    background-color: #ffffff;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-padre{
+    background-color: #3b3b3b;
 }
 
 .no-scroll{
@@ -38,7 +51,6 @@
     width: 90%;
     min-height: 100%;
     height: 100vh;
-    background-color: #ffffff;
     
     display: none;
 
@@ -48,6 +60,14 @@
 
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+}
+/*modo claro*/
+.light-mode .contenedor-contenido-menu-hamburguesa-novedades-categoria{
+    background-color: #ffffff;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-contenido-menu-hamburguesa-novedades-categoria{
+    background-color: #000000;
 }
 
 
@@ -60,7 +80,7 @@
 }
 
 .contenedor-compra-antDes-desc-producto{
-    margin: 8.5rem auto 1rem;
+    margin: 8.4rem auto 1rem;
     width: 100%;
     height: auto;
 }
@@ -95,7 +115,6 @@
     width: 100%;
     max-height: 100%;
     height: 100vh;
-    background-color: #ffffff;
 
     display: none;
     
@@ -104,6 +123,15 @@
 
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+}
+
+/*modo claro*/
+.light-mode .contenedor-recibir-pedido-compra-recoge-envio-domicilio{
+    background-color: #ffffff;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-recibir-pedido-compra-recoge-envio-domicilio{
+    background-color: #161515;
 }
 
 .contenedor-recibir-pedido-compra-recoge-envio-domicilio.visible {
@@ -120,7 +148,7 @@
     max-width: 90%;
     max-height: 100%;
     height: 100vh;
-    background-color: #ffffff;
+    background-color: transparent;
 
     display: none;
     
@@ -148,7 +176,7 @@
 /*modo Landscape para dispositivos moviles*/
 @media screen and (min-width: 320px) and (max-width: 932px) and (orientation: landscape){
     .contenedor-compra-antDes-desc-producto{
-        margin: 9.3rem auto 1rem;
+        margin: 9.2rem auto 1rem;
     } 
 
     .contenedor-cuadro-notificaciones{
@@ -163,7 +191,7 @@
 /*Tablets y laptops pequeñas*/
 @media screen and (min-width: 768px) and (max-width: 1366px){
     .contenedor-compra-antDes-desc-producto{
-        margin: 11.8rem auto 1rem;
+        margin: 11.7rem auto 1rem;
     }
 
     .contenedor-cuadro-notificaciones{
@@ -178,7 +206,7 @@
 /*Laptops estandar*/
 @media screen and (min-width: 1367px) and (max-width: 1440px){
     .contenedor-compra-antDes-desc-producto{
-        margin: 10.6rem auto 1rem;
+        margin: 10.5rem auto 1rem;
     }
 
     .contenedor-cuadro-notificaciones{
@@ -193,7 +221,7 @@
 /*Escritorio grandes*/
 @media screen and (min-width: 1441px) and (max-width: 1920px){
     .contenedor-compra-antDes-desc-producto{
-        margin: 11.5rem auto 1rem;
+        margin: 11.4rem auto 1rem;
     }
 
     .contenedor-cuadro-notificaciones{
@@ -208,7 +236,7 @@
 /*TVs Full HD (1921px o mas)*/
 @media screen and (min-width: 1921px) and (max-width: 3840px){
     .contenedor-compra-antDes-desc-producto{
-        margin: 12.5rem auto 1rem;
+        margin: 12.2rem auto 1rem;
     }
 
     .contenedor-cuadro-notificaciones{
@@ -223,7 +251,7 @@
 /*TVs 4K (3841px o mas)*/
 @media screen and (min-width: 3841px) and (max-width: 4480px){
     .contenedor-compra-antDes-desc-producto{
-        margin: 13.2rem auto 1rem;
+        margin: 13.1rem auto 1rem;
     }
 
     .contenedor-cuadro-notificaciones{
@@ -238,7 +266,7 @@
 /*TVs 4481px o mas*/
 @media screen and (min-width: 4481px){
     .contenedor-compra-antDes-desc-producto{
-        margin: 14.8rem auto 1rem;
+        margin: 14.7rem auto 1rem;
     }
 
     .contenedor-cuadro-notificaciones{

@@ -32,22 +32,46 @@
     pointer-events: auto;
 }
 
-.contenedor-primera-seccion-cabecera .icono-fuego {
+/*modo claro*/
+.light-mode .contenedor-primera-seccion-cabecera .icono-fuego {
     color: #fc0e0e;
 }
 
-.contenedor-primera-seccion-cabecera .icono-computadora {
-    color: #ffffff;
+/*modo oscuro*/
+.dark-mode .contenedor-primera-seccion-cabecera .icono-fuego {
+    color: #a39e9e;
 }
 
-.icono-menu-hamburguesa,
-.icono-busqueda,
-.icono-notificaciones,
-.icono-usuario,
-.icono-carrito,
-.icono-ubicacion,
-.icono-expansion-derecha {
+/*modo claro*/
+.light-mode .contenedor-primera-seccion-cabecera .icono-computadora {
+    color: #0fff5f;
+}
+
+/*modo oscuro*/
+.dark-mode .contenedor-primera-seccion-cabecera .icono-computadora {
+    color: #a39e9e;
+}
+
+/*modo claro*/
+.light-mode .icono-menu-hamburguesa,
+.light-mode .icono-busqueda,
+.light-mode .icono-notificaciones,
+.light-mode .icono-usuario,
+.light-mode .icono-carrito,
+.light-mode .icono-ubicacion,
+.light-mode .icono-expansion-derecha {
     color: #000000;
+}
+
+/*modo oscuro*/
+.dark-mode .icono-menu-hamburguesa,
+.dark-mode .icono-busqueda,
+.dark-mode .icono-notificaciones,
+.dark-mode .icono-usuario,
+.dark-mode .icono-carrito,
+.dark-mode .icono-ubicacion,
+.dark-mode .icono-expansion-derecha {
+    color: #ffffff;
 }
 
 .icono-fuego,
@@ -61,44 +85,90 @@
 .icono-carrito,
 .icono-ubicacion,
 .icono-menu-hamburguesa,
-.icono-expansion-derecha {
+.icono-expansion-derecha,
+.icono-expansion-izquierda {
     font-size: 1rem;
 }
 
 .contenedor-icono-notificaciones-hover .icono-notificaciones:hover {
     padding: 0.1rem;
     border-radius: 50%;
+}
+
+/*modo claro*/
+.light-mode .contenedor-icono-notificaciones-hover .icono-notificaciones:hover {
     background-color: #ffffff;
+}
+
+/*modo oscuro*/
+.dark-mode .contenedor-icono-notificaciones-hover .icono-notificaciones:hover {
+    background-color: #686363;
 }
 
 .contenedor-icono-usuario-hover .icono-usuario:hover {
     padding: 0.1rem;
     border-radius: 50%;
+}
+
+/*modo claro*/
+.light-mode .contenedor-icono-usuario-hover .icono-usuario:hover {
     background-color: #ffffff;
+}
+
+/*modo oscuro*/
+.dark-mode .contenedor-icono-usuario-hover .icono-usuario:hover {
+    background-color: #686363;
 }
 
 .contenedor-icono-carrito-hover .icono-carrito:hover {
     padding: 0.1rem;
     border-radius: 50%;
+}
+
+/*modo claro*/
+.light-mode .contenedor-icono-carrito-hover .icono-carrito:hover {
     background-color: #ffffff;
+}
+
+/*modo oscuro*/
+.dark-mode .contenedor-icono-carrito-hover .icono-carrito:hover {
+    background-color: #686363;
 }
 
 .contenedor-icono-menu-hamburguesa-hover .icono-menu-hamburguesa:hover {
     padding: 0.1rem;
     border-radius: 50%;
+}
+
+/*modo claro*/
+.light-mode .contenedor-icono-menu-hamburguesa-hover .icono-menu-hamburguesa:hover {
     background-color: #ffffff;
+}
+
+/*modo oscuro*/
+.dark-mode .contenedor-icono-menu-hamburguesa-hover .icono-menu-hamburguesa:hover {
+    background-color: #686363;
 }
 
 .contenedor-primera-seccion-cabecera {
     width: 100%;
     height: auto;
     padding: 0.3rem;
-    background-color: #7c00c4;
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+
+/*modo claro*/
+.light-mode .contenedor-primera-seccion-cabecera {
+    background-color: #7c00c4;
+}
+
+/*modo oscuro*/
+.dark-mode .contenedor-primera-seccion-cabecera {
+    background-color: #000000;
 }
 
 .contenedor-envio-gratis {
@@ -118,11 +188,19 @@
 
 .contenedor-envio-gratis .contenedor-todos-lo .texto-todos-lo {
     text-align: center;
-    color: #ffffff;
     font-size: 1rem;
     font-weight: bold;
 }
 
+/*modo claro*/
+.light-mode .contenedor-envio-gratis .contenedor-todos-lo .texto-todos-lo {
+    color: #ffffff;
+}
+
+/*modo oscuro*/
+.dark-mode .contenedor-envio-gratis .contenedor-todos-lo .texto-todos-lo {
+    color: #a39e9e;
+}
 
 .contenedor-envio-gratis .contenedor-articulo-envio-gratis {
     display: flex;
@@ -134,9 +212,18 @@
 
 .contenedor-envio-gratis .contenedor-articulo-envio-gratis .texto-articulo-envio-gratis {
     text-align: center;
-    color: #ffffff;
     font-size: 1rem;
     font-weight: bold;
+}
+
+/*modo claro*/
+.light-mode .contenedor-envio-gratis .contenedor-articulo-envio-gratis .texto-articulo-envio-gratis {
+    color: #ffffff;
+}
+
+/*modo oscuro*/
+.dark-mode .contenedor-envio-gratis .contenedor-articulo-envio-gratis .texto-articulo-envio-gratis {
+    color: #a39e9e;
 }
 
 .contenedor-primera-seccion-cabecera .boton-compra {
@@ -147,7 +234,6 @@
     font-size: 1rem;
     border: none;
     border-radius: 0.3rem;
-    background-color: #e7ff11;
     cursor: pointer;
 
     display: flex;
@@ -156,22 +242,47 @@
     justify-content: center;
 }
 
-.contenedor-primera-seccion-cabecera .boton-compra:active {
+/*modo claro*/
+.light-mode .contenedor-primera-seccion-cabecera .boton-compra {
+    background-color: #e7ff11;
+}
+
+/*modo oscuro*/
+.dark-mode .contenedor-primera-seccion-cabecera .boton-compra {
+    background-color: #686363;
+}
+
+/*modo claro*/
+.light-mode .contenedor-primera-seccion-cabecera .boton-compra:active {
     background-color: #f0ff6c;
 }
 
+/*modo oscuro*/
+.dark-mode .contenedor-primera-seccion-cabecera .boton-compra:active {
+    background-color: #8d8a8a;
+}
+
 .contenedor-segunda-seccion-cabecera {
-    margin-bottom: -0.5vh;
+    margin: -0.3vh auto -0.5vh;
     width: 100%;
     height: auto;
     padding: 0.9rem;
-    background-color: #e7ff11;
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     gap: 0.3rem;
+}
+
+/*modo claro*/
+.light-mode .contenedor-segunda-seccion-cabecera {
+    background-color: #e7ff11;
+}
+
+/*modo oscuro*/
+.dark-mode .contenedor-segunda-seccion-cabecera {
+    background-color: #383737;
 }
 
 .contenedor-segunda-seccion-cabecera .contenedor-menu-hamburguesa {
@@ -199,7 +310,6 @@
     width: 65%;
     height: auto;
     padding: 0.5rem;
-    background-color: #ffffff;
     border: none;
     border-radius: 0.5rem;
     box-shadow: 2px 3px 5px #000000;
@@ -211,12 +321,43 @@
     gap: 0.3rem;
 }
 
+/*modo claro*/
+.light-mode .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda {
+    background-color: #ffffff;
+}
+
+/*modo oscuro*/
+.dark-mode .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda {
+    background-color: #686363;
+}
+
 .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda input {
     width: 100%;
     height: auto;
-    background-color: #ffffff;
     border: none;
     font-size: 1rem;
+}
+
+/*modo claro*/
+.light-mode .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda input {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/*modo oscuro*/
+.dark-mode .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda input {
+    background-color: #686363;
+    color: #ffffff;
+}
+
+/*modo claro*/
+.light-mode .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda input::placeholder {
+    color: #696565;
+}
+
+/*modo oscuro*/
+.dark-mode .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda input::placeholder {
+    color: #cac5c5;
 }
 
 .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda input:focus {
@@ -238,12 +379,21 @@
 .contenedor-tercera-seccion-cabecera {
     width: 100%;
     height: auto;
-    background-color: #e7ff11;
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+/*modo claro*/
+.light-mode .contenedor-tercera-seccion-cabecera {
+    background-color: #e7ff11;
+}
+
+/*modo oscuro*/
+.dark-mode .contenedor-tercera-seccion-cabecera {
+    background-color: #383737;
 }
 
 .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu {
@@ -272,9 +422,18 @@
 }
 
 .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera .contenedor-como-quieres-recibir-tu-pedido .texto-quieres-recibir {
-    color: #000000;
     font-size: 1rem;
     text-align: center;
+}
+
+/*modo claro*/
+.light-mode .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera .contenedor-como-quieres-recibir-tu-pedido .texto-quieres-recibir {
+    color: #000000;
+}
+
+/*modo oscuro*/
+.dark-mode .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera .contenedor-como-quieres-recibir-tu-pedido .texto-quieres-recibir {
+    color: #ffffff;
 }
 
 .contenedor-menu-hamburguesa .contenedor-titulo-uno {
@@ -326,6 +485,60 @@
     display: none;
 }
 
+/*modo claro*/
+.light-mode .contenedor-menu-hamburguesa .contenedor-titulo-uno {
+    background-color: #fbff02;
+}
+
+/*modo oscuro*/
+.dark-mode .contenedor-menu-hamburguesa .contenedor-titulo-uno {
+    background-color: #000000;
+}
+
+/*modo claro*/
+.light-mode .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno .titulo-uno{
+    color: #000000;
+}
+
+/*modo oscuro*/
+.dark-mode .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno .titulo-uno{
+    color: #ffffff;
+}
+
+/*modo claro*/
+.light-mode .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu .titulo-de-menu {
+    color: #000000;
+}
+
+/*modo oscuro*/
+.dark-mode .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu .titulo-de-menu {
+    color: #ffffff;
+}
+
+/*modo claro*/
+.light-mode .contenedor-texto-notificaciones,
+.light-mode .contenedor-texto-mi-cuenta,
+.light-mode .contenedor-texto-carrito {
+    color: #000000;
+}
+
+/*modo oscuro*/
+.dark-mode .contenedor-texto-notificaciones,
+.dark-mode .contenedor-texto-mi-cuenta,
+.dark-mode .contenedor-texto-carrito {
+    color: #ffffff;
+}
+
+/*modo claro*/
+.light-mode .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu .contenedor-como-quieres-recibir-tu-pedido .texto-quieres-recibir {
+    color: #000000;
+}
+
+/*modo oscuro*/
+.dark-mode .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu .contenedor-como-quieres-recibir-tu-pedido .texto-quieres-recibir {
+    color: #ffffff;
+}
+
 
 /*modo Landscape para dispositivos moviles*/
 @media screen and (min-width: 320px) and (max-width: 932px) and (orientation: landscape) {
@@ -341,7 +554,8 @@
     .icono-carrito,
     .icono-ubicacion,
     .icono-menu-hamburguesa,
-    .icono-expansion-derecha {
+    .icono-expansion-derecha,
+    .icono-expansion-izquierda {
         font-size: 1.2rem;
     }
 
@@ -373,6 +587,7 @@
 
 /*Tablets y laptops pequeñas*/
 @media screen and (min-width: 768px) and (max-width: 1366px) {
+
     .icono-fuego,
     .icono-computadora,
     .icono-busqueda {
@@ -384,7 +599,8 @@
     .icono-carrito,
     .icono-ubicacion,
     .icono-menu-hamburguesa,
-    .icono-expansion-derecha {
+    .icono-expansion-derecha,
+    .icono-expansion-izquierda {
         font-size: 1.2rem;
     }
 
@@ -431,7 +647,6 @@
 
     .contenedor-menu-hamburguesa .contenedor-titulo-uno {
         display: block;
-        background-color: #fbff02;
 
         padding: 0.4rem;
         border: 1px solid #000000;
@@ -444,17 +659,14 @@
     }
 
     .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
-        color: #000000;
         font-size: 1.2rem;
     }
-
 
     .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu {
         display: block;
     }
 
     .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu .titulo-de-menu {
-        color: #000000;
         font-size: 1.2rem;
     }
 
@@ -462,7 +674,8 @@
         gap: 1rem;
     }
 
-    .link-crear-cuenta, .link-cuadro-compra{
+    .link-crear-cuenta,
+    .link-cuadro-compra {
         text-decoration: none;
     }
 
@@ -472,12 +685,12 @@
         display: block;
         text-align: center;
         font-size: 1.2rem;
-        color: #000000;
     }
 }
 
 /*Laptops estandar*/
 @media screen and (min-width: 1367px) and (max-width: 1440px) {
+
     .icono-fuego,
     .icono-computadora,
     .icono-busqueda {
@@ -489,7 +702,8 @@
     .icono-carrito,
     .icono-ubicacion,
     .icono-menu-hamburguesa,
-    .icono-expansion-derecha {
+    .icono-expansion-derecha,
+    .icono-expansion-izquierda {
         font-size: 1.4rem;
     }
 
@@ -537,9 +751,7 @@
     .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu .contenedor-como-quieres-recibir-tu-pedido .texto-quieres-recibir {
         text-align: center;
         font-size: 1.4rem;
-        color: #000000;
     }
-
 
     .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera {
         display: none;
@@ -551,7 +763,6 @@
 
     .contenedor-menu-hamburguesa .contenedor-titulo-uno {
         display: block;
-        background-color: #fbff02;
 
         padding: 0.4rem;
         border: 1px solid #000000;
@@ -564,7 +775,6 @@
     }
 
     .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
-        color: #000000;
         font-size: 1.4rem;
     }
 
@@ -574,7 +784,6 @@
     }
 
     .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu .titulo-de-menu {
-        color: #000000;
         font-size: 1.4rem;
     }
 
@@ -582,7 +791,8 @@
         gap: 1.5rem;
     }
 
-    .link-crear-cuenta, .link-cuadro-compra{
+    .link-crear-cuenta,
+    .link-cuadro-compra {
         text-decoration: none;
     }
 
@@ -592,12 +802,12 @@
         display: block;
         text-align: center;
         font-size: 1.4rem;
-        color: #000000;
     }
 }
 
 /*Escritorio grandes*/
 @media screen and (min-width: 1441px) and (max-width: 1920px) {
+
     .icono-fuego,
     .icono-computadora,
     .icono-busqueda {
@@ -609,7 +819,8 @@
     .icono-carrito,
     .icono-ubicacion,
     .icono-menu-hamburguesa,
-    .icono-expansion-derecha {
+    .icono-expansion-derecha,
+    .icono-expansion-izquierda {
         font-size: 1.6rem;
     }
 
@@ -657,9 +868,7 @@
     .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu .contenedor-como-quieres-recibir-tu-pedido .texto-quieres-recibir {
         text-align: center;
         font-size: 1.6rem;
-        color: #000000;
     }
-
 
     .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera {
         display: none;
@@ -671,7 +880,6 @@
 
     .contenedor-menu-hamburguesa .contenedor-titulo-uno {
         display: block;
-        background-color: #fbff02;
 
         padding: 0.4rem;
         border: 1px solid #000000;
@@ -684,17 +892,14 @@
     }
 
     .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
-        color: #000000;
         font-size: 1.6rem;
     }
-
 
     .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu {
         display: block;
     }
 
     .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu .titulo-de-menu {
-        color: #000000;
         font-size: 1.6rem;
     }
 
@@ -702,7 +907,8 @@
         gap: 2rem;
     }
 
-    .link-crear-cuenta, .link-cuadro-compra{
+    .link-crear-cuenta,
+    .link-cuadro-compra {
         text-decoration: none;
     }
 
@@ -712,12 +918,12 @@
         display: block;
         text-align: center;
         font-size: 1.6rem;
-        color: #000000;
     }
 }
 
 /*TVs Full HD (1921px o mas)*/
 @media screen and (min-width: 1921px) and (max-width: 3840px) {
+
     .icono-fuego,
     .icono-computadora,
     .icono-busqueda {
@@ -729,7 +935,8 @@
     .icono-carrito,
     .icono-ubicacion,
     .icono-menu-hamburguesa,
-    .icono-expansion-derecha {
+    .icono-expansion-derecha,
+    .icono-expansion-izquierda {
         font-size: 1.8rem;
     }
 
@@ -777,9 +984,7 @@
     .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu .contenedor-como-quieres-recibir-tu-pedido .texto-quieres-recibir {
         text-align: center;
         font-size: 1.8rem;
-        color: #000000;
     }
-
 
     .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera {
         display: none;
@@ -791,7 +996,6 @@
 
     .contenedor-menu-hamburguesa .contenedor-titulo-uno {
         display: block;
-        background-color: #fbff02;
 
         padding: 0.4rem;
         border: 1px solid #000000;
@@ -804,17 +1008,14 @@
     }
 
     .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
-        color: #000000;
         font-size: 1.8rem;
     }
-
 
     .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu {
         display: block;
     }
 
     .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu .titulo-de-menu {
-        color: #000000;
         font-size: 1.8rem;
     }
 
@@ -822,7 +1023,8 @@
         gap: 2.5rem;
     }
 
-    .link-crear-cuenta, .link-cuadro-compra{
+    .link-crear-cuenta,
+    .link-cuadro-compra {
         text-decoration: none;
     }
 
@@ -832,12 +1034,12 @@
         display: block;
         text-align: center;
         font-size: 1.8rem;
-        color: #000000;
     }
 }
 
 /*TVs 4K (3841px o mas)*/
 @media screen and (min-width: 3841px) and (max-width: 4480px) {
+
     .icono-fuego,
     .icono-computadora,
     .icono-busqueda {
@@ -849,7 +1051,8 @@
     .icono-carrito,
     .icono-ubicacion,
     .icono-menu-hamburguesa,
-    .icono-expansion-derecha {
+    .icono-expansion-derecha,
+    .icono-expansion-izquierda {
         font-size: 2rem;
     }
 
@@ -897,7 +1100,6 @@
     .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu .contenedor-como-quieres-recibir-tu-pedido .texto-quieres-recibir {
         text-align: center;
         font-size: 2rem;
-        color: #000000;
     }
 
 
@@ -911,7 +1113,6 @@
 
     .contenedor-menu-hamburguesa .contenedor-titulo-uno {
         display: block;
-        background-color: #fbff02;
 
         padding: 0.4rem;
         border: 1px solid #000000;
@@ -924,17 +1125,14 @@
     }
 
     .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
-        color: #000000;
         font-size: 2rem;
     }
-
 
     .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu {
         display: block;
     }
 
     .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu .titulo-de-menu {
-        color: #000000;
         font-size: 2rem;
     }
 
@@ -942,7 +1140,8 @@
         gap: 3rem;
     }
 
-    .link-crear-cuenta, .link-cuadro-compra{
+    .link-crear-cuenta,
+    .link-cuadro-compra {
         text-decoration: none;
     }
 
@@ -952,13 +1151,13 @@
         display: block;
         text-align: center;
         font-size: 2rem;
-        color: #000000;
     }
 }
 
 
 /*TVs 4481px o mas*/
-@media screen and (min-width: 4481px){
+@media screen and (min-width: 4481px) {
+
     .icono-fuego,
     .icono-computadora,
     .icono-busqueda {
@@ -970,7 +1169,8 @@
     .icono-carrito,
     .icono-ubicacion,
     .icono-menu-hamburguesa,
-    .icono-expansion-derecha {
+    .icono-expansion-derecha,
+    .icono-expansion-izquierda {
         font-size: 2.2rem;
     }
 
@@ -1018,7 +1218,6 @@
     .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu .contenedor-como-quieres-recibir-tu-pedido .texto-quieres-recibir {
         text-align: center;
         font-size: 2.2rem;
-        color: #000000;
     }
 
 
@@ -1032,7 +1231,6 @@
 
     .contenedor-menu-hamburguesa .contenedor-titulo-uno {
         display: block;
-        background-color: #fbff02;
 
         padding: 0.4rem;
         border: 1px solid #000000;
@@ -1045,17 +1243,14 @@
     }
 
     .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
-        color: #000000;
         font-size: 2.2rem;
     }
-
 
     .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu {
         display: block;
     }
 
     .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu .titulo-de-menu {
-        color: #000000;
         font-size: 2.2rem;
     }
 
@@ -1063,7 +1258,8 @@
         gap: 3.5rem;
     }
 
-    .link-crear-cuenta, .link-cuadro-compra{
+    .link-crear-cuenta,
+    .link-cuadro-compra {
         text-decoration: none;
     }
 
@@ -1073,6 +1269,5 @@
         display: block;
         text-align: center;
         font-size: 2.2rem;
-        color: #000000;
     }
 }

@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import './css/MenuHamburguesaTerciaria.css';
 import { FaTimes, FaChevronLeft } from 'react-icons/fa';
 
+import { Link } from 'react-router-dom';
+
 function MenuHamburguesaTerciaria({ toggleMenu, seleccionadaSeccionDos, retrocederMenu, setMenuActual, seleccionadoItem, seleccionadoItemDos }) {
     const navigate = useNavigate();
 
@@ -17,7 +19,12 @@ function MenuHamburguesaTerciaria({ toggleMenu, seleccionadaSeccionDos, retroced
 
             <div className='contenedor-primera-seccion-menu-hamburguesa-terciaria'>
 
-                <p className='titulo-uno-menu-hamburguesa-terciaria'>Uno</p>
+                <div className='contenedor-titulo-uno'>
+                    <Link className='link-titulo-uno' to='/'>
+                        <p className='titulo-uno'>Uno</p>
+                    </Link>
+                </div>
+
                 <FaTimes className='icono-cerrar'
                     onClick={() => {
                         toggleMenu();
@@ -38,7 +45,7 @@ function MenuHamburguesaTerciaria({ toggleMenu, seleccionadaSeccionDos, retroced
                                 Volver a {seleccionadoItem}
                             </p>
                         </div>
-                        
+
                     </div>
 
                 </div>

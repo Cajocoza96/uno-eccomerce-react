@@ -23,12 +23,20 @@
 .contenedor-prod-desc-defi-pagos-boton-agregar {
     width: 100%;
     height: auto;
-    background-color: #ffffff;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.2rem;
+}
+
+/*modo claro*/
+.light-mode .contenedor-prod-desc-defi-pagos-boton-agregar{
+    background-color: #ffffff;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-prod-desc-defi-pagos-boton-agregar{
+    background-color: #000000;
 }
 
 .contenedor-imagen-prod-defi {
@@ -66,14 +74,30 @@
 
 .contenedor-texto-detalles-prod-defi .texto-detalles-prod-defi {
     font-size: 1rem;
-    color: #2b2929;
     font-weight: bold;
+}
+
+/*modo claro*/
+.light-mode .contenedor-texto-detalles-prod-defi .texto-detalles-prod-defi{
+    color: #2b2929;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-texto-detalles-prod-defi .texto-detalles-prod-defi{
+    color: #807c7c;
 }
 
 .contenedor-texto-detalles-marca-prod-defi .texto-marca-prod-defi {
     font-size: 1.1rem;
-    color: #2b2929;
     font-weight: bold;
+}
+
+/*modo claro*/
+.light-mode .contenedor-texto-detalles-marca-prod-defi .texto-marca-prod-defi{
+    color: #2b2929;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-texto-detalles-marca-prod-defi .texto-marca-prod-defi{
+    color: #706d6d;
 }
 
 .contenedor-desc-defi-pagos {
@@ -91,17 +115,33 @@
 }
 
 .contenedor-precio-antes-pago-defini .texto-descuento {
-    color: #000000;
     font-size: 1rem;
     font-weight: bold;
 }
 
-.contenedor-precio-antes-pago-defini .texto-precio-antes {
+/*modo claro*/
+.light-mode .contenedor-precio-antes-pago-defini .texto-descuento{
     color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-precio-antes-pago-defini .texto-descuento{
+    color: #ffffff;
+}
+
+.contenedor-precio-antes-pago-defini .texto-precio-antes {
     font-size: 1rem;
     text-decoration: line-through;
     text-decoration-color: #ff0000;
     font-weight: bold;
+}
+
+/*modo claro*/
+.light-mode .contenedor-precio-antes-pago-defini .texto-precio-antes{
+    color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-precio-antes-pago-defini .texto-precio-antes{
+    color: #ffffff;
 }
 
 .contenedor-precio-tarjeta-uno {
@@ -112,16 +152,24 @@
 }
 
 .contenedor-precio-tarjeta-uno .texto-precio-tarjeta-uno {
-    color: #000000;
     font-size: 1rem;
     text-align: center;
     font-weight: bold;
 }
 
-.contenedor-tarjeta-uno {
+/*modo claro*/
+.light-mode .contenedor-precio-tarjeta-uno .texto-precio-tarjeta-uno{
+    color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-precio-tarjeta-uno .texto-precio-tarjeta-uno{
+    color: #ffffff;
+}
+
+.contenedor-desc-defi-pagos .contenedor-precio-tarjeta-uno .contenedor-tarjeta-uno {
     padding: 0.4rem;
-    background-color: #fbff02;
     border-radius: 50%;
+    background-color: #fbff02;
     width: auto;
 
     display: flex;
@@ -130,10 +178,10 @@
     justify-content: center;
 }
 
-.contenedor-tarjeta-uno .tarjeta-uno {
+.contenedor-desc-defi-pagos .contenedor-precio-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
     font-size: 1rem;
-    font-weight: bold;
     color: #000000;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -145,10 +193,18 @@
 }
 
 .contenedor-precio-tarjeta-mastercard .texto-precio-tarjeta-mastercard {
-    color: #ff4800f6;
     font-size: 1rem;
     text-align: center;
     font-weight: bold;
+}
+
+/*modo claro*/
+.light-mode .contenedor-precio-tarjeta-mastercard .texto-precio-tarjeta-mastercard {
+    color: #ff4800f6;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-precio-tarjeta-mastercard .texto-precio-tarjeta-mastercard {
+    color: #ffffff;
 }
 
 .contenedor-tarjeta-mastercard {
@@ -182,10 +238,18 @@
 }
 
 .contenedor-descuento-otro .texto-precio-otro {
-    color: #000000;
     font-size: 1rem;
     text-align: center;
     font-weight: bold;
+}
+
+/*modo claro*/
+.light-mode .contenedor-descuento-otro .texto-precio-otro{
+    color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-descuento-otro .texto-precio-otro{
+    color: #ffffff;
 }
 
 
@@ -197,9 +261,17 @@
 }
 
 .contenedor-texto-precio-unitario .texto-precio-unitario-prod-defi {
-    color: #220147;
     font-size: 1rem;
     font-weight: bold;
+}
+
+/*modo claro*/
+.light-mode .contenedor-texto-precio-unitario .texto-precio-unitario-prod-defi{
+    color: #220147;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-texto-precio-unitario .texto-precio-unitario-prod-defi{
+    color: #ffffff;
 }
 
 .contenedor-boton-agregar {
@@ -208,9 +280,17 @@
 }
 
 .contenedor-boton-agregar .texto-vendido-por-empresa {
-    color: #000000;
     font-size: 1rem;
     font-weight: bold;
+}
+
+/*modo claro*/
+.light-mode .contenedor-boton-agregar .texto-vendido-por-empresa{
+    color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-boton-agregar .texto-vendido-por-empresa{
+    color: #ffffff;
 }
 
 
@@ -244,7 +324,7 @@
         font-size: 1.2rem;
     }
 
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-desc-defi-pagos .contenedor-precio-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.2rem;
     }
 
@@ -295,7 +375,7 @@
         font-size: 1.2rem;
     }
 
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-desc-defi-pagos .contenedor-precio-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.2rem;
     }
 
@@ -346,7 +426,7 @@
         font-size: 1.4rem;
     }
 
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-desc-defi-pagos .contenedor-precio-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.4rem;
     }
 
@@ -397,7 +477,7 @@
         font-size: 1.6rem;
     }
 
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-desc-defi-pagos .contenedor-precio-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.6rem;
     }
 
@@ -448,7 +528,7 @@
         font-size: 1.8rem;
     }
 
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-desc-defi-pagos .contenedor-precio-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.8rem;
     }
 
@@ -499,7 +579,7 @@
         font-size: 2rem;
     }
 
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-desc-defi-pagos .contenedor-precio-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 2rem;
     }
 
@@ -550,7 +630,7 @@
         font-size: 2.2rem;
     }
 
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-desc-defi-pagos .contenedor-precio-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 2.2rem;
     }
 

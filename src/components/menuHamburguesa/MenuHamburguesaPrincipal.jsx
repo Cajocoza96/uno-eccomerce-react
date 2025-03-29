@@ -7,6 +7,10 @@ import './css/MenuHamburguesaPrincipal.css';
 import { FaTimes, FaChevronRight } from 'react-icons/fa';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 
+import { Link } from 'react-router-dom';
+
+import ModoClaroOscuro from '../assets/icon/ModoClaroOscuro/ModoClaroOscuro.jsx';
+
 const iconosMap = {
     FaChevronRight: <FaChevronRight className='icono-expansion-derecha' />
 }
@@ -39,7 +43,13 @@ function MenuHamburguesaPrincipal({ toggleMenu, toggleMenuDos, setseleccionadaSe
 
             <div className='contenedor-primera-seccion-menu-hamburguesa-principal'>
 
-                <p className='titulo-uno-menu-hamburguesa-principal'>Uno</p>
+                <div className='contenedor-titulo-uno'>
+                    <Link className='link-titulo-uno' to='/'>
+                        <p className='titulo-uno'>Uno</p>
+                    </Link>
+                </div>
+
+                <ModoClaroOscuro />
                 <FaTimes className='icono-cerrar' onClick={toggleMenu} />
 
             </div>

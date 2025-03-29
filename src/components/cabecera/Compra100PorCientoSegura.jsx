@@ -10,9 +10,9 @@ function Compra100PorCientoSegura() {
     return (
         <div className='contenedor-signo-exclamacion-compra-segura-candado-titulo-uno'>
 
-            <div className='contenedor-tarjeta-uno'>
+            <div className='contenedor-titulo-uno'>
                 <Link className='link-titulo-uno' to='/'>
-                    <p className='tarjeta-uno'>Uno</p>
+                    <p className='titulo-uno'>Uno</p>
                 </Link>
             </div>
 

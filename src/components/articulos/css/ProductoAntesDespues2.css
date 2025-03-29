@@ -7,7 +7,6 @@
 
 .contenedor-producto-antes-despues-boton2{
     padding: 0.5rem;
-    background-color: #f83b02;
     height: auto;
     border-radius: 1.3rem;
 
@@ -15,6 +14,15 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 0.5rem;
+}
+
+/*modo claro*/
+.light-mode .contenedor-producto-antes-despues-boton2{
+    background-color: #f83b02;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-producto-antes-despues-boton2{
+    background-color: #3b1002;
 }
 
 .contenedor-producto-antes-despues2{
@@ -101,11 +109,11 @@
     text-shadow: 2px 2px 3px #000000;
 }
 
-.contenedor-tarjeta-uno {
+.contenedor-producto-info-antes-despues2 .contenedor-pagando-con-tarjeta-uno-prod-antes-despues-2 .contenedor-tarjeta-uno {
     padding: 0.4rem;
-    background-color: #fbff02;
     border-radius: 50%;
     width: auto;
+    background-color: #fbff02;
 
     display: flex;
     flex-direction: column;
@@ -114,12 +122,13 @@
 }
     
 
-.contenedor-tarjeta-uno .tarjeta-uno {
+.contenedor-producto-info-antes-despues2 .contenedor-pagando-con-tarjeta-uno-prod-antes-despues-2 .contenedor-tarjeta-uno .tarjeta-uno {
     font-size: 1rem;
-    font-weight: bold;
     color: #000000;
+    font-weight: bold;
     text-align: center;
 }
+
 
 .contenedor-precio-oferta-texto-producto-detalle-antes-despues{
     display: flex;
@@ -145,7 +154,6 @@
     width: auto;
     height: auto;
     padding: 0.5rem;
-    background-color: #7302a0;
     border: none;
     border-radius: 0.3rem;
     color: #ffffff;
@@ -153,14 +161,29 @@
     cursor: pointer;
 }
 
-.contenedor-producto-antes-despues-boton2 .boton-compra:active{
+/*modo claro*/
+.light-mode .contenedor-producto-antes-despues-boton2 .boton-compra{
+    background-color: #7302a0;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-producto-antes-despues-boton2 .boton-compra{
+    background-color: #000000;
+}
+
+
+/*modo claro*/
+.light-mode .contenedor-producto-antes-despues-boton2 .boton-compra:active{
     background-color: #81369e;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-producto-antes-despues-boton2 .boton-compra:active{
+    background-color: #504f4f;
 }
 
 
 /*modo Landscape para dispositivos moviles*/
 @media screen and (min-width: 320px) and (max-width: 932px) and (orientation: landscape){
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-producto-info-antes-despues2 .contenedor-pagando-con-tarjeta-uno-prod-antes-despues-2 .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.2rem;
     }
 
@@ -209,7 +232,7 @@
 
 /*Tablets y laptops pequeñas*/
 @media screen and (min-width: 768px) and (max-width: 1366px){
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-producto-info-antes-despues2 .contenedor-pagando-con-tarjeta-uno-prod-antes-despues-2 .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.2rem;
     }
 
@@ -258,7 +281,7 @@
 
 /*Laptops estandar*/
 @media screen and (min-width: 1367px) and (max-width: 1440px){
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-producto-info-antes-despues2 .contenedor-pagando-con-tarjeta-uno-prod-antes-despues-2 .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.4rem;
     }
 
@@ -308,7 +331,7 @@
 
 /*Escritorio grandes*/
 @media screen and (min-width: 1441px) and (max-width: 1920px){
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-producto-info-antes-despues2 .contenedor-pagando-con-tarjeta-uno-prod-antes-despues-2 .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.6rem;
     }
 
@@ -357,7 +380,7 @@
 
 /*TVs Full HD (1921px o mas)*/
 @media screen and (min-width: 1921px) and (max-width: 3840px){
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-producto-info-antes-despues2 .contenedor-pagando-con-tarjeta-uno-prod-antes-despues-2 .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.8rem;
     }
 
@@ -406,7 +429,7 @@
 
 /*TVs 4K (3841px o mas)*/
 @media screen and (min-width: 3841px) and (max-width: 4480px){
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-producto-info-antes-despues2 .contenedor-pagando-con-tarjeta-uno-prod-antes-despues-2 .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 2rem;
     }
 
@@ -455,7 +478,7 @@
 
 /*TVs 4481px o mas*/
 @media screen and (min-width: 4481px){
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-producto-info-antes-despues2 .contenedor-pagando-con-tarjeta-uno-prod-antes-despues-2 .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 2.2rem;
     }
 

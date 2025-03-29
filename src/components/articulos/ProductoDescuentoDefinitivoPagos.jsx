@@ -143,7 +143,7 @@ function ProductoDescuentoDefinitivoPagos() {
                                     <div className='contenedor-precio-tarjeta-uno'>
                                         <p className='texto-precio-tarjeta-uno'>${producto.precioUno.toLocaleString("es-CO")}</p>
 
-                                        <div className='contenedor-tarjeta-uno'>
+                                        <div className='contenedor-tarjeta-uno-prodesdefipago'>
                                             <p className='tarjeta-uno'>Uno</p>
                                         </div>
                                     </div>

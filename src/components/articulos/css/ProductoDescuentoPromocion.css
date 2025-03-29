@@ -7,7 +7,6 @@
 
 .contenedor-producto-descuento-promocion-boton{
     margin-bottom: 2rem;
-    background: linear-gradient(to right, #ce2c03 50%, #b80248 50%);
     height: auto;
     padding: 0.5rem;
     border-radius: 1.3rem;
@@ -16,6 +15,15 @@
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+}
+
+/*modo claro*/
+.light-mode .contenedor-producto-descuento-promocion-boton{
+    background: linear-gradient(to right, #ce2c03 50%, #b80248 50%);
+}
+/*modo oscuro*/
+.dark-mode .contenedor-producto-descuento-promocion-boton{
+    background: linear-gradient(to right, #6e1d08 50%, #7a0431 50%);
 }
 
 .contenedor-producto-descuento-promocion{
@@ -79,7 +87,7 @@
 }
 
 
-.contenedor-tarjeta-uno {
+.contenedor-descuento-tarjeta-producto .contenedor-pagando-con-tu-tarjeta-uno .contenedor-tarjeta-uno {
     padding: 0.4rem;
     background-color: #fbff02;
     border-radius: 50%;
@@ -92,7 +100,7 @@
 }
     
 
-.contenedor-tarjeta-uno .tarjeta-uno {
+.contenedor-descuento-tarjeta-producto .contenedor-pagando-con-tu-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
     font-size: 1rem;
     font-weight: bold;
     color: #000000;
@@ -132,7 +140,6 @@
 }
 
 .contenedor-info-promocion{
-    background-color: #ffffff;
     padding: 0.7rem;
     width: auto;
     height: auto;
@@ -144,17 +151,33 @@
     justify-content: center;
 }
 
+/*modo claro*/
+.light-mode .contenedor-info-promocion{
+    background-color: #ffffff;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-info-promocion{
+    background-color: #000000;
+}
+
 .contenedor-info-promocion .texto-info-promocion{
-    color: #000000;
     font-size: 1rem;
     text-align: center;
+}
+
+/*modo claro*/
+.light-mode .contenedor-info-promocion .texto-info-promocion{
+    color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-info-promocion .texto-info-promocion{
+    color: #ffffff;
 }
 
 .contenedor-producto-descuento-promocion-boton .boton-compra{
     width: auto; 
     height: auto;
     padding: 0.5rem;
-    background-color: #088b0f;
     border: none;
     border-radius: 0.3rem;
     color: #ffffff;
@@ -163,13 +186,28 @@
     cursor: pointer;
 }
 
-.contenedor-producto-descuento-promocion-boton .boton-compra:active{
+/*modo claro*/
+.light-mode .contenedor-producto-descuento-promocion-boton .boton-compra{
+    background-color: #088b0f;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-producto-descuento-promocion-boton .boton-compra{
+    background-color: #000000;
+}
+
+/*modo claro*/
+.light-mode .contenedor-producto-descuento-promocion-boton .boton-compra:active{
     background-color: #348a38;
 }
+/*modo oscuro*/
+.dark-mode .contenedor-producto-descuento-promocion-boton .boton-compra:active{
+    background-color: #444343;
+}
+
 
 /*modo Landscape para dispositivos moviles*/
 @media screen and (min-width: 320px) and (max-width: 932px) and (orientation: landscape){
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-descuento-tarjeta-producto .contenedor-pagando-con-tu-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.2rem;
     }
 
@@ -208,7 +246,7 @@
 
 /*Tablets y laptops pequeñas*/
 @media screen and (min-width: 768px) and (max-width: 1366px){
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-descuento-tarjeta-producto .contenedor-pagando-con-tu-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.2rem;
     }
 
@@ -251,7 +289,7 @@
 
 /*Laptops estandar*/
 @media screen and (min-width: 1367px) and (max-width: 1440px){
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-descuento-tarjeta-producto .contenedor-pagando-con-tu-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.4rem;
     }
 
@@ -290,7 +328,7 @@
 
 /*Escritorio grandes*/
 @media screen and (min-width: 1441px) and (max-width: 1920px){
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-descuento-tarjeta-producto .contenedor-pagando-con-tu-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.6rem;
     }
 
@@ -329,7 +367,7 @@
 
 /*TVs Full HD (1921px o mas)*/
 @media screen and (min-width: 1921px) and (max-width: 3840px){
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-descuento-tarjeta-producto .contenedor-pagando-con-tu-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.8rem;
     }
 
@@ -368,7 +406,7 @@
 
 /*TVs 4K (3841px o mas)*/
 @media screen and (min-width: 3841px) and (max-width: 4480px){
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-descuento-tarjeta-producto .contenedor-pagando-con-tu-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 2rem;
     }
 
@@ -408,7 +446,7 @@
 
 /*TVs 4481px o mas*/
 @media screen and (min-width: 4481px){
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-descuento-tarjeta-producto .contenedor-pagando-con-tu-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 2.2rem;
     }
 

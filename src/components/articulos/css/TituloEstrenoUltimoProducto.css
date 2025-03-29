@@ -12,10 +12,18 @@
 }
 
 .cabecera-titulo-estreno-ultimo-producto .titulo-estreno-ultimo-producto{
-    color: #000000;
     font-weight: bold;
     font-size: 1.3rem;
     text-align: center;
+}
+
+/*modo claro*/
+.light-mode .cabecera-titulo-estreno-ultimo-producto .titulo-estreno-ultimo-producto{
+    color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .cabecera-titulo-estreno-ultimo-producto .titulo-estreno-ultimo-producto{
+    color: #ffffff;
 }
 
 /*modo Landscape para dispositivos moviles*/

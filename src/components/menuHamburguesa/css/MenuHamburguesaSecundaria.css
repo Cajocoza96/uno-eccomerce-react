@@ -5,17 +5,32 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+/*modo claro*/
+.light-mode .icono-expansion-izquierda{
+    color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .icono-expansion-izquierda{
+    color: #ffffff;
+}
+
 .contenedor-menu-hamburguesa-info-secundaria {
     width: 98%;
     height: auto;
+}
+/*modo claro*/
+.light-mode .contenedor-menu-hamburguesa-info-secundaria{
     background-color: #ffffff;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-menu-hamburguesa-info-secundaria{
+    background-color: #000000;
 }
 
 .contenedor-primera-seccion-menu-hamburguesa-secundaria {
     width: 100%;
     height: auto;
     padding: 1.5rem;
-    background-color: #e7ff11;
 
     display: flex;
     flex-direction: row;
@@ -23,35 +38,100 @@
     align-items: center;
     gap: 0.5rem;
 }
+/*modo claro*/
+.light-mode .contenedor-primera-seccion-menu-hamburguesa-secundaria{
+    background-color: #e7ff11;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-primera-seccion-menu-hamburguesa-secundaria{
+    background-color:  #383737;
+}
 
-.contenedor-primera-seccion-menu-hamburguesa-secundaria .titulo-uno-menu-hamburguesa-secundaria {
+.contenedor-primera-seccion-menu-hamburguesa-secundaria .contenedor-titulo-uno{
+    padding: 0.4rem;
+    border-radius: 50%;
+    border: 1px solid #000000;
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*modo claro*/
+.light-mode .contenedor-primera-seccion-menu-hamburguesa-secundaria .contenedor-titulo-uno{
+    background-color: #fbff02;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-primera-seccion-menu-hamburguesa-secundaria .contenedor-titulo-uno{
+    background-color:  #000000;
+}
+
+.contenedor-primera-seccion-menu-hamburguesa-secundaria .contenedor-titulo-uno .link-titulo-uno{
+    text-decoration: none;
+}
+
+.contenedor-primera-seccion-menu-hamburguesa-secundaria .contenedor-titulo-uno .link-titulo-uno .titulo-uno{
     font-size: 1rem;
-    font-weight: bold;
+}
+
+/*modo claro*/
+.light-mode .contenedor-primera-seccion-menu-hamburguesa-secundaria .contenedor-titulo-uno .link-titulo-uno .titulo-uno{
     color: #000000;
+}
+
+/*modo oscuro*/
+.dark-mode .contenedor-primera-seccion-menu-hamburguesa-secundaria .contenedor-titulo-uno .link-titulo-uno .titulo-uno{
+    color: #ffffff;
 }
 
 .contenedor-primera-seccion-menu-hamburguesa-secundaria .icono-cerrar {
     font-size: 1rem;
-    color: #000000;
     margin-top: 0.5rem;
     cursor: pointer;
+}
+/*modo claro*/
+.light-mode .contenedor-primera-seccion-menu-hamburguesa-secundaria .icono-cerrar  {
+    color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-primera-seccion-menu-hamburguesa-secundaria .icono-cerrar  {
+    color: #ffffff;
 }
 
 .contenedor-segunda-seccion-menu-hamburguesa-secundaria {
     width: 100%;
     height: auto;
     padding: 0.8rem;
+}
+/*modo claro*/
+.light-mode .contenedor-segunda-seccion-menu-hamburguesa-secundaria{
     background-color: #ffffff;
     border-bottom: 1px solid #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-segunda-seccion-menu-hamburguesa-secundaria{
+    background-color: #000000;
+    border-bottom: 1px solid #ffffff;
 }
 
 .contenedor-padre-icono-expansion-izquierda-texto-volver-a {
     width: 100%;
+
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     gap: 0.5rem;
+}
+/*modo claro*/
+.light-mode .contenedor-padre-icono-expansion-izquierda-texto-volver-a{
+    background-color: #ffffff;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-padre-icono-expansion-izquierda-texto-volver-a{
+    background-color: #000000;
 }
 
 .contenedor-icono-expansion-izquierda-texto-volver-a {
@@ -64,15 +144,17 @@
     cursor: pointer;
 }
 
-.contenedor-icono-expansion-izquierda-texto-volver-a .icono-ubicacion {
-    font-size: 1rem;
-    color: #000000;
-}
-
 .contenedor-icono-expansion-izquierda-texto-volver-a .texto-volver-a-menu-hamburguesa-secundaria {
-    color: #000000;
     font-weight: bold;
     font-size: 1rem;
+}
+/*modo claro*/
+.light-mode .contenedor-icono-expansion-izquierda-texto-volver-a .texto-volver-a-menu-hamburguesa-secundaria {
+    color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-icono-expansion-izquierda-texto-volver-a .texto-volver-a-menu-hamburguesa-secundaria {
+    color: #ffffff;
 }
 
 .contenedor-segunda-tercera-cuarta-seccion-menu-hamburguesa-secundaria {
@@ -87,7 +169,6 @@
     padding: 0.8rem;
     width: 100%;
     height: auto;
-    background-color: #e7ff11;
 
     display: flex;
     flex-direction: row;
@@ -95,24 +176,45 @@
     justify-content: space-between;
     gap: 0.5rem;
 }
+/*modo claro*/
+.light-mode .contenedor-tercera-seccion-menu-hamburguesa-secundaria{
+    background-color: #e7ff11;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-tercera-seccion-menu-hamburguesa-secundaria{
+    background-color:  #383737;
+}
 
 .contenedor-tercera-seccion-menu-hamburguesa-secundaria .texto-seleccion-menu-hamburguesa-secundaria {
     font-size: 1rem;
-    color: #000000;
     font-weight: bold;
+}
+/*modo claro*/
+.light-mode .contenedor-tercera-seccion-menu-hamburguesa-secundaria .texto-seleccion-menu-hamburguesa-secundaria {
+    color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-tercera-seccion-menu-hamburguesa-secundaria .texto-seleccion-menu-hamburguesa-secundaria {
+    color: #ffffff;
 }
 
 
 .contenedor-tercera-seccion-menu-hamburguesa-secundaria .texto-ver-todo-menu-hamburguesa-secundaria {
     font-size: 1rem;
-    color: #000000;
     font-weight: bold;
+}
+/*modo claro*/
+.light-mode .contenedor-tercera-seccion-menu-hamburguesa-secundaria .texto-ver-todo-menu-hamburguesa-secundaria{
+    color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-tercera-seccion-menu-hamburguesa-secundaria .texto-ver-todo-menu-hamburguesa-secundaria{
+    color: #ffffff;
 }
 
 .contenedor-cuarta-seccion-menu-hamburguesa-secundaria {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-
 }
 
 .contenedor-item-iconos-expansion-menu-hamburguesa-cuarta-secundaria {
@@ -129,7 +231,14 @@
 .contenedor-item-iconos-expansion-menu-hamburguesa-cuarta-secundaria .texto-item-seleccion-menu-hamburguesa-cuarta-secundaria {
     margin-bottom: 0.5rem;
     font-size: 1rem;
+}
+/*modo claro*/
+.light-mode .contenedor-item-iconos-expansion-menu-hamburguesa-cuarta-secundaria .texto-item-seleccion-menu-hamburguesa-cuarta-secundaria{
     color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-item-iconos-expansion-menu-hamburguesa-cuarta-secundaria .texto-item-seleccion-menu-hamburguesa-cuarta-secundaria{
+    color: #ffffff;
 }
 
 /*modo Landscape para dispositivos moviles*/
@@ -140,7 +249,7 @@
         height: 1.7rem;
     }
 
-    .contenedor-primera-seccion-menu-hamburguesa-secundaria .titulo-uno-menu-hamburguesa-secundaria {
+    .contenedor-primera-seccion-menu-hamburguesa-secundaria .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
         font-size: 1.2rem;
     }
 
@@ -178,7 +287,7 @@
         height: 1.7rem;
     }
 
-    .contenedor-primera-seccion-menu-hamburguesa-secundaria .titulo-uno-menu-hamburguesa-secundaria {
+    .contenedor-primera-seccion-menu-hamburguesa-secundaria .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
         font-size: 1.2rem;
     }
 
@@ -216,7 +325,7 @@
         height: 1.9rem;
     }
 
-    .contenedor-primera-seccion-menu-hamburguesa-secundaria .titulo-uno-menu-hamburguesa-secundaria {
+    .contenedor-primera-seccion-menu-hamburguesa-secundaria .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
         font-size: 1.4rem;
     }
 
@@ -254,7 +363,7 @@
         height: 2.3rem;
     }
 
-    .contenedor-primera-seccion-menu-hamburguesa-secundaria .titulo-uno-menu-hamburguesa-secundaria {
+    .contenedor-primera-seccion-menu-hamburguesa-secundaria .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
         font-size: 1.6rem;
     }
 
@@ -292,7 +401,7 @@
         height: 2.7rem;
     }
 
-    .contenedor-primera-seccion-menu-hamburguesa-secundaria .titulo-uno-menu-hamburguesa-secundaria {
+    .contenedor-primera-seccion-menu-hamburguesa-secundaria .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
         font-size: 1.8rem;
     }
 
@@ -330,7 +439,7 @@
         height: 3rem;
     }
 
-    .contenedor-primera-seccion-menu-hamburguesa-secundaria .titulo-uno-menu-hamburguesa-secundaria {
+    .contenedor-primera-seccion-menu-hamburguesa-secundaria .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
         font-size: 2rem;
     }
 
@@ -368,7 +477,7 @@
         height: 3.4rem;
     }
 
-    .contenedor-primera-seccion-menu-hamburguesa-secundaria .titulo-uno-menu-hamburguesa-secundaria {
+    .contenedor-primera-seccion-menu-hamburguesa-secundaria .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
         font-size: 2.2rem;
     }
 

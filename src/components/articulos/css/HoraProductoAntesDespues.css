@@ -18,7 +18,6 @@
 
 .contenedor-hora-actual-imagen-producto-antes-despues{
     padding: 1.2rem;
-    background-color: #1156d4;
     height: auto;
     overflow: hidden;
 
@@ -27,11 +26,19 @@
     gap: 1.5rem;
 }
 
+/*modo claro*/
+.light-mode .contenedor-hora-actual-imagen-producto-antes-despues{
+    background-color: #1156d4;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-hora-actual-imagen-producto-antes-despues{
+    background-color: #061838;
+}
+
 .contenedor-imagen-producto-antes-despues{
     padding: 0.5rem;
     width: 95%;
     height: auto;
-    background: linear-gradient(135deg, #bef104, #007746, #50a004, #b0bd03);
     background-size: 300% 300%;
     animation: gradientAnimation 8s ease infinite;
     border-radius: 1.3rem;
@@ -42,6 +49,15 @@
     gap: 0.5rem;
 
     border: 1px solid #ffffff;
+}
+
+/*modo claro*/
+.light-mode .contenedor-imagen-producto-antes-despues{
+    background: linear-gradient(135deg, #bef104, #007746, #50a004, #b0bd03);
+}
+/*modo oscuro*/
+.dark-mode .contenedor-imagen-producto-antes-despues{
+    background: linear-gradient(135deg, #445702, #00311d, #1d3b01, #4e5301);
 }
 
 @keyframes gradientAnimation {
@@ -117,10 +133,10 @@
     text-shadow: 2px 2px 3px #000000;
 }
 
-.contenedor-tarjeta-uno {
+.contenedor-antes-desp-precOfer-tarj-product .contenedor-pagando-con-tarjeta-uno-hora-antes-despues .contenedor-tarjeta-uno {
     padding: 0.4rem;
-    background-color: #fbff02;
     border-radius: 50%;
+    background-color: #fbff02;
     width: auto;
 
     display: flex;
@@ -130,12 +146,13 @@
 }
     
 
-.contenedor-tarjeta-uno .tarjeta-uno {
+.contenedor-antes-desp-precOfer-tarj-product .contenedor-pagando-con-tarjeta-uno-hora-antes-despues .contenedor-tarjeta-uno .tarjeta-uno {
     font-size: 1rem;
-    font-weight: bold;
     color: #000000;
+    font-weight: bold;
     text-align: center;
 }
+
 
 .contenedor-antes-desp-precOfer-tarj-product .texto-precio-oferta-product, .texto-precio-unitario{
     font-size: 1.2rem;
@@ -167,7 +184,6 @@
     width: auto;
     height: auto;
     padding: 0.6rem;
-    background-color: #80025a;
     border: none;
     border-radius: 0.3rem;
     color: #ffffff;
@@ -176,14 +192,28 @@
     cursor: pointer; 
 }
 
-.contenedor-imagen-producto-antes-despues .boton-compra:active{
+/*modo claro*/
+.light-mode .contenedor-imagen-producto-antes-despues .boton-compra{
+    background-color: #80025a;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-imagen-producto-antes-despues .boton-compra{
+    background-color: #000000;
+}
+
+/*modo claro*/
+.light-mode .contenedor-imagen-producto-antes-despues .boton-compra:active{
     background-color: #7c3767;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-imagen-producto-antes-despues .boton-compra:active{
+    background-color: #444343;
 }
 
 
 /*modo Landscape para dispositivos moviles*/
 @media screen and (min-width: 320px) and (max-width: 932px) and (orientation: landscape){
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-antes-desp-precOfer-tarj-product .contenedor-pagando-con-tarjeta-uno-hora-antes-despues .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.2rem;
     }
 
@@ -222,7 +252,7 @@
 
 /*Tablets y laptops pequeñas*/
 @media screen and (min-width: 768px) and (max-width: 1366px){
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-antes-desp-precOfer-tarj-product .contenedor-pagando-con-tarjeta-uno-hora-antes-despues .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.2rem;
     }
 
@@ -261,7 +291,7 @@
 
 /*Laptops estandar*/
 @media screen and (min-width: 1367px) and (max-width: 1440px){
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-antes-desp-precOfer-tarj-product .contenedor-pagando-con-tarjeta-uno-hora-antes-despues .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.4rem;
     }
 
@@ -308,7 +338,7 @@
 
 /*Escritorio grandes*/
 @media screen and (min-width: 1441px) and (max-width: 1920px){
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-antes-desp-precOfer-tarj-product .contenedor-pagando-con-tarjeta-uno-hora-antes-despues .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.6rem;
     }
 
@@ -355,7 +385,7 @@
 
 /*TVs Full HD (1921px o mas)*/
 @media screen and (min-width: 1921px) and (max-width: 3840px){
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-antes-desp-precOfer-tarj-product .contenedor-pagando-con-tarjeta-uno-hora-antes-despues .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.8rem;
     }
 
@@ -402,7 +432,7 @@
 
 /*TVs 4K (3841px o mas)*/
 @media screen and (min-width: 3841px) and (max-width: 4480px){
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-antes-desp-precOfer-tarj-product .contenedor-pagando-con-tarjeta-uno-hora-antes-despues .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 2rem;
     }
 
@@ -449,7 +479,7 @@
 
 /*TVs 4481px o mas*/
 @media screen and (min-width: 4481px){
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-antes-desp-precOfer-tarj-product .contenedor-pagando-con-tarjeta-uno-hora-antes-despues .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 2.2rem;
     }
 

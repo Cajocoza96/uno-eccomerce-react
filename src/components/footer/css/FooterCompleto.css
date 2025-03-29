@@ -1,5 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
 .contenedor-footer-completo{
-    margin: 0.5rem auto 0;
+    margin: 0.3rem auto 0;
     width: 100%;
     height: auto;
 }
+
+/*modo claro*/
+.light-mode .contenedor-footer-completo{
+    background-color: #ffffff;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-footer-completo{
+    background-color: #161515;
+}
+

@@ -16,10 +16,27 @@
     gap: 0.9rem;
 }
 
+/*modo claro*/
+.light-mode .contenedor-siguenos-en-redes-sociales-footer{
+    background-color: #ffffff;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-siguenos-en-redes-sociales-footer{
+    background-color: #161515;
+}
+
 .contenedor-siguenos-en-redes-sociales-footer .texto-siguenos-en{
     font-size: 1rem;
     font-weight: bold;
+}
+
+/*modo claro*/
+.light-mode .contenedor-siguenos-en-redes-sociales-footer .texto-siguenos-en{
     color: #202020;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-siguenos-en-redes-sociales-footer .texto-siguenos-en{
+    color: #ffffff;
 }
 
 .contenedor-redes-sociales{
@@ -34,8 +51,16 @@
 
 .contenedor-redes-sociales .icono-facebook, .icono-instagram, .icono-tiktok, .icono-twitter{
     font-size: 1rem;
-    color: #000000;
     cursor: pointer;
+}
+
+/*modo claro*/
+.light-mode .contenedor-redes-sociales .icono-facebook, .icono-instagram, .icono-tiktok, .icono-twitter{
+    color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-redes-sociales .icono-facebook, .icono-instagram, .icono-tiktok, .icono-twitter{
+    color: #ffffff;
 }
 
 /*modo Landscape para dispositivos moviles*/

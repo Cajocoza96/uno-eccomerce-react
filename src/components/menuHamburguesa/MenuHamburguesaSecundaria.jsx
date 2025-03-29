@@ -4,6 +4,8 @@ import './css/MenuHamburguesaSecundaria.css';
 
 import { FaTimes, FaChevronLeft } from 'react-icons/fa';
 
+import { Link } from 'react-router-dom';
+
 function MenuHamburguesaSecundaria({ toggleMenu, seleccionadaSeccion, setseleccionadaSeccionDos, setMenuActual, retrocederMenu, seleccionadoItem, setSeleccionadoItemDos }) {
 
     return (
@@ -11,7 +13,12 @@ function MenuHamburguesaSecundaria({ toggleMenu, seleccionadaSeccion, setselecci
 
             <div className='contenedor-primera-seccion-menu-hamburguesa-secundaria'>
 
-                <p className='titulo-uno-menu-hamburguesa-secundaria'>Uno</p>
+                <div className='contenedor-titulo-uno'>
+                    <Link className='link-titulo-uno' to='/'>
+                        <p className='titulo-uno'>Uno</p>
+                    </Link>
+                </div>
+
                 <FaTimes className='icono-cerrar'
                     onClick={() => {
                         toggleMenu();

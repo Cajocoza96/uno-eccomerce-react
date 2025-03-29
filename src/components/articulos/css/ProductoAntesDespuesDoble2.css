@@ -7,7 +7,6 @@
 
 .contenedor-productos-antes-despues-doble-2{
     height: auto;
-    background: linear-gradient(135deg, #998000, #ac1315, #51158a, #016885);
     background-size: 300% 300%;
     animation: gradientAnimation 8s ease infinite;
 
@@ -18,11 +17,19 @@
     gap: 0.5rem;
 }
 
+/*modo claro*/
+.light-mode .contenedor-productos-antes-despues-doble-2{
+    background: linear-gradient(135deg, #998000, #ac1315, #51158a, #016885);
+}
+/*modo oscuro*/
+.dark-mode .contenedor-productos-antes-despues-doble-2{
+    background: linear-gradient(135deg, #5f4f01, #58090b, #310d53, #023b4b);
+}
+
 .contenedor-producto-antes-despues-doble-2-boton{
     padding: 0.5rem;
     width: auto;
     height: auto;
-    background: linear-gradient(135deg, #e2bd02, #fa3c40, #8a2be2, #00c9ff);
     background-size: 300% 300%;
     animation: gradientAnimation 8s ease infinite;
 
@@ -30,6 +37,15 @@
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+}
+
+/*modo claro*/
+.light-mode .contenedor-producto-antes-despues-doble-2-boton{
+    background: linear-gradient(135deg, #e2bd02, #fa3c40, #8a2be2, #00c9ff);
+}
+/*modo oscuro*/
+.dark-mode .contenedor-producto-antes-despues-doble-2-boton{
+    background: linear-gradient(135deg, #5f4f01, #58090b, #310d53, #023b4b);
 }
 
 @keyframes gradientAnimation {
@@ -87,11 +103,11 @@
     text-shadow: 2px 2px 3px #000000;
 }
 
-.contenedor-tarjeta-uno {
+.contenedor-texto-detalles-producto-antes-despues-doble-2 .contenedor-pagando-tarjeta-uno-prod-ante-des-dob-2 .contenedor-tarjeta-uno {
     padding: 0.4rem;
-    background-color: #fbff02;
     border-radius: 50%;
     width: auto;
+    background-color: #fbff02; 
 
     display: flex;
     flex-direction: column;
@@ -99,12 +115,13 @@
     justify-content: center;
 }
     
-.contenedor-tarjeta-uno .tarjeta-uno {
+.contenedor-texto-detalles-producto-antes-despues-doble-2 .contenedor-pagando-tarjeta-uno-prod-ante-des-dob-2 .contenedor-tarjeta-uno .tarjeta-uno {
     font-size: 1rem;
-    font-weight: bold;
     color: #000000;
+    font-weight: bold;
     text-align: center;
 }
+
 
 .contenedor-texto-oferta-nombre-producto-prod-ante-des-dob-2{
     height: 5rem;
@@ -155,7 +172,6 @@
     width: auto;
     height: auto;
     padding: 0.5rem;
-    background-color: #200a9c;
     border: none;
     border-radius: 0.3rem;
     color: #ffffff;
@@ -164,8 +180,22 @@
     cursor: pointer;
 }
 
-.contenedor-producto-antes-despues-doble-2-boton .boton-compra:active{
+/*modo claro*/
+.light-mode .contenedor-producto-antes-despues-doble-2-boton .boton-compra{
+    background-color: #200a9c;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-producto-antes-despues-doble-2-boton .boton-compra{
+    background-color: #000000;
+}
+
+/*modo claro*/
+.light-mode  .contenedor-producto-antes-despues-doble-2-boton .boton-compra:active{
     background-color: #392a8f;
+}
+/*modo oscuro*/
+.dark-mode  .contenedor-producto-antes-despues-doble-2-boton .boton-compra:active{
+    background-color: #4b4949;
 }
 
 
@@ -212,7 +242,7 @@
         font-size: 1.2rem;
     }
 
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-texto-detalles-producto-antes-despues-doble-2 .contenedor-pagando-tarjeta-uno-prod-ante-des-dob-2 .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.2rem;
     }
 
@@ -272,7 +302,7 @@
         font-size: 1.2rem;
     }
 
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-texto-detalles-producto-antes-despues-doble-2 .contenedor-pagando-tarjeta-uno-prod-ante-des-dob-2 .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.2rem;
     }
 
@@ -333,7 +363,7 @@
         font-size: 1.4rem;
     }
 
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-texto-detalles-producto-antes-despues-doble-2 .contenedor-pagando-tarjeta-uno-prod-ante-des-dob-2 .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.4rem;
     }
 
@@ -393,7 +423,7 @@
         font-size: 1.6rem;
     }
 
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-texto-detalles-producto-antes-despues-doble-2 .contenedor-pagando-tarjeta-uno-prod-ante-des-dob-2 .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.6rem;
     }
 
@@ -453,7 +483,7 @@
         font-size: 1.8rem;
     }
 
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-texto-detalles-producto-antes-despues-doble-2 .contenedor-pagando-tarjeta-uno-prod-ante-des-dob-2 .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.8rem;
     }
 
@@ -513,7 +543,7 @@
         font-size: 2rem;
     }
 
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-texto-detalles-producto-antes-despues-doble-2 .contenedor-pagando-tarjeta-uno-prod-ante-des-dob-2 .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 2rem;
     }
 
@@ -573,7 +603,7 @@
         font-size: 2.2rem;
     }
 
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-texto-detalles-producto-antes-despues-doble-2 .contenedor-pagando-tarjeta-uno-prod-ante-des-dob-2 .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 2.2rem;
     }
 

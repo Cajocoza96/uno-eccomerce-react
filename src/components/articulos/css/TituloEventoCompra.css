@@ -19,12 +19,20 @@
 }
 
 .cabecera-titulo-evento-compra .titulo-evento-compra{
-    color: #000000;
     font-weight: bold;
     font-size: 1.2rem;
 }
 
-.contenedor-tarjeta-uno {
+/*modo claro*/
+.light-mode .cabecera-titulo-evento-compra .titulo-evento-compra{
+    color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .cabecera-titulo-evento-compra .titulo-evento-compra{
+    color: #ffffff;
+}
+
+.cabecera-titulo-evento-compra .contenedor-tarjeta-uno {
     padding: 0.4rem;
     background-color: #fbff02;
     border-radius: 50%;
@@ -36,7 +44,7 @@
 }
     
 
-.contenedor-tarjeta-uno .tarjeta-uno {
+.cabecera-titulo-evento-compra .contenedor-tarjeta-uno .tarjeta-uno {
     font-size: 1rem;
     font-weight: bold;
     color: #000000;

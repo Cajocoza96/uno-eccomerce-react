@@ -1,17 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { HashRouter } from 'react-router-dom';
-
-import { BrowserRouter } from 'react-router-dom';
+import ScrollToTop from './components/complementos/ScrollToTop';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+const applyTheme = () => {
+  const savedTheme = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const theme = savedTheme ? savedTheme : prefersDark ? 'dark' : 'light';
+  
+  document.documentElement.className = theme === 'dark' ? 'dark-mode' : 'light-mode';
+};
+
+applyTheme();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
     <HashRouter>
+      <ScrollToTop />
       <App />
     </HashRouter>
   </React.StrictMode>

@@ -7,7 +7,6 @@
 
 .contenedor-producto-descuento2-boton {
     margin-bottom: 2rem;
-    background: #d10b0b;
     height: auto;
     padding: 0.5rem;
     border-radius: 1.3rem;
@@ -17,6 +16,15 @@
     flex-direction: column;
     align-items: start;
     gap: 0.5rem;
+}
+
+/*modo claro*/
+.light-mode .contenedor-producto-descuento2-boton{
+    background: #d10b0b;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-producto-descuento2-boton{
+    background: #3b0404;
 }
 
 .contenedor-producto-descuento2 {
@@ -75,23 +83,22 @@
     text-shadow: 2px 2px 3px #000000;
 }
 
-.contenedor-tarjeta-uno {
+.contenedor-texto-informacion-produc-desc2 .contenedor-pagando-con-tarjeta-uno-producto-descuento2 .contenedor-tarjeta-uno {
     padding: 0.4rem;
-    background-color: #fbff02;
     border-radius: 50%;
     width: auto;
+    background-color: #fbff02;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-    
 
-.contenedor-tarjeta-uno .tarjeta-uno {
+.contenedor-texto-informacion-produc-desc2 .contenedor-pagando-con-tarjeta-uno-producto-descuento2 .contenedor-tarjeta-uno .tarjeta-uno {
     font-size: 1rem;
-    font-weight: bold;
     color: #000000;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -131,23 +138,36 @@
     width: auto;
     height: auto;
     padding: 0.5rem;
-    background-color: #f7f31a;
     border: none;
     border-radius: 0.3rem;
-    color: #000000;
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
 }
 
-.contenedor-producto-descuento2-boton .boton-compra:active {
-    background-color: #e6e477;
+/*modo claro*/
+.light-mode .contenedor-producto-descuento2-boton .boton-compra{
+    background-color: #f7f31a;
+    color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-producto-descuento2-boton .boton-compra{
+    background-color: #000000;
+    color: #ffffff;
 }
 
+/*modo claro*/
+.light-mode .contenedor-producto-descuento2-boton .boton-compra:active {
+    background-color: #e6e477;
+}
+/*modo oscuro*/
+.dark-mode  .contenedor-producto-descuento2-boton .boton-compra:active {
+    background-color: #424141;
+}
 
 /*modo Landscape para dispositivos moviles*/
 @media screen and (min-width: 320px) and (max-width: 932px) and (orientation: landscape) {
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-texto-informacion-produc-desc2 .contenedor-pagando-con-tarjeta-uno-producto-descuento2 .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.2rem;
     }
 
@@ -186,7 +206,7 @@
 
 /*Tablets y laptops pequeñas*/
 @media screen and (min-width: 768px) and (max-width: 1366px) {
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-texto-informacion-produc-desc2 .contenedor-pagando-con-tarjeta-uno-producto-descuento2 .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.2rem;
     }
 
@@ -225,7 +245,7 @@
 
 /*Laptops estandar*/
 @media screen and (min-width: 1367px) and (max-width: 1440px) {
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-texto-informacion-produc-desc2 .contenedor-pagando-con-tarjeta-uno-producto-descuento2 .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.4rem;
     }
 
@@ -264,7 +284,7 @@
 
 /*Escritorio grandes*/
 @media screen and (min-width: 1441px) and (max-width: 1920px) {
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-texto-informacion-produc-desc2 .contenedor-pagando-con-tarjeta-uno-producto-descuento2 .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.6rem;
     }
 
@@ -304,7 +324,7 @@
 
 /*TVs Full HD (1921px o mas)*/
 @media screen and (min-width: 1921px) and (max-width: 3840px) {
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-texto-informacion-produc-desc2 .contenedor-pagando-con-tarjeta-uno-producto-descuento2 .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.8rem;
     }
 
@@ -343,7 +363,7 @@
 
 /*TVs 4K (3841px o mas)*/
 @media screen and (min-width: 3841px) and (max-width: 4480px) {
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-texto-informacion-produc-desc2 .contenedor-pagando-con-tarjeta-uno-producto-descuento2 .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 2rem;
     }
 
@@ -382,7 +402,7 @@
 
 /*TVs 4481px o mas*/
 @media screen and (min-width: 4481px) {
-    .contenedor-tarjeta-uno .tarjeta-uno {
+    .contenedor-texto-informacion-produc-desc2 .contenedor-pagando-con-tarjeta-uno-producto-descuento2 .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 2.2rem;
     }
 

@@ -12,6 +12,15 @@
     padding: 0.5rem;
 }
 
+/*modo claro*/
+.light-mode .contenedor-actualizar-beneficios-boton-footer{
+    background-color: #ffffff;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-actualizar-beneficios-boton-footer{
+    background-color: #161515;
+}
+
 .contenedor-actualizar-beneficios{
     display: flex;
     flex-direction: column;
@@ -22,13 +31,29 @@
 .contenedor-actualizar-beneficios .texto-actualizar-datos{
     font-size: 1rem;
     font-weight: bold;
+}
+
+/*modo claro*/
+.light-mode .contenedor-actualizar-beneficios .texto-actualizar-datos{
     color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-actualizar-beneficios .texto-actualizar-datos{
+    color: #ffffff;
 }
 
 .contenedor-actualizar-beneficios .texto-descubrir-beneficios{
     font-size: 1rem;
     font-weight: bold;
+}
+
+/*modo claro*/
+.light-mode .contenedor-actualizar-beneficios .texto-descubrir-beneficios{
     color: #1f1d1d;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-actualizar-beneficios .texto-descubrir-beneficios{
+    color: #9c9c9c;
 }
 
 .contenedor-actualizar-beneficios-boton-footer .boton-actualizar{
@@ -47,6 +72,7 @@
     align-items: center;
     justify-content: center;
 }
+
 
 .contenedor-actualizar-beneficios-boton-footer .boton-actualizar:active{
     background-color: #8b46b3;

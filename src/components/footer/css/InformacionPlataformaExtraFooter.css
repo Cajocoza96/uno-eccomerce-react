@@ -10,6 +10,15 @@
     flex-direction: column;
 }
 
+/*modo claro*/
+.light-mode .contenedor-informacion-plataforma-extra-icono-footer-varios{
+    background-color: #ffffff;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-informacion-plataforma-extra-icono-footer-varios{
+    background-color: #161515;
+}
+
 .contenedor-informacion-plataforma-extra-icono-footer{
     padding: 0.5rem;
     display: flex;
@@ -30,6 +39,15 @@
     font-weight: bold;
 }
 
+/*modo claro*/
+.light-mode .contenedor-informacion-plataforma-footer .texto-principal-informacion-plataforma-footer{
+    color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-informacion-plataforma-footer .texto-principal-informacion-plataforma-footer{
+   color: #ffffff;
+}
+
 .contenedor-icono-plataforma-extra-footer{
     overflow: hidden;
 }
@@ -44,9 +62,17 @@
 .enlace-desplegable {
     text-decoration: none;
     font-size: 0.9rem;
-    color: #242525;
     margin-bottom: 0.3rem;
     outline: none;
+}
+
+/*modo claro*/
+.light-mode .enlace-desplegable{
+    color: #242525;
+}
+/*modo oscuro*/
+.dark-mode .enlace-desplegable{
+    color: #838888;
 }
 
 .enlace-desplegable:hover {
@@ -58,8 +84,16 @@
 }
 
 .contenedor-icono-plataforma-extra-footer .icono-expansion-arriba, .icono-expansion-abajo{
-    color: #000000;
     font-size: 1rem;
+}
+
+/*modo claro*/
+.light-mode .contenedor-icono-plataforma-extra-footer .icono-expansion-arriba, .light-mode .icono-expansion-abajo{
+    color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-icono-plataforma-extra-footer .icono-expansion-arriba, .dark-mode .icono-expansion-abajo{
+    color: #ffffff;
 }
 
 

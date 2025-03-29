@@ -9,7 +9,6 @@
     width: 100%;
     height: auto;
     padding: 1rem;
-    background-color: #e7ff11;
 
     display: flex;
     flex-direction: row;
@@ -18,9 +17,25 @@
     gap: 1rem;
 }
 
-.contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-tarjeta-uno {
-    padding: 0.5rem;
-    background-color: #fbff02;
+/*modo claro*/
+.light-mode .contenedor-signo-exclamacion-compra-segura-candado-titulo-uno{
+    background-color: #e7ff11;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-signo-exclamacion-compra-segura-candado-titulo-uno{
+    background-color: #383737;
+}
+
+.contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-titulo-uno .link-titulo-uno{
+    text-decoration: none;
+}
+
+.contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-titulo-uno .link-titulo-uno .titulo-uno{
+    font-size: 1rem;
+} 
+
+.contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-titulo-uno{
+    padding: 0.4rem;
     border-radius: 50%;
     border: 1px solid #000000;
     width: auto;
@@ -29,18 +44,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 
-.contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-tarjeta-uno .link-titulo-uno{
-    color: #000000;
-    text-decoration: none;
+/*modo claro*/
+.light-mode .contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-titulo-uno{
+    background-color: #fbff02;
 }
 
-.contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-tarjeta-uno .link-titulo-uno .tarjeta-uno {
-    font-size: 1rem;
-    font-weight: bold;
+/*modo oscuro*/
+.dark-mode .contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-titulo-uno{
+    background-color: #000000;
+}
+
+/*modo claro*/
+.light-mode .contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-titulo-uno .link-titulo-uno .titulo-uno{
     color: #000000;
-    text-align: center;
+}
+
+/*modo oscuro*/
+.dark-mode .contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-titulo-uno .link-titulo-uno .titulo-uno{
+    color: #ffffff;
 }
 
 .contenedor-signo-exclamacion-compra-segura-candado{
@@ -51,7 +75,15 @@
 
 .contenedor-signo-exclamacion-compra-segura-candado .signo-exclamacion{
     font-size: 1.1rem;
+}
+
+/*modo claro*/
+.light-mode .contenedor-signo-exclamacion-compra-segura-candado .signo-exclamacion{
     color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-signo-exclamacion-compra-segura-candado .signo-exclamacion{
+    color: #ffffff;
 }
 
 .contenedor-compra-segura-candado{
@@ -64,19 +96,35 @@
 
 .contenedor-compra-segura-candado .texto-compra-segura{
     font-size: 1.1rem;
-    color: #000000;
     font-weight: bold;
+}
+
+/*modo claro*/
+.light-mode .contenedor-compra-segura-candado .texto-compra-segura{
+    color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-compra-segura-candado .texto-compra-segura{
+    color: #ffffff;
 }
 
 .contenedor-compra-segura-candado .icono-candado{
     font-size: 1.1rem;
+}
+
+/*modo claro*/
+.light-mode .contenedor-compra-segura-candado .icono-candado{
     color: #000000;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-compra-segura-candado .icono-candado{
+    color: #ffffff;
 }
 
 
 /*modo Landscape para dispositivos moviles*/
 @media screen and (min-width: 320px) and (max-width: 932px) and (orientation: landscape){
-    .contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-tarjeta-uno .link-titulo-uno .tarjeta-uno {
+    .contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
         font-size: 1.2rem;
     }
 
@@ -95,7 +143,7 @@
 
 /*Tablets y laptops pequeñas*/
 @media screen and (min-width: 768px) and (max-width: 1366px){
-    .contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-tarjeta-uno .link-titulo-uno .tarjeta-uno {
+    .contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
         font-size: 1.2rem;
     }
 
@@ -114,7 +162,7 @@
 
 /*Laptops estandar*/
 @media screen and (min-width: 1367px) and (max-width: 1440px){
-    .contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-tarjeta-uno .link-titulo-uno .tarjeta-uno {
+    .contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
         font-size: 1.4rem;
     }
 
@@ -133,7 +181,7 @@
 
 /*Escritorio grandes*/
 @media screen and (min-width: 1441px) and (max-width: 1920px){
-    .contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-tarjeta-uno .link-titulo-uno .tarjeta-uno {
+    .contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
         font-size: 1.6rem;
     }
 
@@ -152,7 +200,7 @@
 
 /*TVs Full HD (1921px o mas)*/
 @media screen and (min-width: 1921px) and (max-width: 3840px){
-    .contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-tarjeta-uno .link-titulo-uno .tarjeta-uno {
+    .contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
         font-size: 1.8rem;
     }
 
@@ -171,7 +219,7 @@
 
 /*TVs 4K (3841px o mas)*/
 @media screen and (min-width: 3841px) and (max-width: 4480px){
-    .contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-tarjeta-uno .link-titulo-uno .tarjeta-uno {
+    .contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
         font-size: 2rem;
     }
 
@@ -190,7 +238,7 @@
 
 /*TVs 4481px o mas*/
 @media screen and (min-width: 4481px){
-    .contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-tarjeta-uno .link-titulo-uno .tarjeta-uno {
+    .contenedor-signo-exclamacion-compra-segura-candado-titulo-uno .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
         font-size: 2.2rem;
     }
 

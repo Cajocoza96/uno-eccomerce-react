@@ -76,7 +76,7 @@ function ProductoAntesDespuesDoble() {
                                         </div>
 
                                     </div>
-                                )}
+                                )} 
 
                                 {(producto.precioProductoUnitario) && (
                                     <div className='contenedor-precio-unitario-productos-antes-despues-doble-1'>

@@ -11,13 +11,21 @@
     height: auto;
     padding: 0.7rem;
     border-radius: 1.3rem;
-    background-color: #568105;
     overflow: hidden;
 
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 3rem;
+}
+
+/*modo claro*/
+.light-mode .contenedor-imagen-producto-antes-despues4{
+    background-color: #568105;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-imagen-producto-antes-despues4{
+    background-color: #1f2e02;
 }
 
 

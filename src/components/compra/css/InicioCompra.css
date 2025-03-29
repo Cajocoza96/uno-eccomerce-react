@@ -8,13 +8,21 @@
 .contenedor-padre-inicio-compra{
     width: 100%;
     height: auto;
-    background-color: #ffffff;
 
     display: flex;
     flex-direction: column;
     justify-content: start;
 
     position: relative;
+}
+
+/*modo claro*/
+.light-mode .contenedor-padre-inicio-compra{
+    background-color: #ffffff;
+}
+/*modo oscuro*/
+.dark-mode .contenedor-padre-inicio-compra{
+    background-color: #000000;
 }
 
 .no-scroll{
