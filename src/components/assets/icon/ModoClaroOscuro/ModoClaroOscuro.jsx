@@ -3,7 +3,7 @@ import { MdDarkMode, MdLightMode } from 'react-icons/md';
 import './css/ModoClaroOscuro.css';
 
 function ModoClaroOscuro() {
-  // Función para obtener la preferencia guardada o el modo del sistema
+  // Obtener el tema inicial desde localStorage o la preferencia del sistema
   const getInitialTheme = () => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) return savedTheme === 'dark';
@@ -12,22 +12,32 @@ function ModoClaroOscuro() {
 
   const [darkMode, setDarkMode] = useState(getInitialTheme);
 
-  // Efecto para actualizar el tema y guardar en localStorage
+  // Aplicar el tema y guardarlo en localStorage
   useEffect(() => {
-    const root = document.documentElement; // <html>
-    root.className = darkMode ? 'dark-mode' : 'light-mode';
+    document.documentElement.classList.toggle('dark-mode', darkMode);
+    document.documentElement.classList.toggle('light-mode', !darkMode);
     localStorage.setItem("theme", darkMode ? 'dark' : 'light');
   }, [darkMode]);
 
-  // Detectar cambios en la configuración del sistema
+  // Detectar cambios en la configuración del sistema y en el almacenamiento local
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    const handleChange = (e) => {
-      setDarkMode(e.matches);
+    const handleSystemChange = (e) => setDarkMode(e.matches);
+
+    const handleStorageChange = () => {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        setDarkMode(savedTheme === 'dark');
+      }
     };
 
-    mediaQuery.addEventListener('change', handleChange);
-    return () => mediaQuery.removeEventListener('change', handleChange);
+    mediaQuery.addEventListener('change', handleSystemChange);
+    window.addEventListener('storage', handleStorageChange);
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleSystemChange);
+      window.removeEventListener('storage', handleStorageChange);
+    };
   }, []);
 
   return (
