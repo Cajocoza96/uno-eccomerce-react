@@ -169,10 +169,21 @@
 
 .contenedor-compra-recoge-sin-costo .primer-texto,
 .segundo-texto {
-    color: #1f1e1e;
     font-size: 1rem;
     font-weight: bold;
 }
+
+/*modo claro*/
+.light-mode .primer-texto, .light-mode .segundo-texto {
+    color: #1f1e1e;
+}
+
+
+/*modo oscuro*/
+.dark-mode .primer-texto, .dark-mode .segundo-texto {
+   color: #666464;
+}
+
 
 .contenedor-envio-domicilio {
     display: flex;
@@ -182,7 +193,6 @@
 }
 
 .contenedor-envio-domicilio .primer-texto {
-    color: #1f1e1e;
     font-size: 1rem;
     font-weight: bold;
 }
