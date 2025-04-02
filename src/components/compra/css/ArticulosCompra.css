@@ -72,7 +72,7 @@
 }
 
 .contenedor-mensaje-promocion-item1 .texto-mensaje-promocion-item1 {
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 /*modo claro*/
@@ -94,7 +94,7 @@
 }
 
 .contenedor-texto-oculto-visto .texto-mensaje-promocion-item1 {
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 /*modo claro*/
@@ -120,7 +120,7 @@
 
 .contenedor-mostrar-menos-mas-icono-menos-mas .texto-mostrar {
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
     
     text-decoration: underline;
@@ -283,7 +283,7 @@
 
 .contenedor-ordenar-por-tipo-orden .texto-tipo-de-orden {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 /*modo claro*/
@@ -331,7 +331,7 @@
 
 .contenedor-ordenar-por-icono-expansion .menu-desplegable .opcion-menu-desplegable {
     list-style: none;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
     text-align: center;
 
@@ -742,15 +742,15 @@
     }
     
     .contenedor-mensaje-promocion-item1 .texto-mensaje-promocion-item1 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     
     .contenedor-texto-oculto-visto .texto-mensaje-promocion-item1 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     
     .contenedor-mostrar-menos-mas-icono-menos-mas .texto-mostrar {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     
     .contenedor-icono-mas-menos .icono-mas,
@@ -775,7 +775,7 @@
     }
     
     .contenedor-ordenar-por-tipo-orden .texto-tipo-de-orden {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     
     .contenedor-ordenar-por-icono-expansion .icono-expansion-abajo {
@@ -783,7 +783,7 @@
     }
     
     .contenedor-ordenar-por-icono-expansion .menu-desplegable .opcion-menu-desplegable {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     
     .contenedor-icono-ver-fila-columna .icono-organizar-como-fila,
@@ -859,15 +859,15 @@
     }
 
     .contenedor-mensaje-promocion-item1 .texto-mensaje-promocion-item1 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .contenedor-texto-oculto-visto .texto-mensaje-promocion-item1 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .contenedor-mostrar-menos-mas-icono-menos-mas .texto-mostrar {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .contenedor-icono-mas-menos .icono-mas,
@@ -892,7 +892,7 @@
     }
 
     .contenedor-ordenar-por-tipo-orden .texto-tipo-de-orden {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .contenedor-ordenar-por-icono-expansion .icono-expansion-abajo {
@@ -905,7 +905,7 @@
     }
 
     .contenedor-ordenar-por-icono-expansion .menu-desplegable .opcion-menu-desplegable {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .contenedor-icono-ver-fila-columna .icono-organizar-como-fila,
@@ -993,15 +993,15 @@
     }
 
     .contenedor-mensaje-promocion-item1 .texto-mensaje-promocion-item1 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-texto-oculto-visto .texto-mensaje-promocion-item1 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-mostrar-menos-mas-icono-menos-mas .texto-mostrar {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-icono-mas-menos .icono-mas,
@@ -1026,7 +1026,7 @@
     }
 
     .contenedor-ordenar-por-tipo-orden .texto-tipo-de-orden {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-ordenar-por-icono-expansion .icono-expansion-abajo {
@@ -1039,7 +1039,7 @@
     }
 
     .contenedor-ordenar-por-icono-expansion .menu-desplegable .opcion-menu-desplegable {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-icono-ver-fila-columna .icono-organizar-como-fila,
@@ -1128,15 +1128,15 @@
     }
 
     .contenedor-mensaje-promocion-item1 .texto-mensaje-promocion-item1 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-texto-oculto-visto .texto-mensaje-promocion-item1 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-mostrar-menos-mas-icono-menos-mas .texto-mostrar {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-icono-mas-menos .icono-mas,
@@ -1262,15 +1262,15 @@
     }
 
     .contenedor-mensaje-promocion-item1 .texto-mensaje-promocion-item1 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-texto-oculto-visto .texto-mensaje-promocion-item1 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-mostrar-menos-mas-icono-menos-mas .texto-mostrar {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-icono-mas-menos .icono-mas,
@@ -1295,7 +1295,7 @@
     }
 
     .contenedor-ordenar-por-tipo-orden .texto-tipo-de-orden {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .contenedor-ordenar-por-icono-expansion .icono-expansion-abajo {
@@ -1308,7 +1308,7 @@
     }
 
     .contenedor-ordenar-por-icono-expansion .menu-desplegable .opcion-menu-desplegable {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .contenedor-icono-ver-fila-columna .icono-organizar-como-fila,
