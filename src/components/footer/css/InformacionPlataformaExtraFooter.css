@@ -8,6 +8,7 @@
 .contenedor-informacion-plataforma-extra-icono-footer-varios{
     display: flex;
     flex-direction: column;
+    gap: 0.6rem;
 }
 
 /*modo claro*/
@@ -45,7 +46,7 @@
 }
 /*modo oscuro*/
 .dark-mode .contenedor-informacion-plataforma-footer .texto-principal-informacion-plataforma-footer{
-   color: #ffffff;
+    color: #ffffff;
 }
 
 .contenedor-icono-plataforma-extra-footer{
@@ -96,9 +97,39 @@
     color: #ffffff;
 }
 
+/* Móviles grandes (Ej: iPhone 14 Pro Max, Galaxy S23 Ultra) */
+@media screen and  (min-width: 481px) and (max-width: 767px) {
+    .contenedor-informacion-plataforma-footer .texto-principal-informacion-plataforma-footer{
+        font-size: 1.1rem;
+    }
 
-/*modo Landscape para dispositivos moviles*/
-@media screen and (min-width: 320px) and (max-width: 932px) and (orientation: landscape){
+    .enlace-desplegable {
+        font-size: 1rem;
+    }
+
+    .contenedor-icono-plataforma-extra-footer .icono-expansion-arriba, .icono-expansion-abajo{
+        font-size: 1.1rem;
+    }
+}
+
+
+/* Móviles en modo Landscape */
+@media screen and (max-width: 812px) and (orientation: landscape){
+    .contenedor-informacion-plataforma-footer .texto-principal-informacion-plataforma-footer{
+        font-size: 1.1rem;
+    }
+
+    .enlace-desplegable {
+        font-size: 1rem;
+    }
+
+    .contenedor-icono-plataforma-extra-footer .icono-expansion-arriba, .icono-expansion-abajo{
+        font-size: 1.1rem;
+    }
+}
+
+/* Tablets y pantallas medianas (Ej: iPad, Galaxy Tab) */
+@media screen and (min-width: 768px) and (max-width: 1024px){
     .contenedor-informacion-plataforma-footer .texto-principal-informacion-plataforma-footer{
         font-size: 1.2rem;
     }
@@ -112,8 +143,8 @@
     }
 }
 
-/*Tablets y laptops pequeñas*/
-@media screen and (min-width: 768px) and (max-width: 1366px){
+/* Laptops y pantallas grandes (Ej: MacBook, laptops comunes) */
+@media screen and (min-width: 1025px) and (max-width: 1440px){
     .contenedor-informacion-plataforma-footer .texto-principal-informacion-plataforma-footer{
         font-size: 1.2rem;
     }
@@ -127,8 +158,8 @@
     }
 }
 
-/*Laptops estandar*/
-@media screen and (min-width: 1367px) and (max-width: 1440px){
+/* Monitores grandes y TVs (Ej: monitores ultraanchos, Smart TVs) */
+@media screen and (min-width: 1441px) {
     .contenedor-informacion-plataforma-footer .texto-principal-informacion-plataforma-footer{
         font-size: 1.4rem;
     }
@@ -141,64 +172,3 @@
         font-size: 1.4rem;
     }
 }
-
-/*Escritorio grandes*/
-@media screen and (min-width: 1441px) and (max-width: 1920px){
-    .contenedor-informacion-plataforma-footer .texto-principal-informacion-plataforma-footer{
-        font-size: 1.6rem;
-    }
-
-    .enlace-desplegable {
-        font-size: 1.5rem;
-    }
-
-    .contenedor-icono-plataforma-extra-footer .icono-expansion-arriba, .icono-expansion-abajo{
-        font-size: 1.6rem;
-    }
-}
-
-/*TVs Full HD (1921px o mas)*/
-@media screen and (min-width: 1921px) and (max-width: 3840px){
-    .contenedor-informacion-plataforma-footer .texto-principal-informacion-plataforma-footer{
-        font-size: 1.8rem;
-    }
-
-    .enlace-desplegable {
-        font-size: 1.7rem;
-    }
-
-    .contenedor-icono-plataforma-extra-footer .icono-expansion-arriba, .icono-expansion-abajo{
-        font-size: 1.8rem;
-    }
-}
-
-/*TVs 4K (3841px o mas)*/
-@media screen and (min-width: 3841px) and (max-width: 4480px){
-    .contenedor-informacion-plataforma-footer .texto-principal-informacion-plataforma-footer{
-        font-size: 2rem;
-    }
-
-    .enlace-desplegable {
-        font-size: 1.9rem;
-    }
-
-    .contenedor-icono-plataforma-extra-footer .icono-expansion-arriba, .icono-expansion-abajo{
-        font-size: 2rem;
-    }
-}
-
-/*TVs 4481px o mas*/
-@media screen and (min-width: 4481px){
-    .contenedor-informacion-plataforma-footer .texto-principal-informacion-plataforma-footer{
-        font-size: 2.2rem;
-    }
-
-    .enlace-desplegable {
-        font-size: 2.1rem;
-    }
-
-    .contenedor-icono-plataforma-extra-footer .icono-expansion-arriba, .icono-expansion-abajo{
-        font-size: 2.2rem;
-    }
-}
-

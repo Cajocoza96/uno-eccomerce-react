@@ -54,7 +54,7 @@
 }
 
 .contenedor-recibir-pedido-icono-cerrar .titulo-recibir-pedido {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -68,7 +68,7 @@
 }
 
 .contenedor-recibir-pedido-icono-cerrar .icono-cerrar {
-    font-size: 1.1rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -181,7 +181,7 @@
 
 /*modo oscuro*/
 .dark-mode .primer-texto, .dark-mode .segundo-texto {
-   color: #666464;
+    color: #666464;
 }
 
 
@@ -353,6 +353,7 @@
 }
 
 .formulario .boton-confirmar {
+    margin-bottom: 0.5rem;
     width: auto;
     height: auto;
     padding: 0.5rem;
@@ -386,64 +387,113 @@
     background-color: #494216;
 }
 
-/*modo Landscape para dispositivos moviles*/
-@media screen and (min-width: 320px) and (max-width: 932px) and (orientation: landscape) {
+/* Móviles grandes (Ej: iPhone 14 Pro Max, Galaxy S23 Ultra) */
+@media screen and  (min-width: 481px) and (max-width: 767px) {
     .contenedor-recibir-pedido-icono-cerrar .titulo-recibir-pedido {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-recibir-pedido-icono-cerrar .icono-cerrar {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .opcion .icono-maletin,
     .icono-camion {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-compra-recoge-sin-costo .primer-texto,
     .segundo-texto {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-envio-domicilio .primer-texto {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-titulo-formulario .texto-titulo-formulario {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-label-input .label {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-input-icono-expansion-abajo .input {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-input-icono-expansion-abajo .icono-expansion-abajo {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .formulario .li {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .formulario .boton-confirmar {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+}
+
+/* Móviles en modo Landscape */
+@media screen and (max-width: 812px) and (orientation: landscape) {
+    .contenedor-recibir-pedido-icono-cerrar .titulo-recibir-pedido {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-recibir-pedido-icono-cerrar .icono-cerrar {
+        font-size: 1.1rem;
+    }
+
+    .opcion .icono-maletin,
+    .icono-camion {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-compra-recoge-sin-costo .primer-texto,
+    .segundo-texto {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-envio-domicilio .primer-texto {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-titulo-formulario .texto-titulo-formulario {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-label-input .label {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-input-icono-expansion-abajo .input {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-input-icono-expansion-abajo .icono-expansion-abajo {
+        font-size: 1.1rem;
+    }
+
+    .formulario .li {
+        font-size: 1.1rem;
+    }
+
+    .formulario .boton-confirmar {
+        font-size: 1.1rem;
         margin-bottom: 1rem;
     }
 }
 
-/*Tablets y laptops pequeñas*/
-@media screen and (min-width: 768px) and (max-width: 1366px) {
+/* Tablets y pantallas medianas (Ej: iPad, Galaxy Tab) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .contenedor-recibir-pedido-icono-cerrar .titulo-recibir-pedido {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-recibir-pedido-icono-cerrar .icono-cerrar {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .opcion .icono-maletin,
@@ -485,247 +535,100 @@
     }
 }
 
-/*Laptops estandar*/
-@media screen and (min-width: 1367px) and (max-width: 1440px) {
+/* Laptops y pantallas grandes (Ej: MacBook, laptops comunes) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
     .contenedor-recibir-pedido-icono-cerrar .titulo-recibir-pedido {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-recibir-pedido-icono-cerrar .icono-cerrar {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .opcion .icono-maletin,
     .icono-camion {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-compra-recoge-sin-costo .primer-texto,
     .segundo-texto {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-envio-domicilio .primer-texto {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-titulo-formulario .texto-titulo-formulario {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-label-input .label {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-input-icono-expansion-abajo .input {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-input-icono-expansion-abajo .icono-expansion-abajo {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .formulario .li {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .formulario .boton-confirmar {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 }
 
-/*Escritorio grandes*/
-@media screen and (min-width: 1441px) and (max-width: 1920px) {
+/* Monitores grandes y TVs (Ej: monitores ultraanchos, Smart TVs) */
+@media screen and (min-width: 1441px) {
     .contenedor-recibir-pedido-icono-cerrar .titulo-recibir-pedido {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-recibir-pedido-icono-cerrar .icono-cerrar {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }
 
     .opcion .icono-maletin,
     .icono-camion {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-compra-recoge-sin-costo .primer-texto,
     .segundo-texto {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-envio-domicilio .primer-texto {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-titulo-formulario .texto-titulo-formulario {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-label-input .label {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-input-icono-expansion-abajo .input {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-input-icono-expansion-abajo .icono-expansion-abajo {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .formulario .li {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .formulario .boton-confirmar {
-        font-size: 1.6rem;
-    }
-}
-
-/*TVs Full HD (1921px o mas)*/
-@media screen and (min-width: 1921px) and (max-width: 3840px) {
-    .contenedor-recibir-pedido-icono-cerrar .titulo-recibir-pedido {
-        font-size: 1.9rem;
-    }
-
-    .contenedor-recibir-pedido-icono-cerrar .icono-cerrar {
-        font-size: 1.9rem;
-    }
-
-    .opcion .icono-maletin,
-    .icono-camion {
-        font-size: 1.8rem;
-    }
-
-    .contenedor-compra-recoge-sin-costo .primer-texto,
-    .segundo-texto {
-        font-size: 1.8rem;
-    }
-
-    .contenedor-envio-domicilio .primer-texto {
-        font-size: 1.8rem;
-    }
-
-    .contenedor-titulo-formulario .texto-titulo-formulario {
-        font-size: 1.8rem;
-    }
-
-    .contenedor-label-input .label {
-        font-size: 1.8rem;
-    }
-
-    .contenedor-input-icono-expansion-abajo .input {
-        font-size: 1.8rem;
-    }
-
-    .contenedor-input-icono-expansion-abajo .icono-expansion-abajo {
-        font-size: 1.8rem;
-    }
-
-    .formulario .li {
-        font-size: 1.8rem;
-    }
-
-    .formulario .boton-confirmar {
-        font-size: 1.8rem;
-    }
-}
-
-/*TVs 4K (3841px o mas)*/
-@media screen and (min-width: 3841px) and (max-width: 4480px) {
-    .contenedor-recibir-pedido-icono-cerrar .titulo-recibir-pedido {
-        font-size: 2.1rem;
-    }
-
-    .contenedor-recibir-pedido-icono-cerrar .icono-cerrar {
-        font-size: 2.1rem;
-    }
-
-    .opcion .icono-maletin,
-    .icono-camion {
-        font-size: 2rem;
-    }
-
-    .contenedor-compra-recoge-sin-costo .primer-texto,
-    .segundo-texto {
-        font-size: 2rem;
-    }
-
-    .contenedor-envio-domicilio .primer-texto {
-        font-size: 2rem;
-    }
-
-    .contenedor-titulo-formulario .texto-titulo-formulario {
-        font-size: 2rem;
-    }
-
-    .contenedor-label-input .label {
-        font-size: 2rem;
-    }
-
-    .contenedor-input-icono-expansion-abajo .input {
-        font-size: 2rem;
-    }
-
-    .contenedor-input-icono-expansion-abajo .icono-expansion-abajo {
-        font-size: 2rem;
-    }
-
-    .formulario .li {
-        font-size: 2rem;
-    }
-
-    .formulario .boton-confirmar {
-        font-size: 2rem;
-    }
-}
-
-/*TVs 4481px o mas*/
-@media screen and (min-width: 4481px) {
-    .contenedor-recibir-pedido-icono-cerrar .titulo-recibir-pedido {
-        font-size: 2.3rem;
-    }
-
-    .contenedor-recibir-pedido-icono-cerrar .icono-cerrar {
-        font-size: 2.3rem;
-    }
-
-    .opcion .icono-maletin,
-    .icono-camion {
-        font-size: 2.2rem;
-    }
-
-    .contenedor-compra-recoge-sin-costo .primer-texto,
-    .segundo-texto {
-        font-size: 2.2rem;
-    }
-
-    .contenedor-envio-domicilio .primer-texto {
-        font-size: 2.2rem;
-    }
-
-    .contenedor-titulo-formulario .texto-titulo-formulario {
-        font-size: 2.2rem;
-    }
-
-    .contenedor-label-input .label {
-        font-size: 2.2rem;
-    }
-
-    .contenedor-input-icono-expansion-abajo .input {
-        font-size: 2.2rem;
-    }
-
-    .contenedor-input-icono-expansion-abajo .icono-expansion-abajo {
-        font-size: 2.2rem;
-    }
-
-    .formulario .li {
-        font-size: 2.2rem;
-    }
-
-    .formulario .boton-confirmar {
-        font-size: 2.2rem;
+        font-size: 1.4rem;
     }
 }

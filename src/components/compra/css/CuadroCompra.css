@@ -136,8 +136,8 @@ body, html{
     color: #ffffff;
 }
 
-/*modo Landscape para dispositivos moviles*/
-@media screen and (min-width: 320px) and (max-width: 932px) and (orientation: landscape){
+/* Móviles grandes (Ej: iPhone 14 Pro Max, Galaxy S23 Ultra) */
+@media screen and  (min-width: 481px) and (max-width: 767px){
     .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .texto-carrito-vacio{
         font-size: 1.7rem;
     }
@@ -155,8 +155,8 @@ body, html{
     }
 }
 
-/*Tablets y laptops pequeñas*/
-@media screen and (min-width: 768px) and (max-width: 1366px){
+/* Móviles en modo Landscape */
+@media screen and (max-width: 812px) and (orientation: landscape){
     .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .texto-carrito-vacio{
         font-size: 1.7rem;
     }
@@ -174,8 +174,27 @@ body, html{
     }
 }
 
-/*Laptops estandar*/
-@media screen and (min-width: 1367px) and (max-width: 1440px){
+/* Tablets y pantallas medianas (Ej: iPad, Galaxy Tab) */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .texto-carrito-vacio{
+        font-size: 1.7rem;
+    }
+
+    .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .boton-sigue-comprando{
+        font-size: 1.2rem;
+    }
+
+    .contenedor-icono-carrito-compra .icono-carrito{
+        font-size: 4.2rem;
+    }
+
+    .contenedor-tenemos .texto-tenemos{
+        font-size: 1.2rem;
+    }
+}
+
+/* Laptops y pantallas grandes (Ej: MacBook, laptops comunes) */
+@media screen and (min-width: 1025px) and (max-width: 1440px){
     .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .texto-carrito-vacio{
         font-size: 1.9rem;
     }
@@ -193,8 +212,8 @@ body, html{
     }
 }
 
-/*Escritorio grandes*/
-@media screen and (min-width: 1441px) and (max-width: 1920px){
+/* Monitores grandes y TVs (Ej: monitores ultraanchos, Smart TVs) */
+@media screen and (min-width: 1441px){
     .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .texto-carrito-vacio{
         font-size: 2.1rem;
     }
@@ -211,61 +230,3 @@ body, html{
         font-size: 1.6rem;
     }
 }
-
-/*TVs Full HD (1921px o mas)*/
-@media screen and (min-width: 1921px) and (max-width: 3840px){
-    .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .texto-carrito-vacio{
-        font-size: 2.3rem;
-    }
-
-    .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .boton-sigue-comprando{
-        font-size: 1.8rem;
-    }
-
-    .contenedor-icono-carrito-compra .icono-carrito{
-        font-size: 4.8rem;
-    }
-
-    .contenedor-tenemos .texto-tenemos{
-        font-size: 1.8rem;
-    }
-}
-
-/*TVs 4K (3841px o mas)*/
-@media screen and (min-width: 3841px) and (max-width: 4480px){
-    .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .texto-carrito-vacio{
-        font-size: 2.5rem;
-    }
-
-    .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .boton-sigue-comprando{
-        font-size: 2rem;
-    }
-
-    .contenedor-icono-carrito-compra .icono-carrito{
-        font-size: 5rem;
-    }
-
-    .contenedor-tenemos .texto-tenemos{
-        font-size: 2rem;
-    }
-}
-
-/*TVs 4481px o mas*/
-@media screen and (min-width: 4481px){
-    .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .texto-carrito-vacio{
-        font-size: 2.7rem;
-    }
-
-    .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .boton-sigue-comprando{
-        font-size: 2.2rem;
-    }
-
-    .contenedor-icono-carrito-compra .icono-carrito{
-        font-size: 5.2rem;
-    }
-
-    .contenedor-tenemos .texto-tenemos{
-        font-size: 2.2rem;
-    }
-}
-

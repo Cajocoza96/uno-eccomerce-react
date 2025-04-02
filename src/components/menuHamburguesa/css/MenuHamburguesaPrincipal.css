@@ -38,8 +38,6 @@
     background-color:  #383737;
 }
 
-
-
 .contenedor-primera-seccion-menu-hamburguesa-principal .icono-cerrar{
     font-size: 1rem;
     margin-top: 0.5rem;
@@ -106,7 +104,7 @@
 
 
 .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-menu .icono-ubicacion{
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 /*modo claro*/
 .light-mode .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-menu .icono-ubicacion{
@@ -335,9 +333,139 @@
     color: #ffffff;
 }
 
+/* Móviles grandes (Ej: iPhone 14 Pro Max, Galaxy S23 Ultra) */
+@media screen and  (min-width: 481px) and (max-width: 767px){
+    .contenedor-item-iconos-expansion-menu-hamburguesa-tercera-principal{
+        margin-top: 1.1rem;
+        margin-bottom: 1.1rem;
+        height: 1.5rem;
+    }
+    
+    .contenedor-item-iconos-expansion-menu-hamburguesa-cuarta-principal{
+        margin-top: 1.1rem;
+        margin-bottom: 1.1rem;
+        height: 1.5rem;
+    }
 
-/*modo Landscape para dispositivos moviles*/
-@media screen and (min-width: 320px) and (max-width: 932px) and (orientation: landscape){
+    .contenedor-item-iconos-expansion-menu-hamburguesa-quinta-principal{
+        margin-top: 1.1rem;
+        margin-bottom: 1.1rem;
+        height: 1.5rem;
+    }
+
+    .contenedor-segunda-seccion-menu-hamburguesa-principal{
+        justify-content: start;
+    }
+
+    .contenedor-primera-seccion-menu-hamburguesa-principal .contenedor-titulo-uno .link-titulo-uno .titulo-uno{
+        font-size: 1.1rem;
+    }
+    
+    .contenedor-primera-seccion-menu-hamburguesa-principal .icono-cerrar{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-menu .icono-ubicacion{
+        font-size: 1.1rem;
+    }
+    
+    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-menu .texto-como-recibir-pedido-menu-hamburguesa-principal{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-tercera-seccion-menu-hamburguesa-principal .texto-novedades-menu-hamburguesa-principal{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-item-iconos-expansion-menu-hamburguesa-tercera-principal .texto-item-novedades-menu-hamburguesa-tercera-principal{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-cuarta-seccion-menu-hamburguesa-principal .texto-categorias-menu-hamburguesa-principal{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-item-iconos-expansion-menu-hamburguesa-cuarta-principal .texto-item-categorias-menu-hamburguesa-cuarta-principal{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-quinta-seccion-menu-hamburguesa-principal .texto-servicios-menu-hamburguesa-principal{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-item-iconos-expansion-menu-hamburguesa-quinta-principal .texto-item-servicios-menu-hamburguesa-quinta-principal{
+        font-size: 1.1rem;
+    }
+}
+
+
+/* Móviles en modo Landscape */
+@media screen and (max-width: 812px) and (orientation: landscape){
+    .contenedor-item-iconos-expansion-menu-hamburguesa-tercera-principal{
+        margin-top: 1.1rem;
+        margin-bottom: 1.1rem;
+        height: 1.5rem;
+    }
+    
+    .contenedor-item-iconos-expansion-menu-hamburguesa-cuarta-principal{
+        margin-top: 1.1rem;
+        margin-bottom: 1.1rem;
+        height: 1.5rem;
+    }
+
+    .contenedor-item-iconos-expansion-menu-hamburguesa-quinta-principal{
+        margin-top: 1.1rem;
+        margin-bottom: 1.1rem;
+        height: 1.5rem;
+    }
+
+    .contenedor-segunda-seccion-menu-hamburguesa-principal{
+        justify-content: start;
+    }
+
+    .contenedor-primera-seccion-menu-hamburguesa-principal .contenedor-titulo-uno .link-titulo-uno .titulo-uno{
+        font-size: 1.1rem;
+    }
+    
+    .contenedor-primera-seccion-menu-hamburguesa-principal .icono-cerrar{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-menu .icono-ubicacion{
+        font-size: 1.1rem;
+    }
+    
+    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-menu .texto-como-recibir-pedido-menu-hamburguesa-principal{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-tercera-seccion-menu-hamburguesa-principal .texto-novedades-menu-hamburguesa-principal{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-item-iconos-expansion-menu-hamburguesa-tercera-principal .texto-item-novedades-menu-hamburguesa-tercera-principal{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-cuarta-seccion-menu-hamburguesa-principal .texto-categorias-menu-hamburguesa-principal{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-item-iconos-expansion-menu-hamburguesa-cuarta-principal .texto-item-categorias-menu-hamburguesa-cuarta-principal{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-quinta-seccion-menu-hamburguesa-principal .texto-servicios-menu-hamburguesa-principal{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-item-iconos-expansion-menu-hamburguesa-quinta-principal .texto-item-servicios-menu-hamburguesa-quinta-principal{
+        font-size: 1.1rem;
+    }
+}
+
+/* Tablets y pantallas medianas (Ej: iPad, Galaxy Tab) */
+@media screen and (min-width: 768px) and (max-width: 1024px){
     .contenedor-item-iconos-expansion-menu-hamburguesa-tercera-principal{
         margin-top: 1.1rem;
         margin-bottom: 1.1rem;
@@ -369,7 +497,7 @@
     }
 
     .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-menu .icono-ubicacion{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     
     .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-menu .texto-como-recibir-pedido-menu-hamburguesa-principal{
@@ -401,73 +529,8 @@
     }
 }
 
-/*Tablets y laptops pequeñas*/
-@media screen and (min-width: 768px) and (max-width: 1366px){
-    .contenedor-item-iconos-expansion-menu-hamburguesa-tercera-principal{
-        margin-top: 1.1rem;
-        margin-bottom: 1.1rem;
-        height: 1.5rem;
-    }
-    
-    .contenedor-item-iconos-expansion-menu-hamburguesa-cuarta-principal{
-        margin-top: 1.1rem;
-        margin-bottom: 1.1rem;
-        height: 1.5rem;
-    }
-
-    .contenedor-item-iconos-expansion-menu-hamburguesa-quinta-principal{
-        margin-top: 1.1rem;
-        margin-bottom: 1.1rem;
-        height: 1.5rem;
-    }
-
-    .contenedor-segunda-seccion-menu-hamburguesa-principal{
-        justify-content: start;
-    }
-
-    .contenedor-primera-seccion-menu-hamburguesa-principal .contenedor-titulo-uno .link-titulo-uno .titulo-uno{
-        font-size: 1.2rem;
-    }
-    
-    .contenedor-primera-seccion-menu-hamburguesa-principal .icono-cerrar{
-        font-size: 1.2rem;
-    }
-
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-menu .icono-ubicacion{
-        font-size: 1.3rem;
-    }
-    
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-menu .texto-como-recibir-pedido-menu-hamburguesa-principal{
-        font-size: 1.2rem;
-    }
-
-    .contenedor-tercera-seccion-menu-hamburguesa-principal .texto-novedades-menu-hamburguesa-principal{
-        font-size: 1.2rem;
-    }
-
-    .contenedor-item-iconos-expansion-menu-hamburguesa-tercera-principal .texto-item-novedades-menu-hamburguesa-tercera-principal{
-        font-size: 1.2rem;
-    }
-
-    .contenedor-cuarta-seccion-menu-hamburguesa-principal .texto-categorias-menu-hamburguesa-principal{
-        font-size: 1.2rem;
-    }
-
-    .contenedor-item-iconos-expansion-menu-hamburguesa-cuarta-principal .texto-item-categorias-menu-hamburguesa-cuarta-principal{
-        font-size: 1.2rem;
-    }
-
-    .contenedor-quinta-seccion-menu-hamburguesa-principal .texto-servicios-menu-hamburguesa-principal{
-        font-size: 1.2rem;
-    }
-
-    .contenedor-item-iconos-expansion-menu-hamburguesa-quinta-principal .texto-item-servicios-menu-hamburguesa-quinta-principal{
-        font-size: 1.2rem;
-    }
-}
-
-/*Laptops estandar*/
-@media screen and (min-width: 1367px) and (max-width: 1440px){
+/* Laptops y pantallas grandes (Ej: MacBook, laptops comunes) */
+@media screen and (min-width: 1025px) and (max-width: 1440px){
     .contenedor-item-iconos-expansion-menu-hamburguesa-tercera-principal{
         margin-top: 1.2rem;
         margin-bottom: 1.2rem;
@@ -491,48 +554,48 @@
     }
 
     .contenedor-primera-seccion-menu-hamburguesa-principal .contenedor-titulo-uno .link-titulo-uno .titulo-uno{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     
     .contenedor-primera-seccion-menu-hamburguesa-principal .icono-cerrar{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-menu .icono-ubicacion{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     
     .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-menu .texto-como-recibir-pedido-menu-hamburguesa-principal{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-tercera-seccion-menu-hamburguesa-principal .texto-novedades-menu-hamburguesa-principal{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-item-iconos-expansion-menu-hamburguesa-tercera-principal .texto-item-novedades-menu-hamburguesa-tercera-principal{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-cuarta-seccion-menu-hamburguesa-principal .texto-categorias-menu-hamburguesa-principal{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-item-iconos-expansion-menu-hamburguesa-cuarta-principal .texto-item-categorias-menu-hamburguesa-cuarta-principal{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-quinta-seccion-menu-hamburguesa-principal .texto-servicios-menu-hamburguesa-principal{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-item-iconos-expansion-menu-hamburguesa-quinta-principal .texto-item-servicios-menu-hamburguesa-quinta-principal{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 }
 
-/*Escritorio grandes*/
-@media screen and (min-width: 1441px) and (max-width: 1920px){
+/* Monitores grandes y TVs (Ej: monitores ultraanchos, Smart TVs) */
+@media screen and (min-width: 1441px) {
     .contenedor-item-iconos-expansion-menu-hamburguesa-tercera-principal{
         margin-top: 1.3rem;
         margin-bottom: 1.3rem;
@@ -556,240 +619,42 @@
     }
 
     .contenedor-primera-seccion-menu-hamburguesa-principal .contenedor-titulo-uno .link-titulo-uno .titulo-uno{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
     
     .contenedor-primera-seccion-menu-hamburguesa-principal .icono-cerrar{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-menu .icono-ubicacion{
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }
     
     .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-menu .texto-como-recibir-pedido-menu-hamburguesa-principal{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-tercera-seccion-menu-hamburguesa-principal .texto-novedades-menu-hamburguesa-principal{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-item-iconos-expansion-menu-hamburguesa-tercera-principal .texto-item-novedades-menu-hamburguesa-tercera-principal{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-cuarta-seccion-menu-hamburguesa-principal .texto-categorias-menu-hamburguesa-principal{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-item-iconos-expansion-menu-hamburguesa-cuarta-principal .texto-item-categorias-menu-hamburguesa-cuarta-principal{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-quinta-seccion-menu-hamburguesa-principal .texto-servicios-menu-hamburguesa-principal{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-item-iconos-expansion-menu-hamburguesa-quinta-principal .texto-item-servicios-menu-hamburguesa-quinta-principal{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 }
-
-/*TVs Full HD (1921px o mas)*/
-@media screen and (min-width: 1921px) and (max-width: 3840px){
-    .contenedor-item-iconos-expansion-menu-hamburguesa-tercera-principal{
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-        height: 2.4rem;
-    }
-    
-    .contenedor-item-iconos-expansion-menu-hamburguesa-cuarta-principal{
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-        height: 2.4rem;
-    }
-
-    .contenedor-item-iconos-expansion-menu-hamburguesa-quinta-principal{
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-        height: 2.4rem;
-    }
-
-    .contenedor-segunda-seccion-menu-hamburguesa-principal{
-        justify-content: start;
-    }
-
-    .contenedor-primera-seccion-menu-hamburguesa-principal .contenedor-titulo-uno .link-titulo-uno .titulo-uno{
-        font-size: 1.8rem;
-    }
-    
-    .contenedor-primera-seccion-menu-hamburguesa-principal .icono-cerrar{
-        font-size: 1.8rem;
-    }
-
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-menu .icono-ubicacion{
-        font-size: 1.9rem;
-    }
-    
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-menu .texto-como-recibir-pedido-menu-hamburguesa-principal{
-        font-size: 1.8rem;
-    }
-
-    .contenedor-tercera-seccion-menu-hamburguesa-principal .texto-novedades-menu-hamburguesa-principal{
-        font-size: 1.8rem;
-    }
-
-    .contenedor-item-iconos-expansion-menu-hamburguesa-tercera-principal .texto-item-novedades-menu-hamburguesa-tercera-principal{
-        font-size: 1.8rem;
-    }
-
-    .contenedor-cuarta-seccion-menu-hamburguesa-principal .texto-categorias-menu-hamburguesa-principal{
-        font-size: 1.8rem;
-    }
-
-    .contenedor-item-iconos-expansion-menu-hamburguesa-cuarta-principal .texto-item-categorias-menu-hamburguesa-cuarta-principal{
-        font-size: 1.8rem;
-    }
-
-    .contenedor-quinta-seccion-menu-hamburguesa-principal .texto-servicios-menu-hamburguesa-principal{
-        font-size: 1.8rem;
-    }
-
-    .contenedor-item-iconos-expansion-menu-hamburguesa-quinta-principal .texto-item-servicios-menu-hamburguesa-quinta-principal{
-        font-size: 1.8rem;
-    }
-}
-
-/*TVs 4K (3841px o mas)*/
-@media screen and (min-width: 3841px) and (max-width: 4480px){
-    .contenedor-item-iconos-expansion-menu-hamburguesa-tercera-principal{
-        margin-top: 1.8rem;
-        margin-bottom: 1.8rem;
-        height: 2.7rem;
-    }
-    
-    .contenedor-item-iconos-expansion-menu-hamburguesa-cuarta-principal{
-        margin-top: 1.8rem;
-        margin-bottom: 1.8rem;
-        height: 2.7rem;
-    }
-
-    .contenedor-item-iconos-expansion-menu-hamburguesa-quinta-principal{
-        margin-top: 1.8rem;
-        margin-bottom: 1.8rem;
-        height: 2.7rem;
-    }
-
-    .contenedor-segunda-seccion-menu-hamburguesa-principal{
-        justify-content: start;
-    }
-
-    .contenedor-primera-seccion-menu-hamburguesa-principal .contenedor-titulo-uno .link-titulo-uno .titulo-uno{
-        font-size: 2rem;
-    }
-    
-    .contenedor-primera-seccion-menu-hamburguesa-principal .icono-cerrar{
-        font-size: 2rem;
-    }
-
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-menu .icono-ubicacion{
-        font-size: 2.1rem;
-    }
-    
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-menu .texto-como-recibir-pedido-menu-hamburguesa-principal{
-        font-size: 2rem;
-    }
-
-    .contenedor-tercera-seccion-menu-hamburguesa-principal .texto-novedades-menu-hamburguesa-principal{
-        font-size: 2rem;
-    }
-
-    .contenedor-item-iconos-expansion-menu-hamburguesa-tercera-principal .texto-item-novedades-menu-hamburguesa-tercera-principal{
-        font-size: 2rem;
-    }
-
-    .contenedor-cuarta-seccion-menu-hamburguesa-principal .texto-categorias-menu-hamburguesa-principal{
-        font-size: 2rem;
-    }
-
-    .contenedor-item-iconos-expansion-menu-hamburguesa-cuarta-principal .texto-item-categorias-menu-hamburguesa-cuarta-principal{
-        font-size: 2rem;
-    }
-
-    .contenedor-quinta-seccion-menu-hamburguesa-principal .texto-servicios-menu-hamburguesa-principal{
-        font-size: 2rem;
-    }
-
-    .contenedor-item-iconos-expansion-menu-hamburguesa-quinta-principal .texto-item-servicios-menu-hamburguesa-quinta-principal{
-        font-size: 2rem;
-    }
-}
-
-/*TVs 4481px o mas*/
-@media screen and (min-width: 4481px){
-    .contenedor-item-iconos-expansion-menu-hamburguesa-tercera-principal{
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        height: 2.9rem;
-    }
-    
-    .contenedor-item-iconos-expansion-menu-hamburguesa-cuarta-principal{
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        height: 2.9rem;
-    }
-
-    .contenedor-item-iconos-expansion-menu-hamburguesa-quinta-principal{
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        height: 2.9rem;
-    }
-
-    .contenedor-segunda-seccion-menu-hamburguesa-principal{
-        justify-content: start;
-    }
-
-    .contenedor-primera-seccion-menu-hamburguesa-principal .contenedor-titulo-uno .link-titulo-uno .titulo-uno{
-        font-size: 2.2rem;
-    }
-    
-    .contenedor-primera-seccion-menu-hamburguesa-principal .icono-cerrar{
-        font-size: 2.2rem;
-    }
-
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-menu .icono-ubicacion{
-        font-size: 2.3rem;
-    }
-    
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-menu .texto-como-recibir-pedido-menu-hamburguesa-principal{
-        font-size: 2.2rem;
-    }
-
-    .contenedor-tercera-seccion-menu-hamburguesa-principal .texto-novedades-menu-hamburguesa-principal{
-        font-size: 2.2rem;
-    }
-
-    .contenedor-item-iconos-expansion-menu-hamburguesa-tercera-principal .texto-item-novedades-menu-hamburguesa-tercera-principal{
-        font-size: 2.2rem;
-    }
-
-    .contenedor-cuarta-seccion-menu-hamburguesa-principal .texto-categorias-menu-hamburguesa-principal{
-        font-size: 2.2rem;
-    }
-
-    .contenedor-item-iconos-expansion-menu-hamburguesa-cuarta-principal .texto-item-categorias-menu-hamburguesa-cuarta-principal{
-        font-size: 2.2rem;
-    }
-
-    .contenedor-quinta-seccion-menu-hamburguesa-principal .texto-servicios-menu-hamburguesa-principal{
-        font-size: 2.2rem;
-    }
-
-    .contenedor-item-iconos-expansion-menu-hamburguesa-quinta-principal .texto-item-servicios-menu-hamburguesa-quinta-principal{
-        font-size: 2.2rem;
-    }
-}
-
-
-

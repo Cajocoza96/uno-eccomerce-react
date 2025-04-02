@@ -116,7 +116,7 @@
 
 
 .contenedor-texto-producto-info-antes-despues3 .texto-antes3{
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-decoration: line-through;
     text-decoration-color: #ff0000;
     color: #ffffff;
@@ -125,7 +125,7 @@
 }
 
 .contenedor-texto-producto-info-antes-despues3 .texto-despues3{
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #ffffff;
     text-align: center;
     text-shadow: 2px 2px 3px #000000;
@@ -177,7 +177,7 @@
 }
 
 .contenedor-detalles-producto-ante-desp-3 .texto-producto-detalles3{
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #ffffff;
     text-align: center;
     text-shadow: 2px 2px 3px #000000;
@@ -214,8 +214,106 @@
     background-color: #414141;
 }
 
-/*modo Landscape para dispositivos moviles*/
-@media screen and (min-width: 320px) and (max-width: 932px) and (orientation: landscape){
+
+/* Móviles grandes (Ej: iPhone 14 Pro Max, Galaxy S23 Ultra) */
+@media screen and  (min-width: 481px) and (max-width: 767px) {
+    .contenedor-event-prom3 .texto-evento-promocion3{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-texto-producto-info-antes-despues3 .texto-antes3{
+        font-size: 1.1rem;
+    }
+    
+    .contenedor-texto-producto-info-antes-despues3 .texto-despues3{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-pagando-con-tarjeta-uno .texto-pagando-tarjeta3{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-producto-info-antes-despues3 .contenedor-pagando-con-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
+        font-size: 1.1rem;
+    }
+    
+    .contenedor-producto-info-antes-despues3 .texto-precio-oferta3{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-detalles-producto-ante-desp-3 .texto-producto-detalles3{
+        font-size: 1.1rem;
+    }
+    
+    .contenedor-producto-antes-despues-boton3 .boton-compra{
+        font-size: 1.1rem;
+    }
+}
+
+
+/* Móviles en modo Landscape */
+@media screen and (max-width: 812px) and (orientation: landscape){
+    .contenedor-producto-info-antes-despues3 .contenedor-pagando-con-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-producto-antes-despues-boton3{
+        align-items: center;
+    } 
+
+    .contenedor-producto-antes-despues3{
+        justify-content: center;
+    }
+
+    .contenedor-event-prom-prod-info-ant-desp3{
+        width: 100%;
+        justify-content: center;
+    
+        border: 1px solid white;
+    }
+
+    .contenedor-texto-producto-info-antes-despues3{
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .contenedor-pagando-con-tarjeta-uno{
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .contenedor-detalles-producto-ante-desp-3{
+        flex-direction: row;
+        gap: 0.3rem;
+    }
+
+    .contenedor-event-prom3 .texto-evento-promocion3{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-texto-producto-info-antes-despues3 .texto-antes3{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-texto-producto-info-antes-despues3 .texto-despues3{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-pagando-con-tarjeta-uno .texto-pagando-tarjeta3{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-producto-info-antes-despues3 .texto-precio-oferta3{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-detalles-producto-ante-desp-3 .texto-producto-detalles3{
+        font-size: 1.1rem;
+    }
+}
+
+/* Tablets y pantallas medianas (Ej: iPad, Galaxy Tab) */
+@media screen and (min-width: 768px) and (max-width: 1024px){
     .contenedor-producto-info-antes-despues3 .contenedor-pagando-con-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.2rem;
     }
@@ -255,11 +353,11 @@
     }
 
     .contenedor-texto-producto-info-antes-despues3 .texto-antes3{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-texto-producto-info-antes-despues3 .texto-despues3{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-pagando-con-tarjeta-uno .texto-pagando-tarjeta3{
@@ -273,10 +371,11 @@
     .contenedor-detalles-producto-ante-desp-3 .texto-producto-detalles3{
         font-size: 1.3rem;
     }
+    
 }
 
-/*Tablets y laptops pequeñas*/
-@media screen and (min-width: 768px) and (max-width: 1366px){
+/* Laptops y pantallas grandes (Ej: MacBook, laptops comunes) */
+@media screen and (min-width: 1025px) and (max-width: 1440px){
     .contenedor-producto-info-antes-despues3 .contenedor-pagando-con-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.2rem;
     }
@@ -316,11 +415,11 @@
     }
 
     .contenedor-texto-producto-info-antes-despues3 .texto-antes3{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-texto-producto-info-antes-despues3 .texto-despues3{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-pagando-con-tarjeta-uno .texto-pagando-tarjeta3{
@@ -332,13 +431,12 @@
     }
 
     .contenedor-detalles-producto-ante-desp-3 .texto-producto-detalles3{
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
-    
 }
 
-/*Laptops estandar*/
-@media screen and (min-width: 1367px) and (max-width: 1440px){
+/* Monitores grandes y TVs (Ej: monitores ultraanchos, Smart TVs) */
+@media screen and (min-width: 1441px){
     .contenedor-producto-info-antes-despues3 .contenedor-pagando-con-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.4rem;
     }
@@ -378,268 +476,22 @@
     }
 
     .contenedor-texto-producto-info-antes-despues3 .texto-antes3{
+        font-size: 1.4rem;
+    }
+
+    .contenedor-texto-producto-info-antes-despues3 .texto-despues3{
+        font-size: 1.4rem;
+    }
+
+    .contenedor-pagando-con-tarjeta-uno .texto-pagando-tarjeta3{
+        font-size: 1.4rem;
+    }
+
+    .contenedor-producto-info-antes-despues3 .texto-precio-oferta3{
+        font-size: 1.4rem;
+    }
+
+    .contenedor-detalles-producto-ante-desp-3 .texto-producto-detalles3{
         font-size: 1.5rem;
     }
-
-    .contenedor-texto-producto-info-antes-despues3 .texto-despues3{
-        font-size: 1.5rem;
-    }
-
-    .contenedor-pagando-con-tarjeta-uno .texto-pagando-tarjeta3{
-        font-size: 1.4rem;
-    }
-
-    .contenedor-producto-info-antes-despues3 .texto-precio-oferta3{
-        font-size: 1.4rem;
-    }
-
-    .contenedor-detalles-producto-ante-desp-3 .texto-producto-detalles3{
-        font-size: 1.5rem;
-    }
 }
-
-/*Escritorio grandes*/
-@media screen and (min-width: 1441px) and (max-width: 1920px){
-    .contenedor-producto-info-antes-despues3 .contenedor-pagando-con-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
-        font-size: 1.6rem;
-    }
-
-    .contenedor-producto-antes-despues-boton3{
-        align-items: center;
-    } 
-
-    .contenedor-producto-antes-despues3{
-        justify-content: center;
-    }
-
-    .contenedor-event-prom-prod-info-ant-desp3{
-        width: 100%;
-        justify-content: center;
-    
-        border: 1px solid white;
-    }
-
-    .contenedor-texto-producto-info-antes-despues3{
-        flex-direction: row;
-        gap: 1rem;
-    }
-
-    .contenedor-pagando-con-tarjeta-uno{
-        flex-direction: row;
-        gap: 1rem;
-    }
-
-    .contenedor-detalles-producto-ante-desp-3{
-        flex-direction: row;
-        gap: 0.3rem;
-    }
-
-    .contenedor-event-prom3 .texto-evento-promocion3{
-        font-size: 1.6rem;
-    }
-
-    .contenedor-texto-producto-info-antes-despues3 .texto-antes3{
-        font-size: 1.7rem;
-    }
-
-    .contenedor-texto-producto-info-antes-despues3 .texto-despues3{
-        font-size: 1.7rem;
-    }
-
-    .contenedor-pagando-con-tarjeta-uno .texto-pagando-tarjeta3{
-        font-size: 1.6rem;
-    }
-
-    .contenedor-producto-info-antes-despues3 .texto-precio-oferta3{
-        font-size: 1.6rem;
-    }
-
-    .contenedor-detalles-producto-ante-desp-3 .texto-producto-detalles3{
-        font-size: 1.7rem;
-    }
-}
-
-/*TVs Full HD (1921px o mas)*/
-@media screen and (min-width: 1921px) and (max-width: 3840px){
-    .contenedor-producto-info-antes-despues3 .contenedor-pagando-con-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
-        font-size: 1.8rem;
-    }
-
-    .contenedor-producto-antes-despues-boton3{
-        align-items: center;
-    } 
-
-    .contenedor-producto-antes-despues3{
-        justify-content: center;
-    }
-
-    .contenedor-event-prom-prod-info-ant-desp3{
-        width: 100%;
-        justify-content: center;
-    
-        border: 1px solid white;
-    }
-
-    .contenedor-texto-producto-info-antes-despues3{
-        flex-direction: row;
-        gap: 1rem;
-    }
-
-    .contenedor-pagando-con-tarjeta-uno{
-        flex-direction: row;
-        gap: 1rem;
-    }
-
-    .contenedor-detalles-producto-ante-desp-3{
-        flex-direction: row;
-        gap: 0.3rem;
-    }
-
-    .contenedor-event-prom3 .texto-evento-promocion3{
-        font-size: 1.8rem;
-    }
-
-    .contenedor-texto-producto-info-antes-despues3 .texto-antes3{
-        font-size: 1.9rem;
-    }
-
-    .contenedor-texto-producto-info-antes-despues3 .texto-despues3{
-        font-size: 1.9rem;
-    }
-
-    .contenedor-pagando-con-tarjeta-uno .texto-pagando-tarjeta3{
-        font-size: 1.8rem;
-    }
-
-
-    .contenedor-producto-info-antes-despues3 .texto-precio-oferta3{
-        font-size: 1.8rem;
-    }
-
-    .contenedor-detalles-producto-ante-desp-3 .texto-producto-detalles3{
-        font-size: 1.9rem;
-    }
-}
-
-/*TVs 4K (3841px o mas)*/
-@media screen and (min-width: 3841px) and (max-width: 4480px){
-    .contenedor-producto-info-antes-despues3 .contenedor-pagando-con-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
-        font-size: 2rem;
-    }
-
-    .contenedor-producto-antes-despues-boton3{
-        align-items: center;
-    } 
-
-    .contenedor-producto-antes-despues3{
-        justify-content: center;
-    }
-
-    .contenedor-event-prom-prod-info-ant-desp3{
-        width: 100%;
-        justify-content: center;
-    
-        border: 1px solid white;
-    }
-
-    .contenedor-texto-producto-info-antes-despues3{
-        flex-direction: row;
-        gap: 1rem;
-    }
-
-    .contenedor-pagando-con-tarjeta-uno{
-        flex-direction: row;
-        gap: 1rem;
-    }
-
-    .contenedor-detalles-producto-ante-desp-3{
-        flex-direction: row;
-        gap: 0.3rem;
-    }
-
-    .contenedor-event-prom3 .texto-evento-promocion3{
-        font-size: 2rem;
-    }
-
-    .contenedor-texto-producto-info-antes-despues3 .texto-antes3{
-        font-size: 2.1rem;
-    }
-
-    .contenedor-texto-producto-info-antes-despues3 .texto-despues3{
-        font-size: 2.1rem;
-    }
-
-    .contenedor-pagando-con-tarjeta-uno .texto-pagando-tarjeta3{
-        font-size: 2rem;
-    }
-
-    .contenedor-producto-info-antes-despues3 .texto-precio-oferta3{
-        font-size: 2rem;
-    }
-
-    .contenedor-detalles-producto-ante-desp-3 .texto-producto-detalles3{
-        font-size: 2.1rem;
-    }
-}
-
-/*TVs 4481px o mas*/
-@media screen and (min-width: 4481px){
-    .contenedor-producto-info-antes-despues3 .contenedor-pagando-con-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
-        font-size: 2.2rem;
-    }
-
-    .contenedor-producto-antes-despues-boton3{
-        align-items: center;
-    } 
-
-    .contenedor-producto-antes-despues3{
-        justify-content: center;
-    }
-
-    .contenedor-event-prom-prod-info-ant-desp3{
-        width: 100%;
-        justify-content: center;
-    
-        border: 1px solid white;
-    }
-
-    .contenedor-texto-producto-info-antes-despues3{
-        flex-direction: row;
-        gap: 1rem;
-    }
-
-    .contenedor-pagando-con-tarjeta-uno{
-        flex-direction: row;
-        gap: 1rem;
-    }
-
-    .contenedor-detalles-producto-ante-desp-3{
-        flex-direction: row;
-        gap: 0.3rem;
-    }
-
-    .contenedor-event-prom3 .texto-evento-promocion3{
-        font-size: 2.2rem;
-    }
-
-    .contenedor-texto-producto-info-antes-despues3 .texto-antes3{
-        font-size: 2.3rem;
-    }
-
-    .contenedor-texto-producto-info-antes-despues3 .texto-despues3{
-        font-size: 2.3rem;
-    }
-
-    .contenedor-pagando-con-tarjeta-uno .texto-pagando-tarjeta3{
-        font-size: 2.2rem;
-    }
-
-    .contenedor-producto-info-antes-despues3 .texto-precio-oferta3{
-        font-size: 2.2rem;
-    }
-
-    .contenedor-detalles-producto-ante-desp-3 .texto-producto-detalles3{
-        font-size: 2.3rem;
-    }
-}
-

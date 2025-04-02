@@ -1,11 +1,11 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
 }
 
-.contenedor-producto-descuento-1{
+.contenedor-producto-descuento-1 {
     margin-bottom: 1rem;
     width: 100%;
     height: auto;
@@ -23,12 +23,13 @@
 }
 
 /*modo claro*/
-.light-mode .contenedor-producto-descuento-1{
-    background: rgba(98, 35, 210, 0.85); 
+.light-mode .contenedor-producto-descuento-1 {
+    background: rgba(98, 35, 210, 0.85);
 }
+
 /*modo oscuro*/
-.dark-mode .contenedor-producto-descuento-1{
-    background: rgba(21, 8, 44, 0.85); 
+.dark-mode .contenedor-producto-descuento-1 {
+    background: rgba(21, 8, 44, 0.85);
 }
 
 
@@ -66,7 +67,7 @@
     gap: 0.5rem
 }
 
-.contenedor-texto-hasta-porcentaje-descuento{
+.contenedor-texto-hasta-porcentaje-descuento {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,7 +75,8 @@
     gap: 0.5rem;
 }
 
-.contenedor-texto-hasta-porcentaje-descuento .texto-hasta-descuento, .texto-porcentaje{
+.contenedor-texto-hasta-porcentaje-descuento .texto-hasta-descuento,
+.texto-porcentaje {
     color: #ffffff;
     font-weight: bold;
     text-align: center;
@@ -83,11 +85,10 @@
 
 .contenedor-texto-hasta-porcentaje-descuento .texto-hasta-descuento {
     font-size: 1rem;
-
 }
 
 .contenedor-texto-hasta-porcentaje-descuento .texto-porcentaje {
-    font-size: 3.2rem;
+    font-size: 2.2rem;
 }
 
 .contenedor-imagen-descuento-producto {
@@ -143,11 +144,12 @@
 }
 
 /*modo claro*/
-.light-mode .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio{
+.light-mode .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio {
     background-color: #ffffff;
 }
+
 /*modo oscuro*/
-.dark-mode .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio{
+.dark-mode .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio {
     background-color: #474646;
 }
 
@@ -158,15 +160,16 @@
 }
 
 /*modo claro*/
-.light-mode .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .texto-envio-gratis, 
+.light-mode .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .texto-envio-gratis,
 .light-mode .texto-por-compras-de,
-.light-mode .texto-con-tarjeta{
+.light-mode .texto-con-tarjeta {
     color: #000000;
 }
+
 /*modo oscuro*/
 .dark-mode .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .texto-envio-gratis,
 .dark-mode .texto-por-compras-de,
-.dark-mode .texto-con-tarjeta{
+.dark-mode .texto-con-tarjeta {
     color: #ffffff;
 }
 
@@ -181,7 +184,7 @@
     align-items: center;
     justify-content: center;
 }
-    
+
 .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .contenedor-tarjeta-uno .tarjeta-uno {
     font-size: 1rem;
     color: #000000;
@@ -211,6 +214,7 @@
 .light-mode .swiperSlide-contenedor-producto-desc-similares-boton .boton-compra {
     background-color: #2517e7;
 }
+
 /*modo oscuro*/
 .dark-mode .swiperSlide-contenedor-producto-desc-similares-boton .boton-compra {
     background-color: #000000;
@@ -218,351 +222,85 @@
 
 
 /*modo claro*/
-.light-mode .swiperSlide-contenedor-producto-desc-similares-boton .boton-compra:active{
+.light-mode .swiperSlide-contenedor-producto-desc-similares-boton .boton-compra:active {
     background-color: #4f44e0;
 }
+
 /*modo oscuro*/
-.dark-mode .swiperSlide-contenedor-producto-desc-similares-boton .boton-compra:active{
+.dark-mode .swiperSlide-contenedor-producto-desc-similares-boton .boton-compra:active {
     background-color: #3a3939;
 }
 
-
-/*modo Landscape para dispositivos moviles*/
-@media screen and (min-width: 320px) and (max-width: 932px) and (orientation: landscape) {
-    .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .contenedor-tarjeta-uno .tarjeta-uno {
-        font-size: 1.2rem;
-    }
-
+/* Móviles grandes (Ej: iPhone 14 Pro Max, Galaxy S23 Ultra) */
+@media screen and (min-width: 481px) and (max-width: 767px) {
     .contenedor-texto-hasta-porcentaje-descuento .texto-hasta-descuento {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-texto-hasta-porcentaje-descuento .texto-porcentaje {
-        font-size: 3.4rem;
+        font-size: 2.3rem;
     }
 
     .contenedor-producto-similares-envio-gratis-precio .texto-producto-similares-mas {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .texto-envio-gratis,
     .texto-por-compras-de,
     .texto-con-tarjeta {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .contenedor-tarjeta-uno .tarjeta-uno {
+        font-size: 1.1rem;
     }
 
     .swiperSlide-contenedor-producto-desc-similares-boton .boton-compra {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 }
 
-/*Tablets y laptops pequeñas*/
-@media screen and (min-width: 768px) and (max-width: 1366px) {
+
+/* Móviles en modo Landscape */
+@media screen and (max-width: 812px) and (orientation: landscape) {
     .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .contenedor-tarjeta-uno .tarjeta-uno {
-        font-size: 1.2rem;
-    }
-
-    .contenedor-producto-desc-similares {
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 3rem;
-    }
-
-    .contenedor-descuento-imagen-producto {
-        width: auto;
-        flex-direction: row;
-        gap: 1rem
-    }
-
-    .contenedor-texto-hasta-porcentaje-descuento{
-        width: auto;
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-    }
-
-    .contenedor-producto-similares-envio-gratis-precio {
-        width: auto;
-        height: auto;
-
-        flex-direction: row;
+        font-size: 1.1rem;
     }
 
     .contenedor-texto-hasta-porcentaje-descuento .texto-hasta-descuento {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-texto-hasta-porcentaje-descuento .texto-porcentaje {
-        font-size: 3.4rem;
-    }
-
-    .contenedor-producto-similares-envio-gratis-precio .texto-producto-similares-mas {
-        font-size: 1.6rem;
-    }
-
-    .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .texto-envio-gratis,
-    .texto-por-compras-de,
-    .texto-con-tarjeta {
-        font-size: 1.2rem;
-    }
-
-    .swiperSlide-contenedor-producto-desc-similares-boton .boton-compra {
-        font-size: 1.2rem;
-    }
-}
-
-/*Laptops estandar*/
-@media screen and (min-width: 1367px) and (max-width: 1440px) {
-    .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .contenedor-tarjeta-uno .tarjeta-uno {
-        font-size: 1.4rem;
-    }
-
-    .contenedor-producto-desc-similares {
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 3rem;
-    }
-
-    .contenedor-descuento-imagen-producto {
-        width: auto;
-        flex-direction: row;
-        gap: 1rem
-    }
-
-    .contenedor-texto-hasta-porcentaje-descuento{
-        width: auto;
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-    }
-
-    .contenedor-producto-similares-envio-gratis-precio {
-        width: auto;
-        height: auto;
-
-        flex-direction: row;
-    }
-
-    .contenedor-texto-hasta-porcentaje-descuento .texto-hasta-descuento {
-        font-size: 1.4rem;
-    }
-
-    .contenedor-texto-hasta-porcentaje-descuento .texto-porcentaje {
-        font-size: 3.6rem;
-    }
-
-    .contenedor-producto-similares-envio-gratis-precio .texto-producto-similares-mas {
-        font-size: 1.8rem;
-    }
-
-    .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .texto-envio-gratis,
-    .texto-por-compras-de,
-    .texto-con-tarjeta {
-        font-size: 1.4rem;
-    }
-
-    .swiperSlide-contenedor-producto-desc-similares-boton .boton-compra {
-        font-size: 1.4rem;
-    }
-}
-
-/*Escritorio grandes*/
-@media screen and (min-width: 1441px) and (max-width: 1920px) {
-    .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .contenedor-tarjeta-uno .tarjeta-uno {
-        font-size: 1.6rem;
-    }
-
-    .contenedor-producto-desc-similares {
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 3rem;
-    }
-
-    .contenedor-descuento-imagen-producto {
-        width: auto;
-        flex-direction: row;
-        gap: 1rem
-    }
-
-    .contenedor-texto-hasta-porcentaje-descuento{
-        width: auto;
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-    }
-
-    .contenedor-producto-similares-envio-gratis-precio {
-        width: auto;
-        height: auto;
-
-        flex-direction: row;
-    }
-
-    .contenedor-texto-hasta-porcentaje-descuento .texto-hasta-descuento {
-        font-size: 1.6rem;
-    }
-
-    .contenedor-texto-hasta-porcentaje-descuento .texto-porcentaje {
-        font-size: 3.8rem;
-    }
-
-    .contenedor-producto-similares-envio-gratis-precio .texto-producto-similares-mas {
-        font-size: 2rem;
-    }
-
-    .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .texto-envio-gratis,
-    .texto-por-compras-de,
-    .texto-con-tarjeta {
-        font-size: 1.6rem;
-    }
-
-    .swiperSlide-contenedor-producto-desc-similares-boton .boton-compra {
-        font-size: 1.6rem;
-    }
-}
-
-/*TVs Full HD (1921px o mas)*/
-@media screen and (min-width: 1921px) and (max-width: 3840px) {
-    .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .contenedor-tarjeta-uno .tarjeta-uno {
-        font-size: 1.8rem;
-    }
-
-    .contenedor-producto-desc-similares {
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 3rem;
-    }
-
-    .contenedor-descuento-imagen-producto {
-        width: auto;
-        flex-direction: row;
-        gap: 1rem
-    }
-
-    .contenedor-texto-hasta-porcentaje-descuento{
-        width: auto;
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-    }
-
-    .contenedor-producto-similares-envio-gratis-precio {
-        width: auto;
-        height: auto;
-
-        flex-direction: row;
-    }
-
-    .contenedor-texto-hasta-porcentaje-descuento .texto-hasta-descuento {
-        font-size: 1.8rem;
-    }
-
-    .contenedor-texto-hasta-porcentaje-descuento .texto-porcentaje {
-        font-size: 4rem;
-    }
-
-    .contenedor-producto-similares-envio-gratis-precio .texto-producto-similares-mas {
-        font-size: 2.2rem;
-    }
-
-    .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .texto-envio-gratis,
-    .texto-por-compras-de,
-    .texto-con-tarjeta {
-        font-size: 1.8rem;
-    }
-
-    .swiperSlide-contenedor-producto-desc-similares-boton .boton-compra {
-        font-size: 1.8rem;
-    }
-}
-
-/*TVs 4K (3841px o mas)*/
-@media screen and (min-width: 3841px) and (max-width: 4480px) {
-    .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .contenedor-tarjeta-uno .tarjeta-uno {
-        font-size: 2rem;
-    }
-
-    .contenedor-producto-desc-similares {
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 50rem;
-    }
-
-    .contenedor-descuento-imagen-producto {
-        width: auto;
-        flex-direction: row;
-        gap: 1rem
-    }
-
-    .contenedor-texto-hasta-porcentaje-descuento{
-        width: auto;
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-    }
-
-    .contenedor-producto-similares-envio-gratis-precio {
-        width: auto;
-        height: auto;
-
-        flex-direction: row;
-    }
-
-
-    .contenedor-texto-hasta-porcentaje-descuento .texto-hasta-descuento {
-        font-size: 2rem;
-    }
-
-    .contenedor-texto-hasta-porcentaje-descuento .texto-porcentaje {
-        font-size: 4.2rem;
-    }
-
-    .contenedor-producto-similares-envio-gratis-precio .texto-producto-similares-mas {
         font-size: 2.4rem;
     }
 
+    .contenedor-producto-similares-envio-gratis-precio .texto-producto-similares-mas {
+        font-size: 1.1rem;
+    }
+
     .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .texto-envio-gratis,
     .texto-por-compras-de,
     .texto-con-tarjeta {
-        font-size: 2rem;
+        font-size: 1.1rem;
     }
 
     .swiperSlide-contenedor-producto-desc-similares-boton .boton-compra {
-        font-size: 2rem;
+        font-size: 1.1rem;
     }
 }
 
-/*TVs 4481px o mas*/
-@media screen and (min-width: 4481px) {
+/* Tablets y pantallas medianas (Ej: iPad, Galaxy Tab) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .contenedor-tarjeta-uno .tarjeta-uno {
-        font-size: 2.2rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-producto-desc-similares {
         width: 100%;
         flex-direction: row;
         justify-content: space-around;
-        gap: 50rem;
+        gap: 3rem;
     }
 
     .contenedor-descuento-imagen-producto {
@@ -571,9 +309,9 @@
         gap: 1rem
     }
 
-    .contenedor-texto-hasta-porcentaje-descuento{
+    .contenedor-texto-hasta-porcentaje-descuento {
         width: auto;
-        
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -589,25 +327,142 @@
     }
 
     .contenedor-texto-hasta-porcentaje-descuento .texto-hasta-descuento {
-        font-size: 2.2rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-texto-hasta-porcentaje-descuento .texto-porcentaje {
-        font-size: 4.4rem;
+        font-size: 2.6rem;
     }
 
-
     .contenedor-producto-similares-envio-gratis-precio .texto-producto-similares-mas {
-        font-size: 2.6rem;
+        font-size: 1.5rem;
     }
 
     .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .texto-envio-gratis,
     .texto-por-compras-de,
     .texto-con-tarjeta {
-        font-size: 2.2rem;
+        font-size: 1.2rem;
     }
 
     .swiperSlide-contenedor-producto-desc-similares-boton .boton-compra {
-        font-size: 2.2rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* Laptops y pantallas grandes (Ej: MacBook, laptops comunes) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .contenedor-tarjeta-uno .tarjeta-uno {
+        font-size: 1.2rem;
+    }
+
+    .contenedor-producto-desc-similares {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 3rem;
+    }
+
+    .contenedor-descuento-imagen-producto {
+        width: auto;
+        flex-direction: row;
+        gap: 1rem
+    }
+
+    .contenedor-texto-hasta-porcentaje-descuento {
+        width: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .contenedor-producto-similares-envio-gratis-precio {
+        width: auto;
+        height: auto;
+
+        flex-direction: row;
+    }
+
+    .contenedor-texto-hasta-porcentaje-descuento .texto-hasta-descuento {
+        font-size: 1.5rem;
+    }
+
+    .contenedor-texto-hasta-porcentaje-descuento .texto-porcentaje {
+        font-size: 2.8rem;
+    }
+
+    .contenedor-producto-similares-envio-gratis-precio .texto-producto-similares-mas {
+        font-size: 1.6rem;
+    }
+
+    .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .texto-envio-gratis,
+    .texto-por-compras-de,
+    .texto-con-tarjeta {
+        font-size: 1.2rem;
+    }
+
+    .swiperSlide-contenedor-producto-desc-similares-boton .boton-compra {
+        font-size: 1.2rem;
+    }
+}
+
+/* Monitores grandes y TVs (Ej: monitores ultraanchos, Smart TVs) */
+@media screen and (min-width: 1441px) {
+    .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .contenedor-tarjeta-uno .tarjeta-uno {
+        font-size: 1.4rem;
+    }
+
+    .contenedor-producto-desc-similares {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 3rem;
+    }
+
+    .contenedor-descuento-imagen-producto {
+        width: auto;
+        flex-direction: row;
+        gap: 1rem
+    }
+
+    .contenedor-texto-hasta-porcentaje-descuento {
+        width: auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .contenedor-producto-similares-envio-gratis-precio {
+        width: auto;
+        height: auto;
+
+        flex-direction: row;
+    }
+
+    .contenedor-texto-hasta-porcentaje-descuento .texto-hasta-descuento {
+        font-size: 1.4rem;
+    }
+
+    .contenedor-texto-hasta-porcentaje-descuento .texto-porcentaje {
+        font-size: 2.9rem;
+    }
+
+    .contenedor-producto-similares-envio-gratis-precio .texto-producto-similares-mas {
+        font-size: 1.7rem;
+    }
+
+    .contenedor-producto-similares-envio-gratis-precio .contenedor-envio-gratis-precio .texto-envio-gratis,
+    .texto-por-compras-de,
+    .texto-con-tarjeta {
+        font-size: 1.4rem;
+    }
+
+    .swiperSlide-contenedor-producto-desc-similares-boton .boton-compra {
+        font-size: 1.4rem;
     }
 }

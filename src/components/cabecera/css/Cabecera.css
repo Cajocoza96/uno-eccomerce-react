@@ -18,7 +18,6 @@
     position: fixed;
 }
 
-
 .overlay {
     position: fixed;
     width: 100%;
@@ -263,7 +262,7 @@
 }
 
 .contenedor-segunda-seccion-cabecera {
-    margin: -0.3vh auto -0.5vh;
+    margin: -0.1rem auto -0.3rem;
     width: 100%;
     height: auto;
     padding: 0.9rem;
@@ -304,7 +303,6 @@
 
     cursor: pointer;
 }
-
 
 .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda {
     width: 65%;
@@ -375,7 +373,6 @@
     gap: 1rem;
 }
 
-
 .contenedor-tercera-seccion-cabecera {
     width: 100%;
     height: auto;
@@ -398,6 +395,7 @@
 
 .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu {
     display: none;
+    cursor: pointer;
 }
 
 .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera {
@@ -438,6 +436,14 @@
 
 .contenedor-menu-hamburguesa .contenedor-titulo-uno {
     display: none;
+    padding: 0.4rem;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    width: auto;
+}
+
+.contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno{
+    text-decoration: none;
 }
 
 .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu {
@@ -483,6 +489,11 @@
 .contenedor-texto-mi-cuenta,
 .contenedor-texto-carrito {
     display: none;
+    text-align: center;
+}
+
+.link-cuadro-compra, .link-crear-cuenta{
+    text-decoration: none;
 }
 
 /*modo claro*/
@@ -496,12 +507,12 @@
 }
 
 /*modo claro*/
-.light-mode .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno .titulo-uno{
+.light-mode .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
     color: #000000;
 }
 
 /*modo oscuro*/
-.dark-mode .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno .titulo-uno{
+.dark-mode .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
     color: #ffffff;
 }
 
@@ -539,9 +550,143 @@
     color: #ffffff;
 }
 
+/* Móviles grandes (Ej: iPhone 14 Pro Max, Galaxy S23 Ultra) */
+@media screen and (min-width: 481px) and (max-width: 767px) {
 
-/*modo Landscape para dispositivos moviles*/
-@media screen and (min-width: 320px) and (max-width: 932px) and (orientation: landscape) {
+    .icono-fuego,
+    .icono-computadora,
+    .icono-busqueda {
+        font-size: 1.1rem;
+    }
+
+    .icono-notificaciones,
+    .icono-usuario,
+    .icono-carrito,
+    .icono-ubicacion,
+    .icono-menu-hamburguesa,
+    .icono-expansion-derecha,
+    .icono-expansion-izquierda {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-envio-gratis .contenedor-todos-lo .texto-todos-lo {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-envio-gratis .contenedor-articulo-envio-gratis .texto-articulo-envio-gratis {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-primera-seccion-cabecera .boton-compra {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-segunda-seccion-cabecera {
+        margin: -0.1rem auto -0.3rem;
+    }
+
+    .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda input {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera .contenedor-como-quieres-recibir-tu-pedido .texto-quieres-recibir {
+        font-size: 1.1rem;
+    }
+}
+
+/* Móviles en modo Landscape */
+@media screen and (max-width: 812px) and (orientation: landscape) {
+    .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda {
+        width: 45%;
+    }
+
+    .contenedor-texto-notificaciones,
+    .contenedor-texto-mi-cuenta,
+    .contenedor-texto-carrito {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-icon-noti-usua-carri .texto-notificaciones, .texto-mi-cuenta, .texto-carrito {
+        font-size: 1.1rem;
+    }
+
+    .icono-fuego,
+    .icono-computadora,
+    .icono-busqueda {
+        font-size: 1.1rem;
+    }
+
+    .icono-notificaciones,
+    .icono-usuario,
+    .icono-carrito,
+    .icono-ubicacion,
+    .icono-menu-hamburguesa,
+    .icono-expansion-derecha,
+    .icono-expansion-izquierda {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-envio-gratis .contenedor-todos-lo .texto-todos-lo {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-envio-gratis .contenedor-articulo-envio-gratis .texto-articulo-envio-gratis {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-primera-seccion-cabecera .boton-compra {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-segunda-seccion-cabecera {
+        margin: -0.1rem auto -0.3rem;
+    }
+
+    .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda input {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera .contenedor-como-quieres-recibir-tu-pedido .texto-quieres-recibir {
+        font-size: 1.1rem;
+    }
+
+}
+
+/* Tablets y pantallas medianas (Ej: iPad, Galaxy Tab) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda {
+        width: 45%;
+    }
+
+    .contenedor-menu-hamburguesa .contenedor-titulo-uno {
+        display: block;
+    }
+
+    .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
+        font-size: 1.2rem;
+    }
+    
+    .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu {
+        display: block;
+    }
+
+    .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu .titulo-de-menu{
+        font-size: 1.2rem;
+    }
+
+    .contenedor-texto-notificaciones,
+    .contenedor-texto-mi-cuenta,
+    .contenedor-texto-carrito {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-icon-noti-usua-carri .texto-notificaciones, .texto-mi-cuenta, .texto-carrito {
+        font-size: 1.2rem;
+    }
 
     .icono-fuego,
     .icono-computadora,
@@ -559,11 +704,6 @@
         font-size: 1.2rem;
     }
 
-    .contenedor-envio-gratis {
-        flex-direction: row;
-        gap: 0.3rem;
-    }
-
     .contenedor-envio-gratis .contenedor-todos-lo .texto-todos-lo {
         font-size: 1.2rem;
     }
@@ -574,6 +714,10 @@
 
     .contenedor-primera-seccion-cabecera .boton-compra {
         font-size: 1.2rem;
+    }
+
+    .contenedor-segunda-seccion-cabecera {
+        margin: -0.1rem auto -0.3rem;
     }
 
     .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda input {
@@ -585,8 +729,55 @@
     }
 }
 
-/*Tablets y laptops pequeñas*/
-@media screen and (min-width: 768px) and (max-width: 1366px) {
+/* Laptops y pantallas grandes (Ej: MacBook, laptops comunes) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda {
+        width: 40%;
+    }
+
+    .contenedor-menu-hamburguesa .contenedor-titulo-uno {
+        display: block;
+    }
+
+    .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
+        font-size: 1.2rem;
+    }
+    
+    .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu {
+        display: block;
+    }
+
+    .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu .titulo-de-menu{
+        font-size: 1.2rem;
+    }
+
+    .contenedor-texto-notificaciones,
+    .contenedor-texto-mi-cuenta,
+    .contenedor-texto-carrito {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-icon-noti-usua-carri .texto-notificaciones, .texto-mi-cuenta, .texto-carrito {
+        font-size: 1.2rem;
+    }
+
+    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera {
+        display: none;
+    }
+
+    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu .contenedor-como-quieres-recibir-tu-pedido .texto-quieres-recibir {
+        font-size: 1.2rem;
+    }
 
     .icono-fuego,
     .icono-computadora,
@@ -604,15 +795,6 @@
         font-size: 1.2rem;
     }
 
-    .contenedor-primera-seccion-cabecera {
-        padding: 0.4rem;
-    }
-
-    .contenedor-envio-gratis {
-        flex-direction: row;
-        gap: 0.3rem;
-    }
-
     .contenedor-envio-gratis .contenedor-todos-lo .texto-todos-lo {
         font-size: 1.2rem;
     }
@@ -626,11 +808,7 @@
     }
 
     .contenedor-segunda-seccion-cabecera {
-        gap: 1rem;
-    }
-
-    .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda {
-        width: 60%;
+        margin: -0.1rem auto -0.3rem;
     }
 
     .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda input {
@@ -640,56 +818,57 @@
     .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera .contenedor-como-quieres-recibir-tu-pedido .texto-quieres-recibir {
         font-size: 1.2rem;
     }
+}
 
-    .contenedor-segunda-seccion-cabecera .contenedor-menu-hamburguesa {
-        gap: 0.9rem;
+/* Monitores grandes y TVs (Ej: monitores ultraanchos, Smart TVs) */
+@media screen and (min-width: 1441px) {
+    .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda {
+        width: 40%;
     }
 
     .contenedor-menu-hamburguesa .contenedor-titulo-uno {
         display: block;
-
-        padding: 0.4rem;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        width: auto;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno {
-        text-decoration: none;
     }
 
     .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
-
+    
     .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu {
         display: block;
     }
 
-    .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu .titulo-de-menu {
-        font-size: 1.2rem;
-    }
-
-    .contenedor-segunda-seccion-cabecera .contenedor-icon-noti-usua-carri {
-        gap: 1rem;
-    }
-
-    .link-crear-cuenta,
-    .link-cuadro-compra {
-        text-decoration: none;
+    .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu .titulo-de-menu{
+        font-size: 1.4rem;
     }
 
     .contenedor-texto-notificaciones,
     .contenedor-texto-mi-cuenta,
     .contenedor-texto-carrito {
-        display: block;
-        text-align: center;
-        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-}
 
-/*Laptops estandar*/
-@media screen and (min-width: 1367px) and (max-width: 1440px) {
+    .contenedor-icon-noti-usua-carri .texto-notificaciones, .texto-mi-cuenta, .texto-carrito {
+        font-size: 1.4rem;
+    }
+
+    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera {
+        display: none;
+    }
+
+    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu .contenedor-como-quieres-recibir-tu-pedido .texto-quieres-recibir {
+        font-size: 1.4rem;
+    }
 
     .icono-fuego,
     .icono-computadora,
@@ -707,15 +886,6 @@
         font-size: 1.4rem;
     }
 
-    .contenedor-primera-seccion-cabecera {
-        padding: 0.4rem;
-    }
-
-    .contenedor-envio-gratis {
-        flex-direction: row;
-        gap: 0.3rem;
-    }
-
     .contenedor-envio-gratis .contenedor-todos-lo .texto-todos-lo {
         font-size: 1.4rem;
     }
@@ -729,545 +899,14 @@
     }
 
     .contenedor-segunda-seccion-cabecera {
-        gap: 1rem;
-    }
-
-    .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda {
-        width: 50%;
+        margin: -0.1rem auto -0.3rem;
     }
 
     .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda input {
         font-size: 1.4rem;
     }
 
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        cursor: pointer;
-    }
-
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu .contenedor-como-quieres-recibir-tu-pedido .texto-quieres-recibir {
-        text-align: center;
+    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera .contenedor-como-quieres-recibir-tu-pedido .texto-quieres-recibir {
         font-size: 1.4rem;
-    }
-
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera {
-        display: none;
-    }
-
-    .contenedor-segunda-seccion-cabecera .contenedor-menu-hamburguesa {
-        gap: 0.9rem;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-titulo-uno {
-        display: block;
-
-        padding: 0.4rem;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        width: auto;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno {
-        text-decoration: none;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
-        font-size: 1.4rem;
-    }
-
-
-    .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu {
-        display: block;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu .titulo-de-menu {
-        font-size: 1.4rem;
-    }
-
-    .contenedor-segunda-seccion-cabecera .contenedor-icon-noti-usua-carri {
-        gap: 1.5rem;
-    }
-
-    .link-crear-cuenta,
-    .link-cuadro-compra {
-        text-decoration: none;
-    }
-
-    .contenedor-texto-notificaciones,
-    .contenedor-texto-mi-cuenta,
-    .contenedor-texto-carrito {
-        display: block;
-        text-align: center;
-        font-size: 1.4rem;
-    }
-}
-
-/*Escritorio grandes*/
-@media screen and (min-width: 1441px) and (max-width: 1920px) {
-
-    .icono-fuego,
-    .icono-computadora,
-    .icono-busqueda {
-        font-size: 1.6rem;
-    }
-
-    .icono-notificaciones,
-    .icono-usuario,
-    .icono-carrito,
-    .icono-ubicacion,
-    .icono-menu-hamburguesa,
-    .icono-expansion-derecha,
-    .icono-expansion-izquierda {
-        font-size: 1.6rem;
-    }
-
-    .contenedor-primera-seccion-cabecera {
-        padding: 0.4rem;
-    }
-
-    .contenedor-envio-gratis {
-        flex-direction: row;
-        gap: 0.3rem;
-    }
-
-    .contenedor-envio-gratis .contenedor-todos-lo .texto-todos-lo {
-        font-size: 1.6rem;
-    }
-
-    .contenedor-envio-gratis .contenedor-articulo-envio-gratis .texto-articulo-envio-gratis {
-        font-size: 1.6rem;
-    }
-
-    .contenedor-primera-seccion-cabecera .boton-compra {
-        font-size: 1.6rem;
-    }
-
-    .contenedor-segunda-seccion-cabecera {
-        gap: 1rem;
-    }
-
-    .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda {
-        width: 50%;
-    }
-
-    .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda input {
-        font-size: 1.6rem;
-    }
-
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        cursor: pointer;
-    }
-
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu .contenedor-como-quieres-recibir-tu-pedido .texto-quieres-recibir {
-        text-align: center;
-        font-size: 1.6rem;
-    }
-
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera {
-        display: none;
-    }
-
-    .contenedor-segunda-seccion-cabecera .contenedor-menu-hamburguesa {
-        gap: 0.9rem;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-titulo-uno {
-        display: block;
-
-        padding: 0.4rem;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        width: auto;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno {
-        text-decoration: none;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
-        font-size: 1.6rem;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu {
-        display: block;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu .titulo-de-menu {
-        font-size: 1.6rem;
-    }
-
-    .contenedor-segunda-seccion-cabecera .contenedor-icon-noti-usua-carri {
-        gap: 2rem;
-    }
-
-    .link-crear-cuenta,
-    .link-cuadro-compra {
-        text-decoration: none;
-    }
-
-    .contenedor-texto-notificaciones,
-    .contenedor-texto-mi-cuenta,
-    .contenedor-texto-carrito {
-        display: block;
-        text-align: center;
-        font-size: 1.6rem;
-    }
-}
-
-/*TVs Full HD (1921px o mas)*/
-@media screen and (min-width: 1921px) and (max-width: 3840px) {
-
-    .icono-fuego,
-    .icono-computadora,
-    .icono-busqueda {
-        font-size: 1.8rem;
-    }
-
-    .icono-notificaciones,
-    .icono-usuario,
-    .icono-carrito,
-    .icono-ubicacion,
-    .icono-menu-hamburguesa,
-    .icono-expansion-derecha,
-    .icono-expansion-izquierda {
-        font-size: 1.8rem;
-    }
-
-    .contenedor-primera-seccion-cabecera {
-        padding: 0.5rem;
-    }
-
-    .contenedor-envio-gratis {
-        flex-direction: row;
-        gap: 0.3rem;
-    }
-
-    .contenedor-envio-gratis .contenedor-todos-lo .texto-todos-lo {
-        font-size: 1.8rem;
-    }
-
-    .contenedor-envio-gratis .contenedor-articulo-envio-gratis .texto-articulo-envio-gratis {
-        font-size: 1.8rem;
-    }
-
-    .contenedor-primera-seccion-cabecera .boton-compra {
-        font-size: 1.8rem;
-    }
-
-    .contenedor-segunda-seccion-cabecera {
-        gap: 1rem;
-    }
-
-    .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda {
-        width: 50%;
-    }
-
-    .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda input {
-        font-size: 1.8rem;
-    }
-
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        cursor: pointer;
-    }
-
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu .contenedor-como-quieres-recibir-tu-pedido .texto-quieres-recibir {
-        text-align: center;
-        font-size: 1.8rem;
-    }
-
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera {
-        display: none;
-    }
-
-    .contenedor-segunda-seccion-cabecera .contenedor-menu-hamburguesa {
-        gap: 0.9rem;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-titulo-uno {
-        display: block;
-
-        padding: 0.4rem;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        width: auto;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno {
-        text-decoration: none;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
-        font-size: 1.8rem;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu {
-        display: block;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu .titulo-de-menu {
-        font-size: 1.8rem;
-    }
-
-    .contenedor-segunda-seccion-cabecera .contenedor-icon-noti-usua-carri {
-        gap: 2.5rem;
-    }
-
-    .link-crear-cuenta,
-    .link-cuadro-compra {
-        text-decoration: none;
-    }
-
-    .contenedor-texto-notificaciones,
-    .contenedor-texto-mi-cuenta,
-    .contenedor-texto-carrito {
-        display: block;
-        text-align: center;
-        font-size: 1.8rem;
-    }
-}
-
-/*TVs 4K (3841px o mas)*/
-@media screen and (min-width: 3841px) and (max-width: 4480px) {
-
-    .icono-fuego,
-    .icono-computadora,
-    .icono-busqueda {
-        font-size: 2rem;
-    }
-
-    .icono-notificaciones,
-    .icono-usuario,
-    .icono-carrito,
-    .icono-ubicacion,
-    .icono-menu-hamburguesa,
-    .icono-expansion-derecha,
-    .icono-expansion-izquierda {
-        font-size: 2rem;
-    }
-
-    .contenedor-primera-seccion-cabecera {
-        padding: 0.6rem;
-    }
-
-    .contenedor-envio-gratis {
-        flex-direction: row;
-        gap: 0.3rem;
-    }
-
-    .contenedor-envio-gratis .contenedor-todos-lo .texto-todos-lo {
-        font-size: 2rem;
-    }
-
-    .contenedor-envio-gratis .contenedor-articulo-envio-gratis .texto-articulo-envio-gratis {
-        font-size: 2rem;
-    }
-
-    .contenedor-primera-seccion-cabecera .boton-compra {
-        font-size: 2rem;
-    }
-
-    .contenedor-segunda-seccion-cabecera {
-        gap: 1rem;
-    }
-
-    .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda {
-        width: 50%;
-    }
-
-    .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda input {
-        font-size: 2rem;
-    }
-
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        cursor: pointer;
-    }
-
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu .contenedor-como-quieres-recibir-tu-pedido .texto-quieres-recibir {
-        text-align: center;
-        font-size: 2rem;
-    }
-
-
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera {
-        display: none;
-    }
-
-    .contenedor-segunda-seccion-cabecera .contenedor-menu-hamburguesa {
-        gap: 0.9rem;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-titulo-uno {
-        display: block;
-
-        padding: 0.4rem;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        width: auto;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno {
-        text-decoration: none;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
-        font-size: 2rem;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu {
-        display: block;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu .titulo-de-menu {
-        font-size: 2rem;
-    }
-
-    .contenedor-segunda-seccion-cabecera .contenedor-icon-noti-usua-carri {
-        gap: 3rem;
-    }
-
-    .link-crear-cuenta,
-    .link-cuadro-compra {
-        text-decoration: none;
-    }
-
-    .contenedor-texto-notificaciones,
-    .contenedor-texto-mi-cuenta,
-    .contenedor-texto-carrito {
-        display: block;
-        text-align: center;
-        font-size: 2rem;
-    }
-}
-
-
-/*TVs 4481px o mas*/
-@media screen and (min-width: 4481px) {
-
-    .icono-fuego,
-    .icono-computadora,
-    .icono-busqueda {
-        font-size: 2.2rem;
-    }
-
-    .icono-notificaciones,
-    .icono-usuario,
-    .icono-carrito,
-    .icono-ubicacion,
-    .icono-menu-hamburguesa,
-    .icono-expansion-derecha,
-    .icono-expansion-izquierda {
-        font-size: 2.2rem;
-    }
-
-    .contenedor-primera-seccion-cabecera {
-        padding: 0.7rem;
-    }
-
-    .contenedor-envio-gratis {
-        flex-direction: row;
-        gap: 0.3rem;
-    }
-
-    .contenedor-envio-gratis .contenedor-todos-lo .texto-todos-lo {
-        font-size: 2.2rem;
-    }
-
-    .contenedor-envio-gratis .contenedor-articulo-envio-gratis .texto-articulo-envio-gratis {
-        font-size: 2.2rem;
-    }
-
-    .contenedor-primera-seccion-cabecera .boton-compra {
-        font-size: 2.2rem;
-    }
-
-    .contenedor-segunda-seccion-cabecera {
-        gap: 1rem;
-    }
-
-    .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda {
-        width: 50%;
-    }
-
-    .contenedor-segunda-seccion-cabecera .contenedor-barra-icono-busqueda input {
-        font-size: 2.2rem;
-    }
-
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        cursor: pointer;
-    }
-
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera-vista-compu .contenedor-como-quieres-recibir-tu-pedido .texto-quieres-recibir {
-        text-align: center;
-        font-size: 2.2rem;
-    }
-
-
-    .contenedor-icono-ubicacion-recibir-pedido-icono-expansion-cabecera {
-        display: none;
-    }
-
-    .contenedor-segunda-seccion-cabecera .contenedor-menu-hamburguesa {
-        gap: 0.9rem;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-titulo-uno {
-        display: block;
-
-        padding: 0.4rem;
-        border: 1px solid #000000;
-        border-radius: 50%;
-        width: auto;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno {
-        text-decoration: none;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-titulo-uno .link-titulo-uno .titulo-uno {
-        font-size: 2.2rem;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu {
-        display: block;
-    }
-
-    .contenedor-menu-hamburguesa .contenedor-icono-menu-hamburguesa-titulo-menu .contenedor-titulo-de-menu .titulo-de-menu {
-        font-size: 2.2rem;
-    }
-
-    .contenedor-segunda-seccion-cabecera .contenedor-icon-noti-usua-carri {
-        gap: 3.5rem;
-    }
-
-    .link-crear-cuenta,
-    .link-cuadro-compra {
-        text-decoration: none;
-    }
-
-    .contenedor-texto-notificaciones,
-    .contenedor-texto-mi-cuenta,
-    .contenedor-texto-carrito {
-        display: block;
-        text-align: center;
-        font-size: 2.2rem;
     }
 }

@@ -67,7 +67,7 @@
 }
 
 .contenedor-descuento-tarjeta-producto .texto-descuento{
-    font-size: 3rem;
+    font-size: 2rem;
     color: #ffffff;
     text-shadow: 3px 2px 2px #000000;
 }
@@ -204,11 +204,42 @@
     background-color: #444343;
 }
 
+/* Móviles grandes (Ej: iPhone 14 Pro Max, Galaxy S23 Ultra) */
+@media screen and  (min-width: 481px) and (max-width: 767px) {
+    .contenedor-descuento-tarjeta-producto .texto-descuento{
+        font-size: 2.1rem;
+    }
 
-/*modo Landscape para dispositivos moviles*/
-@media screen and (min-width: 320px) and (max-width: 932px) and (orientation: landscape){
+    .contenedor-pagando-con-tu-tarjeta-uno .texto-pagando-con{
+        font-size: 1.1rem;
+    }
+
     .contenedor-descuento-tarjeta-producto .contenedor-pagando-con-tu-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    .contenedor-info-evento .texto-info-evento{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-info-evento-promocion-categ-prod .texto-favorito{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-info-promocion .texto-info-promocion{
+        font-size: 1.1rem;
+    }
+
+    .contenedor-producto-descuento-promocion-boton .boton-compra{
+        font-size: 1.1rem;
+    }
+}
+
+
+/* Móviles en modo Landscape */
+@media screen and (max-width: 812px) and (orientation: landscape){
+    .contenedor-descuento-tarjeta-producto .contenedor-pagando-con-tu-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
+        font-size: 1.1rem;
     }
 
     .contenedor-descuento-tarjeta-producto{
@@ -216,15 +247,15 @@
     }
 
     .contenedor-descuento-tarjeta-producto .texto-descuento{
-        font-size: 3.2rem;
+        font-size: 2.1rem;
     }
 
     .contenedor-pagando-con-tu-tarjeta-uno .texto-pagando-con{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-info-evento .texto-info-evento{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-info-evento-promocion-categ-prod{
@@ -232,20 +263,20 @@
     }
     
     .contenedor-info-evento-promocion-categ-prod .texto-favorito{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-info-promocion .texto-info-promocion{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-producto-descuento-promocion-boton .boton-compra{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 }
 
-/*Tablets y laptops pequeñas*/
-@media screen and (min-width: 768px) and (max-width: 1366px){
+/* Tablets y pantallas medianas (Ej: iPad, Galaxy Tab) */
+@media screen and (min-width: 768px) and (max-width: 1024px){
     .contenedor-descuento-tarjeta-producto .contenedor-pagando-con-tu-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
         font-size: 1.2rem;
     }
@@ -259,7 +290,7 @@
     }
 
     .contenedor-descuento-tarjeta-producto .texto-descuento{
-        font-size: 3.2rem;
+        font-size: 2.4rem;
     }
 
     .contenedor-pagando-con-tu-tarjeta-uno .texto-pagando-con{
@@ -287,10 +318,10 @@
     }
 }
 
-/*Laptops estandar*/
-@media screen and (min-width: 1367px) and (max-width: 1440px){
+/* Laptops y pantallas grandes (Ej: MacBook, laptops comunes) */
+@media screen and (min-width: 1025px) and (max-width: 1440px){
     .contenedor-descuento-tarjeta-producto .contenedor-pagando-con-tu-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-descuento-tarjeta-producto{
@@ -298,15 +329,15 @@
     }
 
     .contenedor-descuento-tarjeta-producto .texto-descuento{
-        font-size: 3.4rem;
+        font-size: 2.6rem;
     }
 
     .contenedor-pagando-con-tu-tarjeta-uno .texto-pagando-con{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-info-evento .texto-info-evento{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-info-evento-promocion-categ-prod{
@@ -314,22 +345,22 @@
     }
     
     .contenedor-info-evento-promocion-categ-prod .texto-favorito{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-info-promocion .texto-info-promocion{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-producto-descuento-promocion-boton .boton-compra{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 }
 
-/*Escritorio grandes*/
-@media screen and (min-width: 1441px) and (max-width: 1920px){
+/* Monitores grandes y TVs (Ej: monitores ultraanchos, Smart TVs) */
+@media screen and (min-width: 1441px){
     .contenedor-descuento-tarjeta-producto .contenedor-pagando-con-tu-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-descuento-tarjeta-producto{
@@ -337,15 +368,15 @@
     }
 
     .contenedor-descuento-tarjeta-producto .texto-descuento{
-        font-size: 3.6rem;
+        font-size: 2.8rem;
     }
 
     .contenedor-pagando-con-tu-tarjeta-uno .texto-pagando-con{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-info-evento .texto-info-evento{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-info-evento-promocion-categ-prod{
@@ -353,133 +384,14 @@
     }
     
     .contenedor-info-evento-promocion-categ-prod .texto-favorito{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-info-promocion .texto-info-promocion{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-producto-descuento-promocion-boton .boton-compra{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 }
-
-/*TVs Full HD (1921px o mas)*/
-@media screen and (min-width: 1921px) and (max-width: 3840px){
-    .contenedor-descuento-tarjeta-producto .contenedor-pagando-con-tu-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
-        font-size: 1.8rem;
-    }
-
-    .contenedor-descuento-tarjeta-producto{
-        gap: 3rem;
-    }
-
-    .contenedor-descuento-tarjeta-producto .texto-descuento{
-        font-size: 3.8rem;
-    }
-
-    .contenedor-pagando-con-tu-tarjeta-uno .texto-pagando-con{
-        font-size: 1.8rem;
-    }
-
-    .contenedor-info-evento .texto-info-evento{
-        font-size: 1.8rem;
-    }
-
-    .contenedor-info-evento-promocion-categ-prod{
-        gap: 3rem;
-    }
-    
-    .contenedor-info-evento-promocion-categ-prod .texto-favorito{
-        font-size: 1.8rem;
-    }
-
-    .contenedor-info-promocion .texto-info-promocion{
-        font-size: 1.8rem;
-    }
-
-    .contenedor-producto-descuento-promocion-boton .boton-compra{
-        font-size: 1.8rem;
-    }
-}
-
-/*TVs 4K (3841px o mas)*/
-@media screen and (min-width: 3841px) and (max-width: 4480px){
-    .contenedor-descuento-tarjeta-producto .contenedor-pagando-con-tu-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
-        font-size: 2rem;
-    }
-
-    .contenedor-descuento-tarjeta-producto{
-        gap: 3rem;
-    }
-
-    .contenedor-descuento-tarjeta-producto .texto-descuento{
-        font-size: 4rem;
-    }
-
-    .contenedor-pagando-con-tu-tarjeta-uno .texto-pagando-con{
-        font-size: 2rem;
-    }
-
-
-    .contenedor-info-evento .texto-info-evento{
-        font-size: 2rem;
-    }
-
-    .contenedor-info-evento-promocion-categ-prod{
-        gap: 3.5rem;
-    }
-    
-    .contenedor-info-evento-promocion-categ-prod .texto-favorito{
-        font-size: 2rem;
-    }
-
-    .contenedor-info-promocion .texto-info-promocion{
-        font-size: 2rem;
-    }
-
-    .contenedor-producto-descuento-promocion-boton .boton-compra{
-        font-size: 2rem;
-    }
-}
-
-/*TVs 4481px o mas*/
-@media screen and (min-width: 4481px){
-    .contenedor-descuento-tarjeta-producto .contenedor-pagando-con-tu-tarjeta-uno .contenedor-tarjeta-uno .tarjeta-uno {
-        font-size: 2.2rem;
-    }
-
-    .contenedor-descuento-tarjeta-producto{
-        gap: 3.5rem;
-    }
-
-    .contenedor-descuento-tarjeta-producto .texto-descuento{
-        font-size: 4.2rem;
-    }
-
-    .contenedor-pagando-con-tu-tarjeta-uno .texto-pagando-con{
-        font-size: 2.2rem;
-    }
-
-    .contenedor-info-evento .texto-info-evento{
-        font-size: 2.2rem;
-    }
-
-    .contenedor-info-evento-promocion-categ-prod{
-        gap: 4rem;
-    }
-    
-    .contenedor-info-evento-promocion-categ-prod .texto-favorito{
-        font-size: 2.2rem;
-    }
-
-    .contenedor-info-promocion .texto-info-promocion{
-        font-size: 2.2rem;
-    }
-
-    .contenedor-producto-descuento-promocion-boton .boton-compra{
-        font-size: 2.2rem;
-    }
-}
-

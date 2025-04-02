@@ -77,7 +77,7 @@ html {
 }
 
 .contenedor-eligir-opcion-ingresar-1 .texto-eligir-opcion-ingresar-1 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -130,7 +130,7 @@ html {
 
 .contenedor-titulo-ingresar-email-1 .texto-titulo-ingresar-email-1 {
     margin-top: 1rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
 }
@@ -171,7 +171,7 @@ html {
     width: 100%;
     height: auto;
     border: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 /*modo claro*/
@@ -367,8 +367,39 @@ html {
     font-weight: bold;
 }
 
-/*modo Landscape para dispositivos moviles*/
-@media screen and (min-width: 320px) and (max-width: 932px) and (orientation: landscape) {
+/* Móviles grandes (Ej: iPhone 14 Pro Max, Galaxy S23 Ultra) */
+@media screen and  (min-width: 481px) and (max-width: 767px){
+    .contenedor-eligir-opcion-ingresar-1 .texto-eligir-opcion-ingresar-1 {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-titulo-ingresar-email-1 .texto-titulo-ingresar-email-1 {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-ingresar-email-1 input {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-crear-cuenta-1 .boton-enviar {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-crear-cuenta-1 .boton-volver {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-recibir-clave-acceso-1 .texto-recibir-clave-acceso-1 {
+        font-size: 1.1rem;
+    }
+
+    .contenedor-ingresar-email-contrasena-1 .texto-ingresar-email-contrasena-1 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Móviles en modo Landscape */
+@media screen and (max-width: 812px) and (orientation: landscape) {
     .contenedor-autenticacion-crear-cuenta-1 {
         margin-bottom: 11.9rem;
     }
@@ -382,42 +413,38 @@ html {
     }
 
     .contenedor-eligir-opcion-ingresar-1 .texto-eligir-opcion-ingresar-1 {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-titulo-ingresar-email-1 .texto-titulo-ingresar-email-1 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-ingresar-email-1 input {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-crear-cuenta-1 .boton-enviar {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-crear-cuenta-1 .boton-volver {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contenedor-recibir-clave-acceso-1 .texto-recibir-clave-acceso-1 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         text-align: center;
     }
 
     .contenedor-ingresar-email-contrasena-1 .texto-ingresar-email-contrasena-1 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         text-align: center;
-    }
-
-    .contenedor-texto-terminos-condiciones-tratamientos-datos-1 .texto-terminos-condiciones-tratamientos-datos-1 {
-        font-size: 1rem;
     }
 }
 
-/*Tablets y laptops pequeñas*/
-@media screen and (min-width: 768px) and (max-width: 1366px) {
+/* Tablets y pantallas medianas (Ej: iPad, Galaxy Tab) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .contenedor-autenticacion-crear-cuenta-1 {
         margin-bottom: 12.2rem;
     }
@@ -431,15 +458,15 @@ html {
     }
 
     .contenedor-eligir-opcion-ingresar-1 .texto-eligir-opcion-ingresar-1 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-titulo-ingresar-email-1 .texto-titulo-ingresar-email-1 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-ingresar-email-1 input {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-crear-cuenta-1 .boton-enviar {
@@ -461,12 +488,12 @@ html {
     }
 
     .contenedor-texto-terminos-condiciones-tratamientos-datos-1 .texto-terminos-condiciones-tratamientos-datos-1 {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
 
-/*Laptops estandar*/
-@media screen and (min-width: 1367px) and (max-width: 1440px) {
+/* Laptops y pantallas grandes (Ej: MacBook, laptops comunes) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
     .contenedor-autenticacion-crear-cuenta-1 {
         margin-bottom: 11.9rem;
     }
@@ -480,42 +507,42 @@ html {
     }
 
     .contenedor-eligir-opcion-ingresar-1 .texto-eligir-opcion-ingresar-1 {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-titulo-ingresar-email-1 .texto-titulo-ingresar-email-1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-ingresar-email-1 input {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-crear-cuenta-1 .boton-enviar {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-crear-cuenta-1 .boton-volver {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .contenedor-recibir-clave-acceso-1 .texto-recibir-clave-acceso-1 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         text-align: center;
     }
 
     .contenedor-ingresar-email-contrasena-1 .texto-ingresar-email-contrasena-1 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         text-align: center;
     }
 
     .contenedor-texto-terminos-condiciones-tratamientos-datos-1 .texto-terminos-condiciones-tratamientos-datos-1 {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
 }
 
-/*Escritorio grandes*/
-@media screen and (min-width: 1441px) and (max-width: 1920px) {
+/* Monitores grandes y TVs (Ej: monitores ultraanchos, Smart TVs) */
+@media screen and (min-width: 1441px) {
     .contenedor-autenticacion-crear-cuenta-1 {
         margin-bottom: 12.2rem;
     }
@@ -529,183 +556,36 @@ html {
     }
 
     .contenedor-eligir-opcion-ingresar-1 .texto-eligir-opcion-ingresar-1 {
-        font-size: 1.8rem;
-    }
-
-    .contenedor-titulo-ingresar-email-1 .texto-titulo-ingresar-email-1 {
-        font-size: 1.7rem;
-    }
-
-    .contenedor-ingresar-email-1 input {
-        font-size: 1.7rem;
-    }
-
-    .contenedor-crear-cuenta-1 .boton-enviar {
-        font-size: 1.6rem;
-    }
-
-    .contenedor-crear-cuenta-1 .boton-volver {
-        font-size: 1.6rem;
-    }
-
-    .contenedor-recibir-clave-acceso-1 .texto-recibir-clave-acceso-1 {
-        font-size: 1.6rem;
-        text-align: center;
-    }
-
-    .contenedor-ingresar-email-contrasena-1 .texto-ingresar-email-contrasena-1 {
-        font-size: 1.6rem;
-        text-align: center;
-    }
-
-    .contenedor-texto-terminos-condiciones-tratamientos-datos-1 .texto-terminos-condiciones-tratamientos-datos-1 {
         font-size: 1.4rem;
     }
-}
-
-/*TVs Full HD (1921px o mas)*/
-@media screen and (min-width: 1921px) and (max-width: 3840px) {
-    .contenedor-autenticacion-crear-cuenta-1 {
-        margin-bottom: 12.5rem;
-    }
-
-    .contenedor-crear-cuenta-clave-acceso-ingresar-terminos-condiciones-1 {
-        flex-direction: row-reverse;
-    }
-
-    .contenedor-clave-acceso-ingresar-email-contrasena-terminos-condiciones-1 {
-        width: 65%;
-    }
-
-    .contenedor-eligir-opcion-ingresar-1 .texto-eligir-opcion-ingresar-1 {
-        font-size: 2rem;
-    }
 
     .contenedor-titulo-ingresar-email-1 .texto-titulo-ingresar-email-1 {
-        font-size: 1.9rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-ingresar-email-1 input {
-        font-size: 1.9rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-crear-cuenta-1 .boton-enviar {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-crear-cuenta-1 .boton-volver {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
 
     .contenedor-recibir-clave-acceso-1 .texto-recibir-clave-acceso-1 {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         text-align: center;
     }
 
     .contenedor-ingresar-email-contrasena-1 .texto-ingresar-email-contrasena-1 {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         text-align: center;
     }
 
     .contenedor-texto-terminos-condiciones-tratamientos-datos-1 .texto-terminos-condiciones-tratamientos-datos-1 {
-        font-size: 1.6rem;
-    }
-}
-
-/*TVs 4K (3841px o mas)*/
-@media screen and (min-width: 3841px) and (max-width: 4480px) {
-    .contenedor-autenticacion-crear-cuenta-1 {
-        margin-bottom: 12.8rem;
-    }
-
-    .contenedor-crear-cuenta-clave-acceso-ingresar-terminos-condiciones-1 {
-        flex-direction: row-reverse;
-    }
-
-    .contenedor-clave-acceso-ingresar-email-contrasena-terminos-condiciones-1 {
-        width: 65%;
-    }
-
-    .contenedor-eligir-opcion-ingresar-1 .texto-eligir-opcion-ingresar-1 {
-        font-size: 2.2rem;
-    }
-
-    .contenedor-titulo-ingresar-email-1 .texto-titulo-ingresar-email-1 {
-        font-size: 2.1rem;
-    }
-
-    .contenedor-ingresar-email-1 input {
-        font-size: 2.2rem;
-    }
-
-    .contenedor-crear-cuenta-1 .boton-enviar {
-        font-size: 2rem;
-    }
-
-    .contenedor-crear-cuenta-1 .boton-volver {
-        font-size: 2rem;
-    }
-
-    .contenedor-recibir-clave-acceso-1 .texto-recibir-clave-acceso-1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .contenedor-ingresar-email-contrasena-1 .texto-ingresar-email-contrasena-1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .contenedor-texto-terminos-condiciones-tratamientos-datos-1 .texto-terminos-condiciones-tratamientos-datos-1 {
-        font-size: 1.8rem;
-    }
-}
-
-/*TVs 4481px o mas*/
-@media screen and (min-width: 4481px) {
-    .contenedor-autenticacion-crear-cuenta-1 {
-        margin-bottom: 12.9rem;
-    }
-
-    .contenedor-crear-cuenta-clave-acceso-ingresar-terminos-condiciones-1 {
-        flex-direction: row-reverse;
-    }
-
-    .contenedor-clave-acceso-ingresar-email-contrasena-terminos-condiciones-1 {
-        width: 65%;
-    }
-
-    .contenedor-eligir-opcion-ingresar-1 .texto-eligir-opcion-ingresar-1 {
-        font-size: 2.4rem;
-    }
-
-    .contenedor-titulo-ingresar-email-1 .texto-titulo-ingresar-email-1 {
-        font-size: 2.3rem;
-    }
-
-    .contenedor-ingresar-email-1 input {
-        font-size: 2.4rem;
-    }
-
-    .contenedor-crear-cuenta-1 .boton-enviar {
-        font-size: 2.2rem;
-    }
-
-    .contenedor-crear-cuenta-1 .boton-volver {
-        font-size: 2.2rem;
-    }
-
-    .contenedor-recibir-clave-acceso-1 .texto-recibir-clave-acceso-1 {
-        font-size: 2.2rem;
-        text-align: center;
-    }
-
-    .contenedor-ingresar-email-contrasena-1 .texto-ingresar-email-contrasena-1 {
-        font-size: 2.2rem;
-        text-align: center;
-    }
-
-    .contenedor-texto-terminos-condiciones-tratamientos-datos-1 .texto-terminos-condiciones-tratamientos-datos-1 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 }
