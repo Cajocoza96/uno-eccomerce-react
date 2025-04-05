@@ -7,8 +7,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import BotonCompra from '../buttons/BotonCompra';
-import HoraActual from './HoraActual';
+import BotonAccion from '../buttons/BotonAccion.jsx';
+import HoraActual from '../titulos/HoraActual.jsx';
 
 import informacionBlackFriday from '../menuHamburguesa/data/novedades/blackFriday/informacionBlackFriday.json';
 import informacionTecnologia from '../menuHamburguesa/data/categorias/tecnologia/informacionTecnologia.json';
@@ -166,7 +166,7 @@ function HoraProductoAntesDespues() {
                                 <p className='texto-detalles-hora-producto-antes-despues'>{producto.detalle2}</p>
                             </div>
 
-                            <BotonCompra value='¡Compra ahora!' />
+                            <BotonAccion value='¡Compra ahora!' />
                         </div>
 
                     </SwiperSlide>

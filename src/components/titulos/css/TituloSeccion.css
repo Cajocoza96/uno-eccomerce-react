@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.cabecera-titulo {
+    margin-bottom: 1.2rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.titulo {
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* Modo claro */
+.light-mode .titulo {
+    color: #000000;
+}
+
+/* Modo oscuro */
+.dark-mode .titulo {
+    color: #ffffff;
+}
+
+/* Estilo del extra (como el cuadro amarillo de "Uno") */
+.contenedor-extra {
+    padding: 0.4rem;
+    background-color: #fbff02;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
+
+/* Responsividad */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .titulo {
+        font-size: 1.4rem;
+    }
+    .contenedor-extra {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 812px) and (orientation: landscape) {
+    .titulo {
+        font-size: 1.4rem;
+    }
+    .contenedor-extra {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .titulo {
+        font-size: 1.5rem;
+    }
+    .contenedor-extra {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .titulo {
+        font-size: 1.5rem;
+    }
+    .contenedor-extra {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .titulo {
+        font-size: 1.7rem;
+    }
+    .contenedor-extra {
+        font-size: 1.4rem;
+    }
+}

@@ -189,28 +189,32 @@ html {
     outline: none;
 }
 
-.contenedor-crear-cuenta-1 .boton-enviar {
-    padding: 0.8rem;
+.contenedor-crear-cuenta-1 .contenedor-botones-enviar-volver{
     width: 95%;
-    height: auto;
-    border: none;
-    border-radius: 0.5rem;
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    background-color: #fc5304;
-    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
-.contenedor-crear-cuenta-1 .boton-enviar:active {
+.contenedor-crear-cuenta-1 .boton-accion {
+    width: 100%;
+    padding: 0.8rem;
+    height: auto;
+    background-color: #fc5304;
+}
+
+.contenedor-crear-cuenta-1 .boton-accion:active {
     background-color: #e9743d;
 }
 
 .link-boton-volver-1 {
-    width: 95%;
+    width: 100%;
     height: auto;
     margin-bottom: 1rem;
+    text-decoration: none;
 }
 
 .contenedor-clave-acceso-ingresar-email-contrasena-terminos-condiciones-1 {
@@ -234,38 +238,6 @@ html {
 .dark-mode .contenedor-clave-acceso-ingresar-email-contrasena-terminos-condiciones-1{
     background-color: #000000;
 }
-
-.contenedor-crear-cuenta-1 .boton-volver {
-    padding: 0.8rem;
-    width: 100%;
-    height: auto;
-    border: 2px solid #281ae7;
-    border-radius: 0.5rem;
-    color: #281ae7;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-}
-
-/*modo claro*/
-.light-mode .contenedor-crear-cuenta-1 .boton-volver{
-    background-color: #c9c3c3e5;
-}
-/*modo oscuro*/
-.dark-mode .contenedor-crear-cuenta-1 .boton-volver{
-    background-color: #000000;
-}
-
-/*modo claro*/
-.light-mode .contenedor-crear-cuenta-1 .boton-volver:active {
-    background-color: #ada7a7e5;
-}
-/*modo oscuro*/
-.dark-mode .contenedor-crear-cuenta-1 .boton-volver:active{
-    background-color: #1b1a1a;
-}
-
 
 .contenedor-recibir-clave-acceso-1 {
     width: 100%;
@@ -381,14 +353,6 @@ html {
         font-size: 1.1rem;
     }
 
-    .contenedor-crear-cuenta-1 .boton-enviar {
-        font-size: 1.1rem;
-    }
-
-    .contenedor-crear-cuenta-1 .boton-volver {
-        font-size: 1.1rem;
-    }
-
     .contenedor-recibir-clave-acceso-1 .texto-recibir-clave-acceso-1 {
         font-size: 1.1rem;
     }
@@ -421,14 +385,6 @@ html {
     }
 
     .contenedor-ingresar-email-1 input {
-        font-size: 1.1rem;
-    }
-
-    .contenedor-crear-cuenta-1 .boton-enviar {
-        font-size: 1.1rem;
-    }
-
-    .contenedor-crear-cuenta-1 .boton-volver {
         font-size: 1.1rem;
     }
 
@@ -466,14 +422,6 @@ html {
     }
 
     .contenedor-ingresar-email-1 input {
-        font-size: 1.2rem;
-    }
-
-    .contenedor-crear-cuenta-1 .boton-enviar {
-        font-size: 1.2rem;
-    }
-
-    .contenedor-crear-cuenta-1 .boton-volver {
         font-size: 1.2rem;
     }
 
@@ -518,14 +466,6 @@ html {
         font-size: 1.2rem;
     }
 
-    .contenedor-crear-cuenta-1 .boton-enviar {
-        font-size: 1.2rem;
-    }
-
-    .contenedor-crear-cuenta-1 .boton-volver {
-        font-size: 1.2rem;
-    }
-
     .contenedor-recibir-clave-acceso-1 .texto-recibir-clave-acceso-1 {
         font-size: 1.2rem;
         text-align: center;
@@ -564,14 +504,6 @@ html {
     }
 
     .contenedor-ingresar-email-1 input {
-        font-size: 1.4rem;
-    }
-
-    .contenedor-crear-cuenta-1 .boton-enviar {
-        font-size: 1.4rem;
-    }
-
-    .contenedor-crear-cuenta-1 .boton-volver {
         font-size: 1.4rem;
     }
 

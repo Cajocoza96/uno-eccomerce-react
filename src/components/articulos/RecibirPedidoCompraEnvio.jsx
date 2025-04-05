@@ -4,7 +4,7 @@ import './css/RecibirPedidoCompraEnvio.css';
 
 import { FaBriefcase, FaTruck, FaChevronDown, FaTimes } from 'react-icons/fa';
 
-import BotonConfirmar from '../buttons/BotonConfirmar';
+import BotonAccion from '../buttons/BotonAccion.jsx';
 
 function RecibirPedidoCompraEnvio({ toggleMenuDos }) {
     const [compraRecoge, setCompraRecoge] = useState(true);
@@ -184,7 +184,7 @@ function RecibirPedidoCompraEnvio({ toggleMenuDos }) {
 
                         </div>
 
-                        <BotonConfirmar value='Confirmar'></BotonConfirmar>
+                        <BotonAccion value='Confirmar' />
 
                     </div>
 
@@ -210,7 +210,7 @@ function RecibirPedidoCompraEnvio({ toggleMenuDos }) {
 
                         </div>
 
-                        <BotonConfirmar value='Confirmar'></BotonConfirmar>
+                        <BotonAccion value='Confirmar' />
 
                     </div>
 

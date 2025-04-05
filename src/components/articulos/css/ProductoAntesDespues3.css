@@ -183,35 +183,14 @@
     text-shadow: 2px 2px 3px #000000;
 }
 
-.contenedor-producto-antes-despues-boton3 .boton-compra{
-    width: auto;
-    height: auto;
-    padding: 0.5rem;
-    border: none;
-    border-radius: 0.3rem;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
 /*modo claro*/
-.light-mode .contenedor-producto-antes-despues-boton3 .boton-compra{
+.light-mode .contenedor-producto-antes-despues-boton3 .boton-accion{
     background-color: #f30c6c;
 }
-/*modo oscuro*/
-.dark-mode .contenedor-producto-antes-despues-boton3 .boton-compra{
-    background-color: #000000;
-}
 
 /*modo claro*/
-.light-mode .contenedor-producto-antes-despues-boton3 .boton-compra:active{
+.light-mode .contenedor-producto-antes-despues-boton3 .boton-accion:active{
     background-color: #e04d8b;
-}
-
-/*modo oscuro*/
-.dark-mode .contenedor-producto-antes-despues-boton3 .boton-compra:active{
-    background-color: #414141;
 }
 
 
@@ -245,9 +224,6 @@
         font-size: 1.1rem;
     }
     
-    .contenedor-producto-antes-despues-boton3 .boton-compra{
-        font-size: 1.1rem;
-    }
 }
 
 
@@ -433,6 +409,7 @@
     .contenedor-detalles-producto-ante-desp-3 .texto-producto-detalles3{
         font-size: 1.4rem;
     }
+
 }
 
 /* Monitores grandes y TVs (Ej: monitores ultraanchos, Smart TVs) */

@@ -167,35 +167,18 @@
     object-fit: cover;
 }
 
-.contenedor-producto-antes-despues-doble-2-boton .boton-compra{
+.contenedor-producto-antes-despues-doble-2-boton .boton-accion{
     margin-top: 0.5rem;
-    width: auto;
-    height: auto;
-    padding: 0.5rem;
-    border: none;
-    border-radius: 0.3rem;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
 }
 
 /*modo claro*/
-.light-mode .contenedor-producto-antes-despues-doble-2-boton .boton-compra{
+.light-mode .contenedor-producto-antes-despues-doble-2-boton .boton-accion{
     background-color: #200a9c;
 }
-/*modo oscuro*/
-.dark-mode .contenedor-producto-antes-despues-doble-2-boton .boton-compra{
-    background-color: #000000;
-}
 
 /*modo claro*/
-.light-mode  .contenedor-producto-antes-despues-doble-2-boton .boton-compra:active{
+.light-mode  .contenedor-producto-antes-despues-doble-2-boton .boton-accion:active{
     background-color: #392a8f;
-}
-/*modo oscuro*/
-.dark-mode  .contenedor-producto-antes-despues-doble-2-boton .boton-compra:active{
-    background-color: #4b4949;
 }
 
 /* Móviles grandes (Ej: iPhone 14 Pro Max, Galaxy S23 Ultra) */
@@ -221,10 +204,6 @@
     }
 
     .contenedor-texto-nombre-producto-ante-desp-doble-2 .texto-nombre-producto{
-        font-size: 1.1rem;
-    }
-
-    .contenedor-producto-antes-despues-doble-2-boton .boton-compra{
         font-size: 1.1rem;
     }
 }
@@ -283,10 +262,6 @@
     .contenedor-texto-nombre-producto-ante-desp-doble-2 .texto-nombre-producto{
         font-size: 1.1rem;
     }
-
-    .contenedor-producto-antes-despues-doble-2-boton .boton-compra{
-        font-size: 1.1rem;
-    }
 }
 
 /* Tablets y pantallas medianas (Ej: iPad, Galaxy Tab) */
@@ -343,11 +318,6 @@
     .contenedor-texto-nombre-producto-ante-desp-doble-2 .texto-nombre-producto{
         font-size: 1.2rem;
     }
-
-    .contenedor-producto-antes-despues-doble-2-boton .boton-compra{
-        font-size: 1.2rem;
-    }
-
 }
 
 /* Laptops y pantallas grandes (Ej: MacBook, laptops comunes) */
@@ -404,10 +374,6 @@
     .contenedor-texto-nombre-producto-ante-desp-doble-2 .texto-nombre-producto{
         font-size: 1.2rem;
     }
-
-    .contenedor-producto-antes-despues-doble-2-boton .boton-compra{
-        font-size: 1.2rem;
-    }
 }
 
 /* Monitores grandes y TVs (Ej: monitores ultraanchos, Smart TVs) */
@@ -462,10 +428,6 @@
     }
 
     .contenedor-texto-nombre-producto-ante-desp-doble-2 .texto-nombre-producto{
-        font-size: 1.4rem;
-    }
-
-    .contenedor-producto-antes-despues-doble-2-boton .boton-compra{
         font-size: 1.4rem;
     }
 }

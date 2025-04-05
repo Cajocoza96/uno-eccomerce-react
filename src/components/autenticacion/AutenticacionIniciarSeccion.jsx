@@ -4,7 +4,7 @@ import './css/AutenticacionIniciarSeccion.css';
 
 import { Link } from 'react-router-dom';
 
-import BotonEntrar from '../buttons/BotonEntrar';
+import BotonAccion from '../buttons/BotonAccion.jsx';
 
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
@@ -62,7 +62,7 @@ function AutenticacionIniciarSeccion() {
                             <p className='texto-olvidaste-contrasena'>Olvidaste tu contraseña</p>
                         </div>
 
-                        <BotonEntrar value='Entrar' />
+                        <BotonAccion value='Entrar' />
 
                         <Link className='link-sin-contrasena-creala' to='/crear-cuenta'>
                             <div className='contenedor-sin-contrasena-creala'>

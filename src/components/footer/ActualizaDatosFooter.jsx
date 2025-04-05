@@ -1,5 +1,6 @@
 import React from 'react';
-import BotonActualizar from '../buttons/BotonActualizar';
+import BotonAccion from '../buttons/BotonAccion';
+
 
 import './css/ActualizaDatosFooter.css';
 
@@ -12,7 +13,7 @@ function ActualizaDatosFooter() {
                 <p className='texto-descubrir-beneficios'>Y descubre todos los beneficios para ti</p>
             </div>
 
-            <BotonActualizar value='¡Actualizar!' />
+            <BotonAccion value='¡Actualizar!' />
             
         </article>
     );

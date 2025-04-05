@@ -3,7 +3,7 @@ import './css/Cabecera.css';
 
 import { Link } from 'react-router-dom';
 
-import BotonCompra from '../buttons/BotonCompra';
+import BotonAccion from '../buttons/BotonAccion.jsx';
 
 import { FaFire, FaDesktop, FaSearch, FaChevronRight } from 'react-icons/fa';
 import { HiOutlineBell, HiOutlineUser, HiOutlineShoppingCart, HiOutlineLocationMarker, HiOutlineMenu } from 'react-icons/hi';
@@ -31,7 +31,7 @@ function Cabecera({ toggleMenu, toggleMenuDos, toggleMenuTres, menuVisible, menu
 
                 </div>
 
-                <BotonCompra value='¡Comprar ya!' />
+                <BotonAccion value='¡Comprar ya!' />
 
             </div>
 

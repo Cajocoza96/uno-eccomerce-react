@@ -133,36 +133,19 @@
     object-fit: cover;
 }
 
-.contenedor-producto-descuento2-boton .boton-compra {
+.contenedor-producto-descuento2-boton .boton-accion {
     margin-left: 1rem;
-    width: auto;
-    height: auto;
-    padding: 0.5rem;
-    border: none;
-    border-radius: 0.3rem;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
 }
 
 /*modo claro*/
-.light-mode .contenedor-producto-descuento2-boton .boton-compra{
+.light-mode .contenedor-producto-descuento2-boton .boton-accion{
     background-color: #f7f31a;
     color: #000000;
 }
-/*modo oscuro*/
-.dark-mode .contenedor-producto-descuento2-boton .boton-compra{
-    background-color: #000000;
-    color: #ffffff;
-}
 
 /*modo claro*/
-.light-mode .contenedor-producto-descuento2-boton .boton-compra:active {
+.light-mode .contenedor-producto-descuento2-boton .boton-accion:active {
     background-color: #e6e477;
-}
-/*modo oscuro*/
-.dark-mode  .contenedor-producto-descuento2-boton .boton-compra:active {
-    background-color: #424141;
 }
 
 /* Móviles grandes (Ej: iPhone 14 Pro Max, Galaxy S23 Ultra) */
@@ -185,10 +168,6 @@
 
     .contenedor-en-marca-producto .texto-marca-de-producto {
         font-size: 1.3rem;
-    }
-
-    .contenedor-producto-descuento2-boton .boton-compra {
-        font-size: 1.1rem;
     }
 }
 
@@ -226,10 +205,6 @@
     .contenedor-imagen-producto-descuento2 {
         width: 50%;
     }
-
-    .contenedor-producto-descuento2-boton .boton-compra {
-        font-size: 1.1rem;
-    }
 }
 
 /* Tablets y pantallas medianas (Ej: iPad, Galaxy Tab) */
@@ -264,10 +239,6 @@
 
     .contenedor-imagen-producto-descuento2 {
         width: 50%;
-    }
-
-    .contenedor-producto-descuento2-boton .boton-compra {
-        font-size: 1.2rem;
     }
 }
 
@@ -305,9 +276,6 @@
         width: 50%;
     }
 
-    .contenedor-producto-descuento2-boton .boton-compra {
-        font-size: 1.2rem;
-    }
 }
 
 /* Monitores grandes y TVs (Ej: monitores ultraanchos, Smart TVs) */
@@ -345,7 +313,4 @@
         width: 50%;
     }
 
-    .contenedor-producto-descuento2-boton .boton-compra {
-        font-size: 1.4rem;
-    }
 }

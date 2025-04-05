@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 
 import './css/ProductoDescuentoDefinitivoPagos.css';
 
-import BotonAgregar from '../buttons/BotonAgregar';
+import BotonAccion from '../buttons/BotonAccion.jsx';
+
+import { HiOutlineShoppingCart } from 'react-icons/hi';
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -179,7 +181,7 @@ function ProductoDescuentoDefinitivoPagos() {
 
                             <div className='contenedor-boton-agregar'>
                                 <p className='texto-vendido-por-empresa'>Vendido por: {producto.vendidoPor}</p>
-                                <BotonAgregar value='Agregar' />
+                                <BotonAccion value='Agregar' icono={<HiOutlineShoppingCart className='icono-carrito'/>}/>
                             </div>
 
                         </div>

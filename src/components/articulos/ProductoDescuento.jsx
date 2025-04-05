@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation } from 'swiper/modules';
 
-import BotonCompra from '../buttons/BotonCompra';
+import BotonAccion from '../buttons/BotonAccion.jsx';
 
 import informacionVinosYLicores from '../menuHamburguesa/data/categorias/vinosYLicores/informacionVinosYLicores.json';
 
@@ -103,7 +103,7 @@ function ProductoDescuento() {
 
                         </div>
 
-                        <BotonCompra value='¡Compra ahora!' />
+                        <BotonAccion value='¡Compra ahora!' />
 
                     </SwiperSlide>
                 ))}

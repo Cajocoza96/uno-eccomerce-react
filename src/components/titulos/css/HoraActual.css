@@ -1,0 +1,50 @@
+.contenedor-hora-actual{
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-hora-actual .hora-actual{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Móviles grandes (Ej: iPhone 14 Pro Max, Galaxy S23 Ultra) */
+@media screen and  (min-width: 481px) and (max-width: 767px) {
+    .contenedor-hora-actual .hora-actual{
+        font-size: 2.1rem;
+    }
+}
+
+/* Móviles en modo Landscape */
+@media screen and (max-width: 812px) and (orientation: landscape) {
+    .contenedor-hora-actual .hora-actual{
+        font-size: 2.1rem;
+    }
+}
+
+/* Tablets y pantallas medianas (Ej: iPad, Galaxy Tab) */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .contenedor-hora-actual .hora-actual{
+        font-size: 2.2rem;
+    }
+}
+
+/* Laptops y pantallas grandes (Ej: MacBook, laptops comunes) */
+@media screen and (min-width: 1025px) and (max-width: 1440px){
+    .contenedor-hora-actual .hora-actual{
+        font-size: 2.2rem;
+    }
+}
+
+/* Monitores grandes y TVs (Ej: monitores ultraanchos, Smart TVs) */
+@media screen and (min-width: 1441px){
+    .contenedor-hora-actual .hora-actual{
+        font-size: 2.4rem;
+    }
+}

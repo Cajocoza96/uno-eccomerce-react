@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './css/ProductoDescuentoPromocion.css';
 
-import BotonCompra from '../buttons/BotonCompra';
+import BotonAccion from '../buttons/BotonAccion.jsx';
 
 import informacionBlackFriday from '../menuHamburguesa/data/novedades/blackFriday/informacionBlackFriday.json';
 
@@ -87,7 +87,7 @@ function ProductoDescuentoPromocion() {
 
                     </div>
 
-                    <BotonCompra value='¡Compra ahora!' />
+                    <BotonAccion value='¡Compra ahora!' />
                 </div>
             ))}
 

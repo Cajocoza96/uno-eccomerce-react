@@ -59,6 +59,22 @@
     gap: 0.7rem;
 }
 
+.contenedor-detalles-desc-antes-precio-tarjeta-prod-defi-padre .contenedor-boton-agregar .boton-accion{
+    margin: 1rem auto 0.5rem;
+    width: 100%;
+    background-color: #f04e0e;
+}
+
+.contenedor-detalles-desc-antes-precio-tarjeta-prod-defi-padre .contenedor-boton-agregar .boton-accion:active{
+    background-color: #ec7141;
+}
+
+.contenedor-detalles-desc-antes-precio-tarjeta-prod-defi-padre .contenedor-boton-agregar .boton-accion .icono-carrito{
+    margin-top: 0.1rem;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
 .contenedor-texto-detalles-marca-prod-defi {
     display: flex;
     flex-direction: column;
@@ -295,6 +311,10 @@
 
 /* Móviles grandes (Ej: iPhone 14 Pro Max, Galaxy S23 Ultra) */
 @media screen and  (min-width: 481px) and (max-width: 767px){
+    .contenedor-detalles-desc-antes-precio-tarjeta-prod-defi-padre .contenedor-boton-agregar .boton-accion .icono-carrito{
+        font-size: 1.1rem;
+    }
+
     .contenedor-texto-detalles-prod-defi .texto-detalles-prod-defi {
         font-size: 1.1rem;
     }
@@ -339,6 +359,10 @@
 
 /* Móviles en modo Landscape */
 @media screen and (max-width: 812px) and (orientation: landscape) {
+    .contenedor-detalles-desc-antes-precio-tarjeta-prod-defi-padre .contenedor-boton-agregar .boton-accion .icono-carrito{
+        font-size: 1.1rem;
+    }
+
     .contenedor-imagen-prod-defi {
         height: 16rem;
     }
@@ -390,6 +414,10 @@
 
 /* Tablets y pantallas medianas (Ej: iPad, Galaxy Tab) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .contenedor-detalles-desc-antes-precio-tarjeta-prod-defi-padre .contenedor-boton-agregar .boton-accion .icono-carrito{
+        font-size: 1.2rem;
+    }
+
     .contenedor-imagen-prod-defi {
         height: 16rem;
     }
@@ -441,6 +469,10 @@
 
 /* Laptops y pantallas grandes (Ej: MacBook, laptops comunes) */
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .contenedor-detalles-desc-antes-precio-tarjeta-prod-defi-padre .contenedor-boton-agregar .boton-accion .icono-carrito{
+        font-size: 1.2rem;
+    }
+
     .contenedor-imagen-prod-defi {
         height: 16rem;
     }
@@ -492,6 +524,10 @@
 
 /* Monitores grandes y TVs (Ej: monitores ultraanchos, Smart TVs) */
 @media screen and (min-width: 1441px) {
+    .contenedor-detalles-desc-antes-precio-tarjeta-prod-defi-padre .contenedor-boton-agregar .boton-accion .icono-carrito{
+        font-size: 1.4rem;
+    }
+
     .contenedor-imagen-prod-defi {
         height: 16rem;
     }

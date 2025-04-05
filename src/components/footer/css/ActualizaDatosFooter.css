@@ -56,25 +56,12 @@
     color: #9c9c9c;
 }
 
-.contenedor-actualizar-beneficios-boton-footer .boton-actualizar{
-    width: auto; 
-    height: auto;
-    padding: 0.5rem;
+.contenedor-actualizar-beneficios-boton-footer .boton-accion{
     background-color: #7c00c4;
-    border: none;
-    border-radius: 0.3rem;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 
-.contenedor-actualizar-beneficios-boton-footer .boton-actualizar:active{
+.contenedor-actualizar-beneficios-boton-footer .boton-accion:active{
     background-color: #8b46b3;
 }
 
@@ -85,10 +72,6 @@
     }
 
     .contenedor-actualizar-beneficios .texto-descubrir-beneficios{
-        font-size: 1.1rem;
-    }
-
-    .contenedor-actualizar-beneficios-boton-footer .boton-actualizar{
         font-size: 1.1rem;
     }
 }
@@ -107,10 +90,6 @@
     .contenedor-actualizar-beneficios .texto-descubrir-beneficios{
         font-size: 1.1rem;
     }
-
-    .contenedor-actualizar-beneficios-boton-footer .boton-actualizar{
-        font-size: 1.1rem;
-    }
 }
 
 /* Tablets y pantallas medianas (Ej: iPad, Galaxy Tab) */
@@ -124,10 +103,6 @@
     }
     
     .contenedor-actualizar-beneficios .texto-descubrir-beneficios{
-        font-size: 1.2rem;
-    }
-
-    .contenedor-actualizar-beneficios-boton-footer .boton-actualizar{
         font-size: 1.2rem;
     }
 }
@@ -145,10 +120,6 @@
     .contenedor-actualizar-beneficios .texto-descubrir-beneficios{
         font-size: 1.2rem;
     }
-
-    .contenedor-actualizar-beneficios-boton-footer .boton-actualizar{
-        font-size: 1.2rem;
-    }
 }
 
 /* Monitores grandes y TVs (Ej: monitores ultraanchos, Smart TVs) */
@@ -162,10 +133,6 @@
     }
     
     .contenedor-actualizar-beneficios .texto-descubrir-beneficios{
-        font-size: 1.4rem;
-    }
-
-    .contenedor-actualizar-beneficios-boton-footer .boton-actualizar{
         font-size: 1.4rem;
     }
 }

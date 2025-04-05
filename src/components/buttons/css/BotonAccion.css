@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.boton-accion{
+    width: auto; 
+    height: auto;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/*modo oscuro*/
+.dark-mode .boton-accion{
+    background-color: #000000;
+}
+
+/*modo oscuro*/
+.dark-mode .boton-accion:active{
+    background-color: #444343;
+}
+
+
+/* Móviles grandes (Ej: iPhone 14 Pro Max, Galaxy S23 Ultra) */
+@media screen and  (min-width: 481px) and (max-width: 767px) {
+    .boton-accion{
+        font-size: 1.1rem;
+    }
+}
+
+/* Móviles en modo Landscape */
+@media screen and (max-width: 812px) and (orientation: landscape){
+    .boton-accion{
+        font-size: 1.1rem;
+    }
+}
+
+/* Tablets y pantallas medianas (Ej: iPad, Galaxy Tab) */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .boton-accion{
+        font-size: 1.2rem;
+    }
+}
+
+/* Laptops y pantallas grandes (Ej: MacBook, laptops comunes) */
+@media screen and (min-width: 1025px) and (max-width: 1440px){
+    .boton-accion{
+        font-size: 1.2rem;
+    }
+}
+
+/* Monitores grandes y TVs (Ej: monitores ultraanchos, Smart TVs) */
+@media screen and (min-width: 1441px){
+    .boton-accion{
+        font-size: 1.4rem;
+    }
+}

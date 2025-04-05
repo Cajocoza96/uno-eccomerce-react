@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import './css/ProductoAntesDespuesDoble2.css';
 
-import BotonCompra from '../buttons/BotonCompra';
+import BotonAccion from '../buttons/BotonAccion.jsx';
 
 import informacionTecnologia from '../menuHamburguesa/data/categorias/tecnologia/informacionTecnologia.json';
 
@@ -108,7 +108,7 @@ function ProductoAntesDespuesDoble2() {
 
                     </div>
 
-                    <BotonCompra value='¡Compra ahora!' />
+                    <BotonAccion value='¡Compra ahora!' />
 
                 </div>
 
@@ -149,7 +149,7 @@ function ProductoAntesDespuesDoble2() {
 
                     </div>
 
-                    <BotonCompra value='¡Compra ahora!' />
+                    <BotonAccion value='¡Compra ahora!' />
 
                 </div>
 

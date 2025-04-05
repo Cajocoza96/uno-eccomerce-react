@@ -151,35 +151,16 @@
     text-shadow: 2px 2px 3px #000000;
 }
 
-.contenedor-producto-antes-despues-boton2 .boton-compra{
-    width: auto;
-    height: auto;
-    padding: 0.5rem;
-    border: none;
-    border-radius: 0.3rem;
-    color: #ffffff;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
 /*modo claro*/
-.light-mode .contenedor-producto-antes-despues-boton2 .boton-compra{
+.light-mode .contenedor-producto-antes-despues-boton2 .boton-accion{
     background-color: #7302a0;
 }
-/*modo oscuro*/
-.dark-mode .contenedor-producto-antes-despues-boton2 .boton-compra{
-    background-color: #000000;
-}
-
 
 /*modo claro*/
-.light-mode .contenedor-producto-antes-despues-boton2 .boton-compra:active{
+.light-mode .contenedor-producto-antes-despues-boton2 .boton-accion:active{
     background-color: #81369e;
 }
-/*modo oscuro*/
-.dark-mode .contenedor-producto-antes-despues-boton2 .boton-compra:active{
-    background-color: #504f4f;
-}
+
 
 /* Móviles grandes (Ej: iPhone 14 Pro Max, Galaxy S23 Ultra) */
 @media screen and  (min-width: 481px) and (max-width: 767px) {  
@@ -205,10 +186,6 @@
 
     .contenedor-texto-producto-detalles-antes-despues .texto-producto-detalles2{
         font-size: 1.2rem;
-    }
-
-    .contenedor-producto-antes-despues-boton2 .boton-compra{
-        font-size: 1.1rem;
     }
     
 }
@@ -256,10 +233,6 @@
     .contenedor-texto-producto-detalles-antes-despues .texto-producto-detalles2{
         font-size: 1.2rem;
     }
-
-    .contenedor-producto-antes-despues-boton2 .boton-compra{
-        font-size: 1.1rem;
-    }
 }
 
 /* Tablets y pantallas medianas (Ej: iPad, Galaxy Tab) */
@@ -304,10 +277,6 @@
 
     .contenedor-texto-producto-detalles-antes-despues .texto-producto-detalles2{
         font-size: 1.3rem;
-    }
-
-    .contenedor-producto-antes-despues-boton2 .boton-compra{
-        font-size: 1.2rem;
     }
 }
 
@@ -354,10 +323,6 @@
     .contenedor-texto-producto-detalles-antes-despues .texto-producto-detalles2{
         font-size: 1.4rem;
     }
-
-    .contenedor-producto-antes-despues-boton2 .boton-compra{
-        font-size: 1.2rem;
-    }
 }
 
 /* Monitores grandes y TVs (Ej: monitores ultraanchos, Smart TVs) */
@@ -402,9 +367,5 @@
 
     .contenedor-texto-producto-detalles-antes-despues .texto-producto-detalles2{
         font-size: 1.5rem;
-    }
-
-    .contenedor-producto-antes-despues-boton2 .boton-compra{
-        font-size: 1.4rem;
     }
 }

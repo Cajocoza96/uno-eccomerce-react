@@ -500,6 +500,22 @@
     gap: 0.5rem;
 }
 
+.contenedor-detalles-boton-agregar-producto-unitario .boton-accion {
+    margin: 1rem auto 0.5rem;
+    width: 100%;
+    background-color: #f04e0e;
+}
+
+.contenedor-detalles-boton-agregar-producto-unitario .boton-accion:active {
+    background-color: #ec7141;
+}
+
+.contenedor-detalles-boton-agregar-producto-unitario .boton-accion .icono-carrito{
+    margin-top: 0.1rem;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
 .contenedor-detalles-producto-unitario {
     display: flex;
     flex-direction: column;

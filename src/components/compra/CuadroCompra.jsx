@@ -4,7 +4,7 @@ import './css/CuadroCompra.css';
 
 import { FaShoppingCart } from 'react-icons/fa';
 
-import BotonSigueComprando from '../buttons/BotonSigueComprando';
+import BotonAccion from '../buttons/BotonAccion.jsx';
 
 import Compra100PorCientoSegura from '../cabecera/Compra100PorCientoSegura';
 
@@ -32,8 +32,8 @@ function CuadroCompra() {
                     <p className='texto-tenemos'>para que elijas lo que mas te gusta</p>
                 </div>
 
-                <Link to='/'>
-                    <BotonSigueComprando value='Sigue comprando' />
+                <Link className='contenedor-boton-sigue-comprando' to='/'>
+                    <BotonAccion value='Sigue comprando' />
                 </Link>
 
             </div>

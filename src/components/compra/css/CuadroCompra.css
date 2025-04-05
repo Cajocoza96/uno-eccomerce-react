@@ -65,22 +65,16 @@ body, html{
     color:#ffffff;
 }
 
-.contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .boton-sigue-comprando{
-    margin: 1rem auto 1rem;
-    padding: 0.5rem;
-    width: auto;
-    height: auto;
-    border: none;
-    border-radius: 0.3rem;
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    background-color: #ee3a04;
-    cursor: pointer;
+.contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .contenedor-boton-sigue-comprando{
+    text-decoration: none;
 }
 
-.contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .boton-sigue-comprando:active{
+.contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .boton-accion{
+    margin: 1rem auto 1rem;
+    background-color: #ee3a04;
+}
+
+.contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .boton-accion:active{
     background-color: #e96036;
 }
 
@@ -142,7 +136,7 @@ body, html{
         font-size: 1.7rem;
     }
 
-    .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .boton-sigue-comprando{
+    .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .boton-accion{
         font-size: 1.2rem;
     }
 
@@ -161,7 +155,7 @@ body, html{
         font-size: 1.7rem;
     }
 
-    .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .boton-sigue-comprando{
+    .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .boton-accion{
         font-size: 1.2rem;
     }
 
@@ -180,7 +174,7 @@ body, html{
         font-size: 1.7rem;
     }
 
-    .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .boton-sigue-comprando{
+    .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .boton-accion{
         font-size: 1.2rem;
     }
 
@@ -199,7 +193,7 @@ body, html{
         font-size: 1.9rem;
     }
 
-    .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .boton-sigue-comprando{
+    .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .boton-accion{
         font-size: 1.4rem;
     }
 
@@ -218,7 +212,7 @@ body, html{
         font-size: 2.1rem;
     }
 
-    .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .boton-sigue-comprando{
+    .contenedor-icono-carrito-carrito-vacio-tenemos-boton-sigue-comprando .boton-accion{
         font-size: 1.6rem;
     }
 

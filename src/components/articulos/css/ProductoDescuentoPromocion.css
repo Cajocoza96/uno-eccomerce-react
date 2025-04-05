@@ -174,34 +174,14 @@
     color: #ffffff;
 }
 
-.contenedor-producto-descuento-promocion-boton .boton-compra{
-    width: auto; 
-    height: auto;
-    padding: 0.5rem;
-    border: none;
-    border-radius: 0.3rem;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
 /*modo claro*/
-.light-mode .contenedor-producto-descuento-promocion-boton .boton-compra{
+.light-mode .contenedor-producto-descuento-promocion-boton .boton-accion{
     background-color: #088b0f;
 }
-/*modo oscuro*/
-.dark-mode .contenedor-producto-descuento-promocion-boton .boton-compra{
-    background-color: #000000;
-}
 
 /*modo claro*/
-.light-mode .contenedor-producto-descuento-promocion-boton .boton-compra:active{
+.light-mode .contenedor-producto-descuento-promocion-boton .boton-accion:active{
     background-color: #348a38;
-}
-/*modo oscuro*/
-.dark-mode .contenedor-producto-descuento-promocion-boton .boton-compra:active{
-    background-color: #444343;
 }
 
 /* Móviles grandes (Ej: iPhone 14 Pro Max, Galaxy S23 Ultra) */
@@ -227,10 +207,6 @@
     }
 
     .contenedor-info-promocion .texto-info-promocion{
-        font-size: 1.1rem;
-    }
-
-    .contenedor-producto-descuento-promocion-boton .boton-compra{
         font-size: 1.1rem;
     }
 }
@@ -267,10 +243,6 @@
     }
 
     .contenedor-info-promocion .texto-info-promocion{
-        font-size: 1.1rem;
-    }
-
-    .contenedor-producto-descuento-promocion-boton .boton-compra{
         font-size: 1.1rem;
     }
 }
@@ -312,10 +284,6 @@
     .contenedor-info-promocion .texto-info-promocion{
         font-size: 1.2rem;
     }
-
-    .contenedor-producto-descuento-promocion-boton .boton-compra{
-        font-size: 1.2rem;
-    }
 }
 
 /* Laptops y pantallas grandes (Ej: MacBook, laptops comunes) */
@@ -351,10 +319,6 @@
     .contenedor-info-promocion .texto-info-promocion{
         font-size: 1.2rem;
     }
-
-    .contenedor-producto-descuento-promocion-boton .boton-compra{
-        font-size: 1.2rem;
-    }
 }
 
 /* Monitores grandes y TVs (Ej: monitores ultraanchos, Smart TVs) */
@@ -388,10 +352,6 @@
     }
 
     .contenedor-info-promocion .texto-info-promocion{
-        font-size: 1.4rem;
-    }
-
-    .contenedor-producto-descuento-promocion-boton .boton-compra{
         font-size: 1.4rem;
     }
 }

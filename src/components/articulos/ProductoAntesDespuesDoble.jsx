@@ -9,7 +9,7 @@ import './css/ProductoAntesDespuesDoble.css';
 
 import { Navigation, Pagination } from 'swiper/modules';
 
-import BotonCompra from '../buttons/BotonCompra';
+import BotonAccion from '../buttons/BotonAccion.jsx';
 
 import informacionTecnologia from '../menuHamburguesa/data/categorias/tecnologia/informacionTecnologia.json'
 
@@ -104,7 +104,7 @@ function ProductoAntesDespuesDoble() {
 
             </Swiper>
 
-            <BotonCompra value='¡Compra ahora!' />
+            <BotonAccion value='¡Compra ahora!' />
 
         </article>
     );

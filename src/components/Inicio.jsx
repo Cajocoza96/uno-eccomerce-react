@@ -9,13 +9,13 @@ import HoraProductoAntesDespues from './articulos/HoraProductoAntesDespues';
 import ProductoDescuentoPromocion from './articulos/ProductoDescuentoPromocion';
 import ProductoDescuento2 from './articulos/ProductoDescuento2';
 import ProductoAntesDespues2 from './articulos/ProductoAntesDespues2';
-import TituloEventoCompra from './articulos/TituloEventoCompra';
+
 import ProductoAntesDespues3 from './articulos/ProductoAntesDespues3';
 import ProductoAntesDespuesDoble2 from './articulos/ProductoAntesDespuesDoble2';
-import TituloLoMejorCategoria from './articulos/TituloLoMejorCategoria';
+
 import ProductoAntesDespues4 from './articulos/ProductoAntesDespues4';
 import ProductoDescuentoDefinitivoPagos from './articulos/ProductoDescuentoDefinitivoPagos';
-import TituloEstrenoUltimoProducto from './articulos/TituloEstrenoUltimoProducto';
+
 
 import MenuHamburguesaPrincipal from './menuHamburguesa/MenuHamburguesaPrincipal';
 import MenuHamburguesaSecundaria from './menuHamburguesa/MenuHamburguesaSecundaria';
@@ -24,6 +24,8 @@ import MenuHamburguesaTerciaria from './menuHamburguesa/MenuHamburguesaTerciaria
 import RecibirPedidoCompraEnvio from './articulos/RecibirPedidoCompraEnvio';
 
 import CuadroNotificaciones from './articulos/CuadroNotificaciones';
+
+import TituloSeccion from './titulos/TituloSeccion';
 
 import FooterCompleto from './footer/FooterCompleto';
 
@@ -132,14 +134,14 @@ function Inicio() {
             </section>
 
             <section className='contenedor-evento-compra-tarjeta-opcional'>
-                <TituloEventoCompra />
+                <TituloSeccion titulo='Black days con' extra='Uno'/>
                 <ProductoAntesDespues3 />
-                <TituloEstrenoUltimoProducto />
+                <TituloSeccion titulo='¡Estrena lo ultimo en celulares!' />
                 <ProductoAntesDespuesDoble2 />
             </section>
 
             <section className='contenedor-lo-mejor-categoria-producto-descuento-definitivo-pagos'>
-                <TituloLoMejorCategoria />
+                <TituloSeccion titulo='¡Lo mejor de audio y video!' />
                 <ProductoAntesDespues4 />
                 <ProductoDescuentoDefinitivoPagos />
             </section>

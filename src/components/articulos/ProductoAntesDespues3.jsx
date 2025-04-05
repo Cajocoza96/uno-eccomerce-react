@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import './css/ProductoAntesDespues3.css';
 
-import BotonCompra from '../buttons/BotonCompra';
+import BotonAccion from '../buttons/BotonAccion.jsx';
 
 import informacionBlackFriday from '../menuHamburguesa/data/novedades/blackFriday/informacionBlackFriday.json';
 
@@ -92,7 +92,7 @@ function ProductoAntesDespues3() {
 
                     </div>
 
-                    <BotonCompra value='¡Compra ahora!' />
+                    <BotonAccion value='¡Compra ahora!' />
 
                 </article>
 

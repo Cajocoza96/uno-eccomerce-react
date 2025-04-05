@@ -270,21 +270,13 @@ body, html{
     color: #ffffff;
 }
 
-.contenedor-inicio-seccion .boton-entrar{
+.contenedor-inicio-seccion .boton-accion{
     padding: 0.8rem;
     width: 95%;
-    height: auto;
-    border: none;
-    border-radius: 0.5rem;
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
     background-color: #fc5304;
-    cursor: pointer;
 }
 
-.contenedor-inicio-seccion .boton-entrar:active{
+.contenedor-inicio-seccion .boton-accion:active{
     background-color: #e9743d;
 }
 
@@ -476,10 +468,6 @@ body, html{
         font-size: 1.1rem;
     }
 
-    .contenedor-inicio-seccion .boton-entrar{
-        font-size: 1.1rem;
-    }
-
     .contenedor-sin-contrasena-creala .texto-sin-contrasena-creala{
         font-size: 1.1rem;
     }
@@ -536,10 +524,6 @@ body, html{
     }
 
     .contenedor-olvidaste-contrasena .texto-olvidaste-contrasena{
-        font-size: 1.1rem;
-    }
-
-    .contenedor-inicio-seccion .boton-entrar{
         font-size: 1.1rem;
     }
 
@@ -600,10 +584,6 @@ body, html{
     }
 
     .contenedor-olvidaste-contrasena .texto-olvidaste-contrasena{
-        font-size: 1.2rem;
-    }
-
-    .contenedor-inicio-seccion .boton-entrar{
         font-size: 1.2rem;
     }
 
@@ -671,10 +651,6 @@ body, html{
         font-size: 1.2rem;
     }
 
-    .contenedor-inicio-seccion .boton-entrar{
-        font-size: 1.2rem;
-    }
-
     .contenedor-sin-contrasena-creala .texto-sin-contrasena-creala{
         font-size: 1.2rem;
     }
@@ -736,10 +712,6 @@ body, html{
     }
 
     .contenedor-olvidaste-contrasena .texto-olvidaste-contrasena{
-        font-size: 1.4rem;
-    }
-
-    .contenedor-inicio-seccion .boton-entrar{
         font-size: 1.4rem;
     }
 

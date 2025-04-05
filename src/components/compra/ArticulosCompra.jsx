@@ -11,7 +11,9 @@ import './css/ArticulosCompra.css';
 
 import { FaPlus, FaMinus, FaChevronLeft, FaChevronDown, FaThLarge, FaBars } from 'react-icons/fa';
 
-import BotonAgregar from '../buttons/BotonAgregar';
+import { HiOutlineShoppingCart } from 'react-icons/hi';
+
+import BotonAccion from '../buttons/BotonAccion.jsx';
 
 function ArticulosCompra({ itemSeleccionado: itemDesdeProps }) {
 
@@ -429,7 +431,7 @@ function ArticulosCompra({ itemSeleccionado: itemDesdeProps }) {
 
                             </div>
 
-                            <BotonAgregar value='Agregar' />
+                            <BotonAccion value='Agregar' icono={<HiOutlineShoppingCart className='icono-carrito'/>}/>
                         </div>
 
                     </div>

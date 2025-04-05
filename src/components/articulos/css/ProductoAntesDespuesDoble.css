@@ -99,40 +99,18 @@
     animation-delay: 1s;
 }
 
-.contenedor-producto-antes-despues-doble-boton-1 .boton-compra{
+.contenedor-producto-antes-despues-doble-boton-1 .boton-accion{
     margin: 0.5rem auto 0.5rem;
-    padding: 0.5rem;
-    width: auto;
-    height: auto;
-    color: #ffffff;
-    font-size: 1rem;
-    border: none;
-    border-radius: 0.3rem;
-    cursor: pointer;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 /*modo claro*/
-.light-mode .contenedor-producto-antes-despues-doble-boton-1 .boton-compra{
+.light-mode .contenedor-producto-antes-despues-doble-boton-1 .boton-accion{
     background-color: #ff0000;
 }
-/*modo oscuro*/
-.dark-mode .contenedor-producto-antes-despues-doble-boton-1 .boton-compra{
-    background-color: #000000;
-}
 
 /*modo claro*/
-.light-mode .contenedor-producto-antes-despues-doble-boton-1 .boton-compra:active{
+.light-mode .contenedor-producto-antes-despues-doble-boton-1 .boton-accion:active{
     background-color: #f83636;
-}
-
-/*modo oscuro*/
-.dark-mode .contenedor-producto-antes-despues-doble-boton-1 .boton-compra:active{
-    background-color: #3f3e3e;
 }
 
 .contenedor-producto-antes-despues-doble-1{
@@ -301,10 +279,6 @@
 
 /* Móviles grandes (Ej: iPhone 14 Pro Max, Galaxy S23 Ultra) */
 @media screen and  (min-width: 481px) and (max-width: 767px) {  
-    .contenedor-producto-antes-despues-doble-boton-1 .boton-compra{
-        font-size: 1.1rem;
-    }
-
     .contenedor-antes-desp-productos-antes-despues-doble-1 .texto-antes-product{
         font-size: 1.1rem;
     }
@@ -338,10 +312,6 @@
 
 /* Móviles en modo Landscape */
 @media screen and  (max-width: 812px) and (orientation: landscape){
-    .contenedor-producto-antes-despues-doble-boton-1 .boton-compra{
-        font-size: 1.1rem;
-    }
-
     .contenedor-antes-despues-tarjeta-oferta-detalles-1{
         height: 15.3rem;
     }
@@ -377,10 +347,6 @@
 
 /* Tablets y pantallas medianas (Ej: iPad, Galaxy Tab) */
 @media screen and (min-width: 768px) and (max-width: 1024px){
-    .contenedor-producto-antes-despues-doble-boton-1 .boton-compra{
-        font-size: 1.2rem; 
-    }
-
     .contenedor-producto-antes-despues-doble-1{
         flex-direction: row;
     }
@@ -421,10 +387,6 @@
 
 /* Laptops y pantallas grandes (Ej: MacBook, laptops comunes) */
 @media screen and (min-width: 1025px) and (max-width: 1440px){
-    .contenedor-producto-antes-despues-doble-boton-1 .boton-compra{
-        font-size: 1.2rem;
-    }
-
     .contenedor-producto-antes-despues-doble-1{
         flex-direction: row;
     }
@@ -464,10 +426,6 @@
 
 /* Monitores grandes y TVs (Ej: monitores ultraanchos, Smart TVs) */
 @media screen and  (min-width: 1441px) {
-    .contenedor-producto-antes-despues-doble-boton-1 .boton-compra{
-        font-size: 1.4rem;
-    }
-
     .contenedor-producto-antes-despues-doble-1{
         flex-direction: row;
     }

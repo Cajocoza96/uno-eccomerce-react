@@ -4,9 +4,7 @@ import './css/AutenticacionCrearCuenta.css';
 
 import { Link } from 'react-router-dom';
 
-import BotonEnviar from '../buttons/BotonEnviar';
-
-import BotonVolver from '../buttons/BotonVolver';
+import BotonAccion from '../buttons/BotonAccion.jsx';
 
 import Compra100PorCientoSegura from '../cabecera/Compra100PorCientoSegura';
 
@@ -37,11 +35,13 @@ function AutenticacionCrearCuenta() {
                             <input type='email' placeholder='Ingresa tu email' />
                         </div>
 
-                        <BotonEnviar value='Enviar' />
+                        <div className='contenedor-botones-enviar-volver'>
+                            <BotonAccion value='Enviar' />
 
-                        <Link className='link-boton-volver-1' to='/'>
-                            <BotonVolver value='Volver' />
-                        </Link>
+                            <Link className='link-boton-volver-1' to='/'>
+                                <BotonAccion value='Volver' />
+                            </Link>
+                        </div>
 
                     </div>
 

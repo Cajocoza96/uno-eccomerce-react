@@ -225,39 +225,23 @@
     color: #a39e9e;
 }
 
-.contenedor-primera-seccion-cabecera .boton-compra {
-    padding: 0.5rem;
-    width: auto;
-    height: auto;
-    color: #000000;
-    font-size: 1rem;
-    border: none;
-    border-radius: 0.3rem;
-    cursor: pointer;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 /*modo claro*/
-.light-mode .contenedor-primera-seccion-cabecera .boton-compra {
-    background-color: #e7ff11;
+.light-mode .contenedor-primera-seccion-cabecera .boton-accion {
+    background-color: #07518d;
 }
 
 /*modo oscuro*/
-.dark-mode .contenedor-primera-seccion-cabecera .boton-compra {
+.dark-mode .contenedor-primera-seccion-cabecera .boton-accion {
     background-color: #686363;
 }
 
 /*modo claro*/
-.light-mode .contenedor-primera-seccion-cabecera .boton-compra:active {
+.light-mode .contenedor-primera-seccion-cabecera .boton-accion:active {
     background-color: #f0ff6c;
 }
 
 /*modo oscuro*/
-.dark-mode .contenedor-primera-seccion-cabecera .boton-compra:active {
+.dark-mode .contenedor-primera-seccion-cabecera .boton-accion:active {
     background-color: #8d8a8a;
 }
 
@@ -577,10 +561,6 @@
         font-size: 1.1rem;
     }
 
-    .contenedor-primera-seccion-cabecera .boton-compra {
-        font-size: 1.1rem;
-    }
-
     .contenedor-segunda-seccion-cabecera {
         margin: -0.1rem auto -0.3rem;
     }
@@ -633,10 +613,6 @@
     }
 
     .contenedor-envio-gratis .contenedor-articulo-envio-gratis .texto-articulo-envio-gratis {
-        font-size: 1.1rem;
-    }
-
-    .contenedor-primera-seccion-cabecera .boton-compra {
         font-size: 1.1rem;
     }
 
@@ -709,10 +685,6 @@
     }
 
     .contenedor-envio-gratis .contenedor-articulo-envio-gratis .texto-articulo-envio-gratis {
-        font-size: 1.2rem;
-    }
-
-    .contenedor-primera-seccion-cabecera .boton-compra {
         font-size: 1.2rem;
     }
 
@@ -803,10 +775,6 @@
         font-size: 1.2rem;
     }
 
-    .contenedor-primera-seccion-cabecera .boton-compra {
-        font-size: 1.2rem;
-    }
-
     .contenedor-segunda-seccion-cabecera {
         margin: -0.1rem auto -0.3rem;
     }
@@ -891,10 +859,6 @@
     }
 
     .contenedor-envio-gratis .contenedor-articulo-envio-gratis .texto-articulo-envio-gratis {
-        font-size: 1.4rem;
-    }
-
-    .contenedor-primera-seccion-cabecera .boton-compra {
         font-size: 1.4rem;
     }
 
