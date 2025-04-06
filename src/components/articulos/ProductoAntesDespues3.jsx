@@ -4,12 +4,12 @@ import './css/ProductoAntesDespues3.css';
 
 import BotonAccion from '../buttons/BotonAccion.jsx';
 
-import informacionBlackFriday from '../menuHamburguesa/data/novedades/blackFriday/informacionBlackFriday.json';
+function ProductoAntesDespues3({info, categoria, idContenido, idSubContenido, idProducto}) {
 
-function ProductoAntesDespues3() {
     const [productos, setProductos] = useState([]);
 
     useEffect(() => {
+
         const productoArray = [];
 
         const agregarProducto = (contenido, subContenidoId, productoId) => {
@@ -22,7 +22,7 @@ function ProductoAntesDespues3() {
 
                     if (productoSeleccion) {
                         productoArray.push({
-                            infoEvento: informacionBlackFriday.blackFriday[0] || '',
+                            infoEvento: info?.[categoria]?.[0] || '',
                             productoInfo: productoSeleccion
                         })
                     }
@@ -30,12 +30,14 @@ function ProductoAntesDespues3() {
             }
         }
 
-        const contenidoLaptopAsusVivobook = informacionBlackFriday.blackFriday[0].contenido.find(cont => cont.id === 1);
+        const categoriaContenido = info?.[categoria]?.[0]?.contenido;
+        const contenidoSeleccionado = categoriaContenido?.find(c => c.id === idContenido);
 
-        agregarProducto(contenidoLaptopAsusVivobook, 1, 3);
+        agregarProducto(contenidoSeleccionado, idSubContenido, idProducto);
+
         setProductos(productoArray);
 
-    }, []);
+    }, [info, categoria, idContenido, idSubContenido, idProducto]);
 
     const obtenerRutaImagen = (imagen) => process.env.PUBLIC_URL + `/assets/img/articulosCompra/${imagen}`;
 

@@ -11,9 +11,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import informacionMercado from '../menuHamburguesa/data/categorias/mercado/informacionMercado.json';
-
-function ProductoDescuentoDefinitivoPagos() {
+function ProductoDescuentoDefinitivoPagos({info, categoria, idContenido, idSubContenido}) {
 
     const [productos, setProductos] = useState([]);
 
@@ -37,9 +35,10 @@ function ProductoDescuentoDefinitivoPagos() {
             }
         };
 
-        const contenidoFrutas = informacionMercado.mercado[0].contenido.find(cont => cont.id === 2);
+        const categoriaContenido = info?.[categoria]?.[0]?.contenido;
+        const contenidoSeleccionado = categoriaContenido?.find(c => c.id === idContenido);
 
-        agregarProducto(contenidoFrutas, 1);
+        agregarProducto(contenidoSeleccionado, 1);
 
         // Detecta el modo landscape con window.matchMedia
         const checkLandscape = () => {
@@ -93,7 +92,7 @@ function ProductoDescuentoDefinitivoPagos() {
             window.removeEventListener("resize", checkLandscape); // Limpia el evento al desmontar
         };
 
-    }, []);
+    }, [info, categoria, idContenido, idSubContenido]);
 
     const obtenerRutaImagen = (imagen) => process.env.PUBLIC_URL + `/assets/img/articulosCompra/${imagen}`;
 

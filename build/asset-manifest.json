@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/uno-eccomerce-react/static/css/main.906b65f8.css",
-    "main.js": "/uno-eccomerce-react/static/js/main.45590be5.js",
+    "main.css": "/uno-eccomerce-react/static/css/main.2e04c6af.css",
+    "main.js": "/uno-eccomerce-react/static/js/main.96f27a3a.js",
     "static/js/453.d6579b24.chunk.js": "/uno-eccomerce-react/static/js/453.d6579b24.chunk.js",
     "index.html": "/uno-eccomerce-react/index.html",
-    "main.906b65f8.css.map": "/uno-eccomerce-react/static/css/main.906b65f8.css.map",
-    "main.45590be5.js.map": "/uno-eccomerce-react/static/js/main.45590be5.js.map",
+    "main.2e04c6af.css.map": "/uno-eccomerce-react/static/css/main.2e04c6af.css.map",
+    "main.96f27a3a.js.map": "/uno-eccomerce-react/static/js/main.96f27a3a.js.map",
     "453.d6579b24.chunk.js.map": "/uno-eccomerce-react/static/js/453.d6579b24.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.906b65f8.css",
-    "static/js/main.45590be5.js"
+    "static/css/main.2e04c6af.css",
+    "static/js/main.96f27a3a.js"
   ]
 }

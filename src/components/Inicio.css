@@ -82,31 +82,37 @@
     display: none;
 }
 
-.contenedor-compra-antDes-desc-producto {
+.contenedor-articulos-seccion-1 {
     margin: 8.4rem auto 1rem;
     width: 100%;
     height: auto;
 }
 
-.contenedor-hora-producto-antes-despues-varios {
+.contenedor-articulos-seccion-2 {
     margin: 2rem auto 1rem;
     width: 100%;
     height: auto;
 }
 
-.contenedor-prod-desc-prom-desc-product2-antes-despues2 {
+.contenedor-articulos-seccion-3 {
     margin: 2rem auto 1rem;
     width: 95%;
     height: auto;
 }
 
-.contenedor-evento-compra-tarjeta-opcional {
+.contenedor-articulos-seccion-4 {
     margin: 2rem auto 1rem;
     width: 95%;
     height: auto;
 }
 
-.contenedor-lo-mejor-categoria-producto-descuento-definitivo-pagos {
+.contenedor-articulos-seccion-5 {
+    margin: 2rem auto 1rem;
+    width: 96%;
+    height: auto;
+}
+
+.contenedor-articulos-seccion-6 {
     margin: 2rem auto 1rem;
     width: 96%;
     height: auto;
@@ -178,14 +184,14 @@
 
 /* Móviles grandes (Ej: iPhone 14 Pro Max, Galaxy S23 Ultra) */
 @media screen and (min-width: 481px) and (max-width: 767px) {
-    .contenedor-compra-antDes-desc-producto {
+    .contenedor-articulos-seccion-1 {
         margin: 9.2rem auto 1rem;
     }
 }
 
 /* Móviles en modo Landscape */
 @media screen and (max-width: 812px) and (orientation: landscape) {
-    .contenedor-compra-antDes-desc-producto {
+    .contenedor-articulos-seccion-1 {
         margin: 11.2rem auto 1rem;
     }
 
@@ -201,7 +207,7 @@
 
 /* Tablets y pantallas medianas (Ej: iPad, Galaxy Tab) */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .contenedor-compra-antDes-desc-producto {
+    .contenedor-articulos-seccion-1 {
         margin: 11.7rem auto 1rem;
     }
 
@@ -216,7 +222,7 @@
 
 /* Laptops y pantallas grandes (Ej: MacBook, laptops comunes) */
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
-    .contenedor-compra-antDes-desc-producto {
+    .contenedor-articulos-seccion-1 {
         margin: 9.7rem auto 1rem;
     }
 
@@ -231,7 +237,7 @@
 
 /* Monitores grandes y TVs (Ej: monitores ultraanchos, Smart TVs) */
 @media screen and (min-width: 1441px) {
-    .contenedor-compra-antDes-desc-producto {
+    .contenedor-articulos-seccion-1 {
         margin: 10.5rem auto 1rem;
     }
 

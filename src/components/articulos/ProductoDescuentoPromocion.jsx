@@ -3,9 +3,7 @@ import './css/ProductoDescuentoPromocion.css';
 
 import BotonAccion from '../buttons/BotonAccion.jsx';
 
-import informacionBlackFriday from '../menuHamburguesa/data/novedades/blackFriday/informacionBlackFriday.json';
-
-function ProductoDescuentoPromocion() {
+function ProductoDescuentoPromocion({info, categoria, idContenido, idSubContenido, idProducto}) {
 
     const [productos, setProductos] = useState([]);
 
@@ -23,7 +21,7 @@ function ProductoDescuentoPromocion() {
 
                     if (productoSeleccion) {
                         productoArray.push({
-                            tipoEvento: informacionBlackFriday.blackFriday[0].titulo1 || '', productosInfo: productoSeleccion
+                            tipoEvento: info?.[categoria]?.[0]?.titulo1 || '', productosInfo: productoSeleccion
                         });
                     }
                 }
@@ -31,13 +29,14 @@ function ProductoDescuentoPromocion() {
 
         };
 
-        const contenidoCalzado = informacionBlackFriday.blackFriday[0].contenido.find(cont => cont.id === 3);
+        const categoriaContenido = info?.[categoria]?.[0]?.contenido;
+        const contenidoSeleccionado = categoriaContenido?.find(c => c.id === idContenido);
 
-        agregarProducto(contenidoCalzado, 4, 1);
+        agregarProducto(contenidoSeleccionado, idSubContenido, idProducto);
 
         setProductos(productoArray);
 
-    }, []);
+    }, [info, categoria, idContenido, idSubContenido, idProducto]);
 
     const obtenerRutaImagen = (imagen) => process.env.PUBLIC_URL + `/assets/img/articulosCompra/${imagen}`;
     

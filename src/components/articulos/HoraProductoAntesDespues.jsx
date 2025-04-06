@@ -10,10 +10,8 @@ import "swiper/css/pagination";
 import BotonAccion from '../buttons/BotonAccion.jsx';
 import HoraActual from '../titulos/HoraActual.jsx';
 
-import informacionBlackFriday from '../menuHamburguesa/data/novedades/blackFriday/informacionBlackFriday.json';
-import informacionTecnologia from '../menuHamburguesa/data/categorias/tecnologia/informacionTecnologia.json';
 
-function HoraProductoAntesDespues() {
+function HoraProductoAntesDespues({info1, categoria1, idContenido1, subContenidoId1, info2, categoria2, idContenido2, subContenidoId2}) {
 
     const [productos, setProductos] = useState([]);
 
@@ -23,7 +21,7 @@ function HoraProductoAntesDespues() {
     });
 
     useEffect(() => {
-
+        
         const productoArray = [];
 
         const agregarProducto = (contenido, subContenidoId) => {
@@ -40,14 +38,16 @@ function HoraProductoAntesDespues() {
 
         }
 
-        const contenidoBlackFriday = informacionBlackFriday.blackFriday[0].contenido.find(c => c.id === 1);
-        const contenidoTecnologia = informacionTecnologia.tecnologia[0].contenido.find(c => c.id === 1);
+        const categoriaContenido1 = info1?.[categoria1]?.[0]?.contenido;
+        const contenidoSeleccionado1 = categoriaContenido1?.find(c => c.id === idContenido1);
 
-        agregarProducto(contenidoBlackFriday, 1);
-        agregarProducto(contenidoTecnologia, 2);
+        const categoriaContenido2 = info2?.[categoria2]?.[0]?.contenido;
+        const contenidoSeleccionado2 = categoriaContenido2?.find(c => c.id === idContenido2);
+
+        agregarProducto(contenidoSeleccionado1, subContenidoId1);
+        agregarProducto(contenidoSeleccionado2, subContenidoId2);
 
         setProductos(productoArray);
-
 
         // Detecta el modo landscape con window.matchMedia
         const checkLandscape = () => {
@@ -100,7 +100,7 @@ function HoraProductoAntesDespues() {
         return () => {
             window.removeEventListener("resize", checkLandscape); // Limpia el evento al desmontar
         };
-    }, []);
+    }, [info1, categoria1, idContenido1, subContenidoId1, info2, categoria2, idContenido2, subContenidoId2]);
 
     const obtenerRutaImagen = (imagen) => process.env.PUBLIC_URL + `/assets/img/articulosCompra/${imagen}`;
 

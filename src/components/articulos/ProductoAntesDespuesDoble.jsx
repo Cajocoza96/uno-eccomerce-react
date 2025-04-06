@@ -11,21 +11,21 @@ import { Navigation, Pagination } from 'swiper/modules';
 
 import BotonAccion from '../buttons/BotonAccion.jsx';
 
-import informacionTecnologia from '../menuHamburguesa/data/categorias/tecnologia/informacionTecnologia.json'
-
-function ProductoAntesDespuesDoble() {
+function ProductoAntesDespuesDoble({info, categoria, idContenido}) {
 
     const [productos, setProductos] = useState([]);
 
     useEffect(() => {
-        const contenidoTecnologia = informacionTecnologia.tecnologia[0].contenido.find((contenido) => contenido.id === 4);
+        const categoriaContenido = info?.[categoria]?.[0]?.contenido;
+        const contenidoSeleccionado = categoriaContenido?.find(c => c.id === idContenido);
 
-        if (contenidoTecnologia) {
-            const productosSubContenido = contenidoTecnologia.subContenido.flatMap((subContenido) => subContenido.productos || []);
+        if(contenidoSeleccionado){
+            const productosSubContenido = 
+                contenidoSeleccionado.subContenido.flatMap(sub => sub.productos || []);
+
             setProductos(productosSubContenido);
         }
-
-    }, []);
+    }, [info, categoria, idContenido]);
 
     const obtenerRutaImagen = (imagen) => process.env.PUBLIC_URL + `/assets/img/articulosCompra/${imagen}`;
 

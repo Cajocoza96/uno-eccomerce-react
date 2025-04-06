@@ -4,9 +4,7 @@ import './css/ProductoAntesDespues2.css';
 
 import BotonAccion from '../buttons/BotonAccion.jsx';
 
-import informacionTecnologia from '../menuHamburguesa/data/categorias/tecnologia/informacionTecnologia.json';
-
-function ProductoAntesDespues2() {
+function ProductoAntesDespues2({info, categoria, idContenido, idSubContenido, idProducto}) {
 
     const [productos, setProductos] = useState([]);
 
@@ -30,13 +28,14 @@ function ProductoAntesDespues2() {
             }
         }
 
-        const contenidoTelevisorSamsungNeoQLED = informacionTecnologia.tecnologia[0].contenido.find(cont => cont.id === 4);
+        const categoriaContenido = info?.[categoria]?.[0]?.contenido;
+        const contenidoSeleccionado = categoriaContenido?.find(c => c.id === idContenido);
 
-        agregarProducto(contenidoTelevisorSamsungNeoQLED, 1, 3);
+        agregarProducto(contenidoSeleccionado, idSubContenido, idProducto);
 
         setProductos(productoArray);
 
-    }, []);
+    }, [info, categoria, idContenido, idSubContenido, idProducto]);
 
     const obtenerRutaImagen = (imagen) => process.env.PUBLIC_URL + `/assets/img/articulosCompra/${imagen}`;
 

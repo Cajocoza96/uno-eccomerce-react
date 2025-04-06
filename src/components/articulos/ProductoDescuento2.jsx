@@ -3,9 +3,7 @@ import './css/ProductoDescuento2.css';
 
 import BotonAccion from '../buttons/BotonAccion.jsx';
 
-import informacionTecnologia from '../menuHamburguesa/data/categorias/tecnologia/informacionTecnologia.json';
-
-function ProductoDescuento2() {
+function ProductoDescuento2({info, categoria, idContenido, idSubContenido, idProducto}) {
 
     const [productos, setProductos] = useState([]);
 
@@ -28,12 +26,14 @@ function ProductoDescuento2() {
             }
         }
 
-        const contenidoNeveraHaceb = informacionTecnologia.tecnologia[0].contenido.find(cont => cont.id === 5);
+        const categoriaContenido = info?.[categoria]?.[0]?.contenido;
+        const contenidoSeleccionado = categoriaContenido?.find(c => c.id === idContenido);
 
-        agregarProducto(contenidoNeveraHaceb, 1, 1);
+        agregarProducto(contenidoSeleccionado, idSubContenido, idProducto);
 
         setProductos(productoArray);
-    }, []);
+
+    }, [info, categoria, idContenido, idSubContenido, idProducto]);
 
     const obtenerRutaImagen = (imagen) => process.env.PUBLIC_URL + `/assets/img/articulosCompra/${imagen}`;
 

@@ -4,9 +4,8 @@ import './css/ProductoAntesDespuesDoble2.css';
 
 import BotonAccion from '../buttons/BotonAccion.jsx';
 
-import informacionTecnologia from '../menuHamburguesa/data/categorias/tecnologia/informacionTecnologia.json';
-
-function ProductoAntesDespuesDoble2() {
+function ProductoAntesDespuesDoble2({ info, categoria, idContenido1, idSubContenido1,
+    idProducto1, idContenido2, idSubContenido2, idProducto2 }) {
 
     const [productos, setProductos] = useState([]);
     const [productos2, setProductos2] = useState([]);
@@ -31,9 +30,11 @@ function ProductoAntesDespuesDoble2() {
             }
         };
 
-        const contenidoCelularGamaAlta = informacionTecnologia.tecnologia[0].contenido.find(cont => cont.id === 3);
+        const categoriaContenido1 = info?.[categoria]?.[0]?.contenido;
+        const contenidoSeleccionado1 = categoriaContenido1?.find(c => c.id === idContenido1);
 
-        agregarProducto(contenidoCelularGamaAlta, 1, 1);
+        agregarProducto(contenidoSeleccionado1, idSubContenido1, idProducto1);
+
 
         setProductos(productoArray);
 
@@ -57,13 +58,15 @@ function ProductoAntesDespuesDoble2() {
             }
         };
 
-        const contenidoCelularGamaBaja = informacionTecnologia.tecnologia[0].contenido.find(cont => cont.id === 3);
+        const categoriaContenido2 = info?.[categoria]?.[0]?.contenido;
+        const contenidoSeleccionado2 = categoriaContenido2?.find(c => c.id === idContenido2);
 
-        agregarProducto2(contenidoCelularGamaBaja, 3, 3);
+        agregarProducto2(contenidoSeleccionado2, idSubContenido2, idProducto2);
 
         setProductos2(productoArray2);
 
-    }, []);
+    }, [info, categoria, idContenido1, idSubContenido1,
+        idProducto1, idContenido2, idSubContenido2, idProducto2]);
 
     const obtenerRutaImagen = (imagen) => process.env.PUBLIC_URL + `/assets/img/articulosCompra/${imagen}`;
 
@@ -94,8 +97,8 @@ function ProductoAntesDespuesDoble2() {
                                 <p className='texto-oferta'>Precio oferta ${producto.productoInfo.precioProductoOfertaUno.toLocaleString("es-CO")}</p>
 
                                 <div className='contenedor-texto-nombre-producto-ante-desp-doble-2'>
-                                    <p className='texto-nombre-producto'>{producto.productoInfo.detalles1}</p>
-                                    <p className='texto-nombre-producto'>{producto.productoInfo.detalles2}</p>
+                                    <p className='texto-nombre-producto'>{producto.productoInfo.detalle1}</p>
+                                    <p className='texto-nombre-producto'>{producto.productoInfo.detalle2}</p>
                                 </div>
 
                             </div>

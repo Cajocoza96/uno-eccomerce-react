@@ -2,13 +2,11 @@ import React, { useState, useEffect } from 'react';
 
 import './css/ProductoAntesDespues4.css';
 
-import informacionBlackFriday from '../menuHamburguesa/data/novedades/blackFriday/informacionBlackFriday.json';
-
-function ProductoAntesDespues4() {
+function ProductoAntesDespues4({info, categoria, idContenido, idSubContenido, idProducto}) {
     const [productos, setProductos] = useState([]);
 
     useEffect(() => {
-
+        
         const productoArray = [];
 
         const agregarProducto = (contenido, subContenidoId, productoId) => {
@@ -21,20 +19,21 @@ function ProductoAntesDespues4() {
 
                     if (productoSeleccion) {
                         productoArray.push({
-                            tituloEvento: informacionBlackFriday.blackFriday[0].titulo1 || '', productoInfo: productoSeleccion
+                            tituloEvento: info?.[categoria]?.[0]?.titulo1 || '', productoInfo: productoSeleccion
                         });
                     }
                 }
             }
         };
 
-        const contenidoAudioYVideo = informacionBlackFriday.blackFriday[0].contenido.find(cont => cont.id === 1);
+        const categoriaContenido = info?.[categoria]?.[0]?.contenido;
+        const contenidoSeleccionado = categoriaContenido?.find(c => c.id === idContenido);
 
-        agregarProducto(contenidoAudioYVideo, 2, 1);
+        agregarProducto(contenidoSeleccionado, idSubContenido, idProducto);
 
         setProductos(productoArray);
 
-    }, []);
+    }, [info, categoria, idContenido, idSubContenido, idProducto]);
 
     const obtenerRutaImagen = (imagen) => process.env.PUBLIC_URL + `/assets/img/articulosCompra/${imagen}`;
 

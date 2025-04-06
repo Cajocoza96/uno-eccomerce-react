@@ -10,11 +10,11 @@ import { Navigation } from 'swiper/modules';
 
 import BotonAccion from '../buttons/BotonAccion.jsx';
 
-import informacionVinosYLicores from '../menuHamburguesa/data/categorias/vinosYLicores/informacionVinosYLicores.json';
-
 import TrianguloFusionInfinito from '../fondo-animados/TrianguloFusionInfinito';
 
-function ProductoDescuento() {
+function ProductoDescuento({ info, categoria, idContenido1, idSubContenido1, idProducto1,
+    idContenido2, idSubContenido2, idProducto2,
+    idContenido3, idSubContenido3, idProducto3 }) {
 
     const [productos, setProductos] = useState([]);
 
@@ -37,17 +37,24 @@ function ProductoDescuento() {
             }
         };
 
-        const contenidoOldParr = informacionVinosYLicores.vinosYLicores[0].contenido.find(c => c.id === 1);
-        const contenidoCervezaNacional = informacionVinosYLicores.vinosYLicores[0].contenido.find(c => c.id === 3);
-        const contenidoVinoTinto = informacionVinosYLicores.vinosYLicores[0].contenido.find(c => c.id === 4);
+        const categoriaContenido1 = info?.[categoria]?.[0]?.contenido;
+        const contenidoSeleccionado1 = categoriaContenido1?.find(c => c.id === idContenido1);
 
-        agregarProducto(contenidoOldParr, 2, 2);
-        agregarProducto(contenidoCervezaNacional, 1, 1);
-        agregarProducto(contenidoVinoTinto, 1, 1);
+        const categoriaContenido2 = info?.[categoria]?.[0]?.contenido;
+        const contenidoSeleccionado2 = categoriaContenido2?.find(c => c.id === idContenido2);
+
+        const categoriaContenido3 = info?.[categoria]?.[0]?.contenido;
+        const contenidoSeleccionado3 = categoriaContenido3?.find(c => c.id === idContenido3);
+
+        agregarProducto(contenidoSeleccionado1, idSubContenido1, idProducto1);
+        agregarProducto(contenidoSeleccionado2, idSubContenido2, idProducto2);
+        agregarProducto(contenidoSeleccionado3, idSubContenido3, idProducto3);
 
         setProductos(productoArray);
 
-    }, []);
+    }, [info, categoria, idContenido1, idSubContenido1, idProducto1,
+        idContenido2, idSubContenido2, idProducto2,
+        idContenido3, idSubContenido3, idProducto3]);
 
     const obtenerRutaImagen = (imagen) => process.env.PUBLIC_URL + `/assets/img/articulosCompra/${imagen}`;
 
