@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/uno-eccomerce-react/static/css/main.2e04c6af.css",
+    "main.css": "/uno-eccomerce-react/static/css/main.a52be6b7.css",
     "main.js": "/uno-eccomerce-react/static/js/main.96f27a3a.js",
     "static/js/453.d6579b24.chunk.js": "/uno-eccomerce-react/static/js/453.d6579b24.chunk.js",
     "index.html": "/uno-eccomerce-react/index.html",
-    "main.2e04c6af.css.map": "/uno-eccomerce-react/static/css/main.2e04c6af.css.map",
+    "main.a52be6b7.css.map": "/uno-eccomerce-react/static/css/main.a52be6b7.css.map",
     "main.96f27a3a.js.map": "/uno-eccomerce-react/static/js/main.96f27a3a.js.map",
     "453.d6579b24.chunk.js.map": "/uno-eccomerce-react/static/js/453.d6579b24.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e04c6af.css",
+    "static/css/main.a52be6b7.css",
     "static/js/main.96f27a3a.js"
   ]
 }
